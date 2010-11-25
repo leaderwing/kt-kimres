@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TransformRules>
+	<!-- X whose name is/are Y => X:Y -->
+	<rule name="notName" priority="-1">
+		<premiselist>
+			<premise>
+				<subject var="a" />
+				<relation var="b"
+					value="whose name is,whose name are,name is,name are,called,'s name is,'s name are" />
+				<object var="c" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" quantifier="objvalue" />
+				<relation var="b" />
+				<object var="c" delete="yes" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	<!-- X(UE) is/are Y(IE) => X:Y -->
+	<rule name="notName" priority="-1">
+		<premiselist>
+			<premise>
+				<subject var="a" classType="UE" />
+				<relation var="b" value="is,are,was,were" />
+				<object var="c" className="subjclass" classType="IE" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" quantifier="objvalue" />
+				<relation var="b" />
+				<object var="c" delete="yes" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- X(UE) is/are Y(IE) => X:Y -->
+	<rule name="notName" priority="-1">
+		<premiselist>
+			<premise>
+				<subject var="a" className="objclass" classType="IE" />
+				<relation var="b" value="is,are,was,were" />
+				<object var="c" classType="UE" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" delete="yes" />
+				<relation var="b" />
+				<object var="c" quantifier="subjvalue" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	<!-- X(UE) is/are Y(IE) => X:Y -->
+	<rule name="notName" priority="-1">
+		<premiselist>
+			<premise>
+				<subject var="a" classType="UE" />
+				<relation var="b" value="is,are,was,were" />
+				<object var="c" className="subjclass" classType="UE" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" delete="yes" />
+				<relation var="b" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<!--  NEW -->
+	<rule name="subRegionOf" priority="10">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Province,Dam,SuspensionBridge" />
+				<relation var="b" value="of,located,in,is" />
+				<object var="c" className="Country" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="subRegionOf" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="locatedIn" priority="10">
+		<premiselist>
+			<premise>
+				<subject var="a"
+					className="Organization,University,company,Building" />
+				<relation var="b" value="in,of" />
+				<object var="c" className="Country,location,city" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="locatedIn" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<rule name="locatedIn" priority="3">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Location"/>
+				<relation var="b" value="is, are, 's, 're" />
+				<object var="c" className="Country" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="locatedIn" />
+				<object var="a" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<rule name="hasFriend1" priority="3">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Person"/>
+				<relation var="b" value="has,of,is,'s" />
+				<object var="c" value="friend" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasFriend" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="subRegionOf1" priority="3">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Country" />
+				<relation var="b" value="subregion" />
+				<object var="c" className="Province" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="subRegionOf" />
+				<object var="a" />
+			</consequent>
+		</consequentlist>
+	</rule>
+    	<rule name="subRegionOf13" priority="30">
+		<premiselist>
+			<premise>
+				<subject var="a" value="Province,Provinces" />
+				<relation var="b" value="of,located,in,is" />
+				<object var="c" className="Country" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="subRegionOf" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="subRegionOf2" priority="3">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Province" />
+				<relation var="b" value="in,of" />
+				<object var="c" className="Location" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="subRegionOf" />
+				<object var="c" className="Country" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	<!-- producedIn-->
+	<rule name="productIn1" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Product" />
+				<relation var="b" value="of,'s,has,from,produced in,built,build" />
+				<object var="c" className="Province" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="producedIn" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="hasWife1" priority="3">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Person,Man"/>
+				<relation var="b" value="has,of,is,'s" />
+				<object var="c" value="wife" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasWife" />
+				<object var="c" className="Woman" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="hasWife2" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Man" />
+				<relation var="b" value="married" />
+				<object var="c" className="Person, Woman" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasWife" />
+				<object var="c" className="Woman" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<rule name="hasHeight" priority="5">
+		<premiselist>
+			<premise>
+				<subject var="a" value = "height"/>
+				<relation var="b" value="of" />
+				<object var="c" className="Dam" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="Dam" />
+				<relation var="b" value="hasHeight" />
+				<object var="a" className="String" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="hasLength" priority="100">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Location" />
+				<relation var="b" value="of,'s,is" />
+				<object var="c" className="String" value="length" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasLength" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="hasPosition2" priority="5">
+		<premiselist>
+			<premise>
+				<subject var="a" className="JobPosition" />
+				<relation var="b" value="is,hold,held" />
+				<object var="c" className="Person" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasPosition" />
+				<object var="a" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="hasPosition1" priority="5">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Person" />
+				<relation var="b"
+					value="is,are,do for a living,was,became,play,held" />
+				<object var="c" className="JobPosition" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasPosition" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="populationCount" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Person" value="people" />
+				<relation var="b"
+					value="are in,live in,live,lived in,lives in,in,grow up,from" />
+				<object var="c" className="Country,Location" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="populationCount" />
+				<object var="a" className="String" quantifier="?" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="liveIn" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Person" />
+				<relation var="b"
+					value="live in,live,lived in,lives in,in,grow up,from" />
+				<object var="c" className="Country,Location" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="liveIn" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+</TransformRules>

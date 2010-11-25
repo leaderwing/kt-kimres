@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+       <!ENTITY rdf  "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl  "http://www.w3.org/2002/07/owl#">
+<!ENTITY xsd  "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY psys  "http://proton.semanticweb.org/2006/05/protons#">
+<!ENTITY ptop  "http://proton.semanticweb.org/2006/05/protont#">
+<!ENTITY pupp "http://proton.semanticweb.org/2006/05/protonu#">
+<!ENTITY protonkm "http://proton.semanticweb.org/2006/05/protonkm#">
+    ]>
+	
+<rdf:RDF	xmlns:owl="&owl;"
+			xmlns:rdf="&rdf;"
+			xmlns:rdfs="&rdfs;"
+			xmlns:psys="&psys;"
+			xmlns:ptop="&ptop;"
+			xmlns:pupp="&pupp;"
+			xmlns:protonkm="&protonkm;"
+			xmlns="&pupp;"
+			xml:base="&pupp;"
+			>
+
+<owl:AnnotationProperty rdf:about="&psys;transitiveOver"/>
+<owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+<owl:AnnotationProperty rdf:about="&rdfs;label"/>
+<owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+
+<!-- Ontology Information -->
+<owl:Ontology rdf:about="">
+	<rdfs:label rdf:datatype="&xsd;string"> T_ONTO </rdfs:label>
+	<rdfs:comment> Test Ontology to experiment TREC </rdfs:comment>
+	<owl:versionInfo> 0.1 </owl:versionInfo>
+	
+  <!-- THESE IMPORTS NEED TO BE with NAMESPACES when D E P L O Y E D -->
+          
+    <owl:imports rdf:resource="protons.owl"/>
+    <owl:imports rdf:resource="protont.owl"/>
+	<owl:imports rdf:resource="protonu.owl"/>
+</owl:Ontology>
+
+<!-- Classes -->
+<owl:Class rdf:ID="Format">
+<rdfs:label> Format </rdfs:label>
+<rdfs:comment> Q 42 What format was VHS's main competition? </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Competitor">
+<rdfs:label> Competitor </rdfs:label>
+<rdfs:comment> Q 42 </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
+<owl:Class rdf:ID="MediaType">
+<rdfs:label> Media Type </rdfs:label>
+<rdfs:comment> Q 42</rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Product">
+<rdfs:label> Product </rdfs:label>
+<rdfs:comment> Q 43 What French province is cognac produced in</rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;ProductModel"/>
+</owl:Class>
+
+<owl:Class rdf:ID="King">
+<rdfs:label> King </rdfs:label>
+<rdfs:comment> Q 126 What king was forced to agree to the Magna Carta?</rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Person"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Dam">
+<rdfs:label> Dam </rdfs:label>
+<rdfs:comment> Q 76 What is the highest dam in the U.S.?</rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Location"/>
+</owl:Class>
+
+<owl:Class rdf:ID="SuspensionBridge">
+<rdfs:label> SuspensionBridge </rdfs:label>
+<rdfs:comment> Q 80 What is the longest suspension bridge in the U.S.?</rdfs:comment>
+<rdfs:subClassOf rdf:resource="&pupp;Bridge"/>
+</owl:Class>
+
+<owl:Class rdf:ID="FamousWoman">
+<rdfs:label> Famous Woman </rdfs:label>
+<rdfs:comment> Woman has Famous property </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Person"/>
+</owl:Class>
+
+<!-- Datatype Properties -->
+<owl:DatatypeProperty rdf:about="&pupp;hasYearsActive"
+                        rdfs:label="hasYearsActive">
+    <rdfs:domain rdf:resource="&ptop;Object"/>
+    <rdf:range rdf:resource="&xsd;string"/>
+ </owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="&pupp;hasHeight"
+                        rdfs:label="hasHeight">
+    <rdfs:domain rdf:resource="&ptop;Object"/>
+    <rdf:range rdf:resource="&xsd;string"/>
+</owl:DatatypeProperty> 
+ 
+<owl:DatatypeProperty rdf:about="&pupp;hasLength"
+                        rdfs:label="hasLength">
+    <rdfs:domain rdf:resource="&ptop;Object"/>
+    <rdf:range rdf:resource="&xsd;string"/>
+</owl:DatatypeProperty> 
+
+<owl:ObjectProperty rdf:about="&pupp;isBeautiful" 
+						rdfs:label="isBeautiful">
+<rdfs:comment>Beautiful property</rdfs:comment>
+<rdfs:domain rdf:resource="&ptop;Person"/>
+<rdfs:range rdf:resource="&xsd;string"/>
+</owl:ObjectProperty>
+
+<!-- Object Properties -->
+<owl:ObjectProperty rdf:about="&pupp;hasFriend" rdfs:label="hasFriend">
+<rdfs:comment>Q 302</rdfs:comment>
+<rdfs:domain rdf:resource="&ptop;Person"/>
+<rdfs:range rdf:resource="&ptop;Person"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pupp;hasFormat" rdfs:label="hasFormat">
+<rdfs:comment>Q 42 What format was VHS's main competition? </rdfs:comment>
+<rdfs:domain rdf:resource="&pupp;Competitor"/>
+<rdfs:range rdf:resource="&pupp;Format"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pupp;hasCompetitor" rdfs:label="hasCompetitor">
+<rdfs:comment>Q 42</rdfs:comment>
+<rdfs:domain rdf:resource="&pupp;MediaType"/>
+<rdfs:range rdf:resource="&pupp;Competitor"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pupp;producedIn" rdfs:label="producedIn">
+<rdfs:comment>Q 43 What French province is cognac produced in</rdfs:comment>
+<rdfs:domain rdf:resource="&pupp;Product"/>
+<rdfs:range rdf:resource="&pupp;Province"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pupp;involvedIn" rdfs:label="involvedIn">
+<rdfs:comment>Q 126 What king was forced to agree to the Magna Carta</rdfs:comment>
+<rdfs:domain rdf:resource="&pupp;King"/>
+<rdfs:range rdf:resource="&pupp;Event"/>
+</owl:ObjectProperty>
+
+<!--
+<owl:Class rdf:ID="Robot">
+<rdfs:label> Robot </rdfs:label>
+<rdfs:comment>
+        A mechanical or electronic device that resembles a living animal and
+        moves automatically or by remote control.
+</rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
+<owl:ObjectProperty rdf:about="#createdBy" rdfs:label="createdBy">
+<rdfs:domain rdf:resource="#Robot"/>
+<rdfs:range rdf:resource="&ptop;Person"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="producedYear"
+                        rdfs:label="producedYear">
+    <rdfs:domain rdf:resource="Robot"/>
+    <rdf:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+ -->
+</rdf:RDF>

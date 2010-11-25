@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TransformRules>
+	<!-- quantitativeAdjective -->
+
+	<!-- ORIGINAL -->
+
+	<!-- orginal plan -->
+	<rule name="quantitativeAdjective" priority="1">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Plan" />
+				<adjective var="d" value="original" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="OriginalPlan" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Plan" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	<!-- ====================================================== -->
+
+
+	<!-- TOP-SELLING -->
+
+	<!-- top-selling fragrance -->
+	<rule name="superlativeAdjective" priority="1">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Fragrance" />
+				<adjective var="d" value="top-selling" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="TopSellingFragrance" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Fragrance" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- top-selling product -->
+	<rule name="superlativeAdjective" priority="1">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Product" />
+				<adjective var="d" value="top-selling" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="TopSellingProduct" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Product" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- ====================================================== -->
+
+	<!-- NORMAL -->
+	<!-- normal heartrate -->
+	<rule name="quantitativeAdjective" priority="1">
+		<premiselist>
+			<premise>
+				<subject var="c" className="HeartRate" />
+				<adjective var="d" value="normal" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="NormalHeartRate" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="HeartRate" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- ====================================================== -->
+
+	<!-- HEALTHY -->
+	<!--  health person -->
+	<rule name="quantitativeAdjective" priority="1">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Person" />
+				<adjective var="d" value="healthy" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="HealthyPerson" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Person" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- ====================================================== -->
+
+	<!-- FAULT -->
+	<!-- Fautl Line -->
+	<rule name="quantitativeAdjective" priority="1">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Line" />
+				<adjective var="d" value="fault" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="FaultLine" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Line" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- ====================================================== -->
+
+	<!-- MAJOR  -->
+	<!-- Major Line -->
+	<rule name="quantitativeAdjective" priority="1">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Line" />
+				<adjective var="d" value="major" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MajorLine" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Line" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- ====================================================== -->
+
+
+	<!-- FAMOUS -->
+
+	<!-- Famous Model -->
+	<rule name="quantitativeAdjective" priority="1">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Woman, Man" value="model" />
+				<adjective var="d" value="famous" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="FamousModel" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Model" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- Most Famous Model -->
+	<rule name="superlativeAdjective" priority="1">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Woman, Man" value="model" />
+				<adjective var="d" value="most famous" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MostFamousModel" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Model" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+
+
+	<!-- Famous Volunteer -->
+	<rule name="quantitativeAdjective" priority="2">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Volunteer" />
+				<adjective var="d" value="famous" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="FamousVolunteer" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Volunteer" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- Most Famous Volunteer -->
+	<rule name="superlativeAdjective" priority="2">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Volunteer" />
+				<adjective var="d" value="most famous" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MostFamousVolunteer" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Volunteer" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- Famous Person -->
+	<rule name="quantitativeAdjective" priority="2">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Person" />
+				<adjective var="d" value="famous" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="FamousPerson" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Person" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- Most Famous Person -->
+	<rule name="superlativeAdjective" priority="2">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Person" />
+				<adjective var="d" value="most famous" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MostFamousPerson" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Person" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- Famous TouristAttraction -->
+	<rule name="quantitativeAdjective" priority="2">
+		<premiselist>
+			<premise>
+				<subject var="c" className="TouristAttraction" />
+				<adjective var="d" value="famous" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="FamousTouristAttraction" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="TouristAttraction"
+					quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- Most Famous TouristAttraction -->
+	<rule name="superlativeAdjective" priority="2">
+		<premiselist>
+			<premise>
+				<subject var="c" className="TouristAttraction" />
+				<adjective var="d" value="most famous" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c"
+					className="MostFamousTouristAttraction" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="TouristAttraction"
+					quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+
+	<!-- Famous Attraction -->
+	<rule name="quantitativeAdjective" priority="2">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Attraction" />
+				<adjective var="d" value="famous" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="FamousAttraction" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Attraction" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- Most Famous TouristAttraction -->
+	<rule name="superlativeAdjective" priority="2">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Attraction" />
+				<adjective var="d" value="most famous" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MostFamousAttraction" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Attraction" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	<!-- ====================================================== -->
+
+	<!-- MALE -->
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="WineMaker" />
+				<adjective var="d" value="male" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MaleWineMaker" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="WineMaker" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	<rule name="quantitativeAdjective" priority="1">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Person" />
+				<adjective var="d" value="male" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="Male" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Person" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- ====================================================== -->
+	<!-- FEMALE -->
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="WineMaker" />
+				<adjective var="d" value="female" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="FemaleWineMaker" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="WineMaker" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Person" />
+				<adjective var="d" value="female" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="Female" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Person" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- ====================================================== -->
+	<!-- HISTORICAL -->
+	<!-- Historical doll -->
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Doll" />
+				<adjective var="d" value="historical" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="HistoricalDoll" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Doll" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- ====================================================== -->
+	<!-- EXTINCT -->
+
+
+
+	<!-- Extinct tiger -->
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="TasmanianTiger" />
+				<adjective var="d" value="extinct" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="ExtinctTasmanianTiger" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="TasmanianTiger"
+					quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- most extinct tiger -->
+	<rule name="superlativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="TasmanianTiger" />
+				<adjective var="d" value="most extinct" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MostExtinctTasmanianTiger" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="TasmanianTiger"
+					quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- Extinct tiger -->
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Tiger" />
+				<adjective var="d" value="extinct" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="ExtinctTiger" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Tiger" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- most extinct tiger -->
+	<rule name="superlativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Tiger" />
+				<adjective var="d" value="most extinct" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MostExtinctTiger" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Tiger" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- Extinct animal -->
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Animal" />
+				<adjective var="d" value="extinct" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="ExtinctAnimal" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Animal" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	<!--most extinct animal -->
+	<rule name="superlativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Animal" />
+				<adjective var="d" value="most extinct" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MostExtinctAnimal" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Animal" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- ====================================================== -->
+	<!-- COMMON DISEASE -->
+
+	<!-- common Skin cancer -->
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="SkinCancer" />
+				<adjective var="d" value="common" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="CommonSkinCancer" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="SkinCancer" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- most common Skin cancer -->
+	<rule name="superlativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="SkinCancer" />
+				<adjective var="d" value="most common" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MostCommonSkinCancer" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="SkinCancer" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- common disease -->
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Disease" />
+				<adjective var="d" value="common" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="CommonDisease" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Disease" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- most common disease -->
+	<rule name="superlativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Disease" />
+				<adjective var="d" value="most common" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MostCommonDisease" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Disease" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+	<!-- ====================================================== -->
+
+	<!-- meat-eating -->
+
+	<rule name="superlativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Marsupial" />
+				<adjective var="d" value="meat-eating" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MeatEatingMarsupial" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Marsupial" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<rule name="superlativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Animal" />
+				<adjective var="d" value="meat-eating" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="MeatEatingAnimal" />
+				<relation var="b" value="subClassOf" />
+				<object var="a" className="Animal" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+
+
+	<!-- ====================================================================================================================================== -->
+	<!-- ====================================================================================================================================== -->
+	<!-- ====================================================================================================================================== -->
+
+
+
+
+	<!-- High, highest, tall, tallest -->
+	<!-- quanlitativeAdjective -->
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" />
+				<adjective var="d" value="high, highest, tall, tallest, low, lowest" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasHeight" />
+				<object var="a" className="String" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- ====================================================== -->
+
+
+	<!-- Long, longest -->
+
+	<rule name="quanlitativeAdjective" priority="5">
+		<premiselist>
+			<premise>
+				<subject var="c"
+					className="ReligiousOrganization,Organization,Dynasty" />
+				<adjective var="d" value="long, longest, old, oldest, new, newest, young, youngest" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasYearsActive" />
+				<object var="a" className="String" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+
+	<rule name="quanlitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" />
+				<adjective var="d" value="long, longest, short, shortest" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasLength" />
+				<object var="a" className="String" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+
+
+	<!-- ====================================================== -->
+
+	<rule name="quanlitativeAdjective" priority="5">
+		<premiselist>
+			<premise>
+				<subject var="c"
+					className="ReligiousOrganization,Organization,Dynasty,Location,City,University" />
+				<adjective var="d" value="old, oldest, young, youngest, new, newst" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasYearsActive" />
+				<object var="a" className="String" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+	<!-- Old, OldestBig, bigest ==> hasAge -->
+
+	<rule name="quanlitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" />
+				<adjective var="d" value="old, oldest, young, youngest, new, newest" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasAge" />
+				<object var="a" className="String" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+
+
+	<!-- ====================================================== -->
+	<!-- Large, largest ==> hasSize -->
+	<rule name="quanlitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" />
+				<adjective var="d" value="large, largest, small, smallest" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasSize" />
+				<object var="a" className="String" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+
+
+	<!-- ====================================================== -->
+	<!-- Big, bigest ==> hasAmount -->
+	<rule name="quanlitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" />
+				<adjective var="d" value="big, biggest, small, smallest" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasAmount" />
+				<object var="a" className="String" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
+</TransformRules>

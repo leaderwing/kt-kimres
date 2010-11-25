@@ -1,0 +1,238 @@
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1> <http://www.w3.org/2000/01/rdf-schema#label> "Samuel Johnsons" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_test.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Samuel Johnsons" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1> <http://www.w3.org/2000/01/rdf-schema#label> "Sam_Joh_Frie_1" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Sam_Joh_Frie_1" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Person> .
+<http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://www.w3.org/2000/01/rdf-schema#label> "Sam_Joh_Frie_2" .
+<http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Sam_Joh_Frie_2" .
+<http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1> <http://proton.semanticweb.org/2006/05/protonu#hasFriend> <http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1> <http://proton.semanticweb.org/2006/05/protonu#hasFriend> <http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#JobPosition> .
+<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1> <http://www.w3.org/2000/01/rdf-schema#label> "biographer" .
+<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "biographer" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1> <http://proton.semanticweb.org/2006/05/protons#hasAlias> <http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1.2> .
+<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1.2> <http://www.w3.org/2000/01/rdf-schema#label> "Biographer" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://proton.semanticweb.org/2006/05/protont#hasPosition> <http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1> <http://proton.semanticweb.org/2006/05/protont#hasPosition> <http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1> .
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#MediaType_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#MediaType> .
+<http://www.ontotext.com/kim/2006/05/wkb#MediaType_test.1> <http://www.w3.org/2000/01/rdf-schema#label> "VHS" .
+<http://www.ontotext.com/kim/2006/05/wkb#MediaType_test.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#MediaType_test.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#MediaType_test.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#MediaType_test.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "VHS" .
+<http://www.ontotext.com/kim/2006/05/wkb#MediaType_test.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Product> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.1> <http://www.w3.org/2000/01/rdf-schema#label> "cognac" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Product_test.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "cognac" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.1> <http://proton.semanticweb.org/2006/05/protonu#producedIn> <http://www.ontotext.com/kim/2006/05/wkb#Province_T.4103> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.1> <http://proton.semanticweb.org/2006/05/protonu#producedIn> <http://www.ontotext.com/kim/2006/05/wkb#Province_T.956> .
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Event> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.1> <http://www.w3.org/2000/01/rdf-schema#label> "Magna Carta" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Event_test.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Magna Carta" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#University> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.1> <http://www.w3.org/2000/01/rdf-schema#label> "Harvard" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#University_test.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Harvard" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.1> <http://proton.semanticweb.org/2006/05/protont#locatedIn> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.1> <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> "374" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#University> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.2> <http://www.w3.org/2000/01/rdf-schema#label> "College of William & Mary" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#University_test.2.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "College of William & Mary" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.2> <http://proton.semanticweb.org/2006/05/protont#locatedIn> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.2> <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> "317" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#University> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.3> <http://www.w3.org/2000/01/rdf-schema#label> "Yale" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#University_test.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "Yale" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.3> <http://proton.semanticweb.org/2006/05/protont#locatedIn> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.3> <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> "309" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#University> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.4> <http://www.w3.org/2000/01/rdf-schema#label> "Princeton" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.4> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#University_test.4.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "Princeton" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.4> <http://proton.semanticweb.org/2006/05/protont#locatedIn> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.4> <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> "264" .
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Dam> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.1> <http://www.w3.org/2000/01/rdf-schema#label> "Oroville" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Oroville" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.1> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.1> <http://proton.semanticweb.org/2006/05/protonu#hasHeight> "230" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Dam> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2> <http://www.w3.org/2000/01/rdf-schema#label> "Hoover" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "Hoover" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2> <http://proton.semanticweb.org/2006/05/protonu#hasHeight> "221" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Dam> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.3> <http://www.w3.org/2000/01/rdf-schema#label> "Dworshak" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "Dworshak" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.3> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.3> <http://proton.semanticweb.org/2006/05/protonu#hasHeight> "218" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Dam> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.4> <http://www.w3.org/2000/01/rdf-schema#label> "Glen Canyon" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.4> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.4.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "Glen Canyon" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.4> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.4> <http://proton.semanticweb.org/2006/05/protonu#hasHeight> "216" .
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#SuspensionBridge> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.1> <http://www.w3.org/2000/01/rdf-schema#label> "Verrazano-Narrows" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Verrazano-Narrows" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.1> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.1> <http://proton.semanticweb.org/2006/05/protonu#hasLength> "1298" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#SuspensionBridge> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.2> <http://www.w3.org/2000/01/rdf-schema#label> "Golden Gate" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.2.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "Golden Gate" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.2> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.2> <http://proton.semanticweb.org/2006/05/protonu#hasLength> "1280" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#SuspensionBridge> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.3> <http://www.w3.org/2000/01/rdf-schema#label> "Mackinac" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "Mackinac" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.3> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.3> <http://proton.semanticweb.org/2006/05/protonu#hasLength> "1158" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#SuspensionBridge> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.4> <http://www.w3.org/2000/01/rdf-schema#label> "George Washington" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.4> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.4.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "George Washington" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.4> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.4> <http://proton.semanticweb.org/2006/05/protonu#hasLength> "1067" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#SuspensionBridge> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.5> <http://www.w3.org/2000/01/rdf-schema#label> "Tacoma Narrows" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.5> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.5.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.5.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.5.0> <http://www.w3.org/2000/01/rdf-schema#label> "Tacoma Narrows" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.5> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.5> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.5> <http://proton.semanticweb.org/2006/05/protonu#hasLength> "853" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#SuspensionBridge> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.6> <http://www.w3.org/2000/01/rdf-schema#label> "Al Zampa Memorial" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.6> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.6.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.6.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.6.0> <http://www.w3.org/2000/01/rdf-schema#label> "Al Zampa Memorial" .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.6> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.6> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
+<http://www.ontotext.com/kim/2006/05/wkb#SuspensionBridge_test.6> <http://proton.semanticweb.org/2006/05/protonu#hasLength> "728" .
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Woman> .
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.1> <http://www.w3.org/2000/01/rdf-schema#label> "Maria Ozawa" .
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Woman_test.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Maria Ozawa" .
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#FamousWoman_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#FamousWoman> .
+<http://www.ontotext.com/kim/2006/05/wkb#FamousWoman_test.1> <http://www.w3.org/2000/01/rdf-schema#label> "Sasaki Nozomi" .
+<http://www.ontotext.com/kim/2006/05/wkb#FamousWoman_test.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#FamousWoman_test.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#FamousWoman_test.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#FamousWoman_test.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Sasaki Nozomi" .
+<http://www.ontotext.com/kim/2006/05/wkb#FamousWoman_test.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1> <http://proton.semanticweb.org/2006/05/protonu#hasWife> <http://www.ontotext.com/kim/2006/05/wkb#Woman_test.1> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1> <http://proton.semanticweb.org/2006/05/protonu#hasWife> <http://www.ontotext.com/kim/2006/05/wkb#FamousWoman_test.1> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.1> <http://proton.semanticweb.org/2006/05/protonu#isBeautiful> "most" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> <http://proton.semanticweb.org/2006/05/protont#populationCount> "295734134" .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_T.VM> <http://proton.semanticweb.org/2006/05/protont#populationCount> "86210781" .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_T.FR> <http://proton.semanticweb.org/2006/05/protont#populationCount> "60656178" .

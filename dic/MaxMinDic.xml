@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dictionary>
+	<entry ADJvalue="shortest,lowest,smallest,youngest,newest" SupAdjType="Min" />
+	<entry ADJvalue="highest,longest,oldest,largest,tallest,biggest"
+		SupAdjType="Max" />
+</dictionary>

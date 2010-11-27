@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dictionary>
+	<entry ADJvalue="shorter,lower,younger,newer,smaller" Rel="isSmallerThan" />
+	<entry ADJvalue="longer,higher,older,larger,taller,bigger"	Rel="isGreaterThan" />
+</dictionary>

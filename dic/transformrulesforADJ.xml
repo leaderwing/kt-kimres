@@ -648,8 +648,8 @@
 	<rule name="quantitativeAdjective" priority="6">
 		<premiselist>
 			<premise>
-				<subject var="c" />
-				<adjective var="d" value="high, highest, tall, tallest, low, lowest" />
+				<subject var="c" className="Dam"/>
+				<adjective var="d" value="high, highest, higher, tall, tallest, taller, low, lowest, lower" />
 			</premise>
 		</premiselist>
 		<consequentlist>
@@ -663,7 +663,6 @@
 
 	<!-- ====================================================== -->
 
-
 	<!-- Long, longest -->
 
 	<rule name="quanlitativeAdjective" priority="5">
@@ -671,7 +670,7 @@
 			<premise>
 				<subject var="c"
 					className="ReligiousOrganization,Organization,Dynasty" />
-				<adjective var="d" value="long, longest, old, oldest, new, newest, young, youngest" />
+				<adjective var="d" value="long, longest, longer, old, oldest, older, new, newest, newer, young, youngest, younger" />
 			</premise>
 		</premiselist>
 		<consequentlist>
@@ -689,7 +688,7 @@
 		<premiselist>
 			<premise>
 				<subject var="c" />
-				<adjective var="d" value="long, longest, short, shortest" />
+				<adjective var="d" value="long, longest, longer, short, shortest, shorter" />
 			</premise>
 		</premiselist>
 		<consequentlist>
@@ -711,7 +710,7 @@
 			<premise>
 				<subject var="c"
 					className="ReligiousOrganization,Organization,Dynasty,Location,City,University" />
-				<adjective var="d" value="old, oldest, young, youngest, new, newst" />
+				<adjective var="d" value="old, oldest, older, young, youngest, younger, new, newst, newer, first, last" />
 			</premise>
 		</premiselist>
 		<consequentlist>
@@ -729,7 +728,7 @@
 		<premiselist>
 			<premise>
 				<subject var="c" />
-				<adjective var="d" value="old, oldest, young, youngest, new, newest" />
+				<adjective var="d" value="old, oldest, older, young, youngest, younger, new, newest, newer" />
 			</premise>
 		</premiselist>
 		<consequentlist>
@@ -750,7 +749,7 @@
 		<premiselist>
 			<premise>
 				<subject var="c" />
-				<adjective var="d" value="large, largest, small, smallest" />
+				<adjective var="d" value="large, largest, larger, small, smallest, smaller" />
 			</premise>
 		</premiselist>
 		<consequentlist>
@@ -771,7 +770,7 @@
 		<premiselist>
 			<premise>
 				<subject var="c" />
-				<adjective var="d" value="big, biggest, small, smallest" />
+				<adjective var="d" value="big, biggest, bigger, small, smallest, smaller" />
 			</premise>
 		</premiselist>
 		<consequentlist>

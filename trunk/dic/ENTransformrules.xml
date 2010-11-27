@@ -73,7 +73,7 @@
 	</rule>
 	
 	<!--  NEW -->
-	<rule name="subRegionOf" priority="10">
+	<rule name="subRegionOf K1" priority="10">
 		<premiselist>
 			<premise>
 				<subject var="a" className="Province,Dam,SuspensionBridge" />
@@ -90,13 +90,13 @@
 		</consequentlist>
 	</rule>
 	
-	<rule name="locatedIn" priority="10">
+	<rule name="locatedIn1" priority="10">
 		<premiselist>
 			<premise>
 				<subject var="a"
-					className="Organization,University,company,Building" />
+					className="Organization,University,Company,Building" />
 				<relation var="b" value="in,of" />
-				<object var="c" className="Country,location,city" />
+				<object var="c" className="Country,Location,City" />
 			</premise>
 		</premiselist>
 		<consequentlist>
@@ -108,22 +108,7 @@
 		</consequentlist>
 	</rule>
 
-	<rule name="locatedIn" priority="3">
-		<premiselist>
-			<premise>
-				<subject var="a" className="Location"/>
-				<relation var="b" value="is, are, 's, 're" />
-				<object var="c" className="Country" />
-			</premise>
-		</premiselist>
-		<consequentlist>
-			<consequent>
-				<subject var="c" />
-				<relation var="b" value="locatedIn" />
-				<object var="a" />
-			</consequent>
-		</consequentlist>
-	</rule>
+
 
 	<rule name="hasFriend1" priority="3">
 		<premiselist>

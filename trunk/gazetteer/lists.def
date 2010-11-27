@@ -2,6 +2,7 @@ IE.lst:IE
 IEtest.lst:IE
 QTA.lst:QTA
 SQTA.lst:SQTA
+CQTA.lst:CQTA
 QLA.lst:QLA
 SQLA.lst:SQLA
 testrelation.lst:RW

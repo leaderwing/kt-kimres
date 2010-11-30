@@ -687,7 +687,7 @@
 	<rule name="quanlitativeAdjective" priority="6">
 		<premiselist>
 			<premise>
-				<subject var="c" />
+				<subject var="c" className="SuspensionBridge" />
 				<adjective var="d" value="long, longest, longer, short, shortest, shorter" />
 			</premise>
 		</premiselist>

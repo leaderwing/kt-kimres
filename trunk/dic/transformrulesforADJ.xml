@@ -649,7 +649,23 @@
 		<premiselist>
 			<premise>
 				<subject var="c" className="Dam"/>
-				<adjective var="d" value="high, highest, higher, tall, tallest, taller, low, lowest, lower" />
+				<adjective var="d" value="high, highest, higher, low, lowest, lower" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasHeight" />
+				<object var="a" className="String" quantifier="*" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="quantitativeAdjective" priority="6">
+		<premiselist>
+			<premise>
+				<subject var="c" className="Person"/>
+				<adjective var="d" value="tall, tallest, taller, short, shortest, shorter" />
 			</premise>
 		</premiselist>
 		<consequentlist>
@@ -727,7 +743,7 @@
 	<rule name="quanlitativeAdjective" priority="6">
 		<premiselist>
 			<premise>
-				<subject var="c" />
+				<subject var="c" className="Person"/>
 				<adjective var="d" value="old, oldest, older, young, youngest, younger, new, newest, newer" />
 			</premise>
 		</premiselist>

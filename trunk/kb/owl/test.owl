@@ -160,6 +160,48 @@
 <rdfs:subClassOf rdf:resource="&ptop;Object"/>
 </owl:Class>
 
+<owl:Class rdf:ID="TradeMark">
+<rdfs:label> Trademark </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+
+<owl:Class rdf:ID="SignatureLine">
+<rdfs:label> Signature Line </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&pupp;TradeMark"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Comedian">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Person"/>
+</owl:Class>
+
+<owl:Class rdf:ID="ZipCode">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="TenKRun">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Producer">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Soldier">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Person"/>
+</owl:Class>
 
 <!-- Datatype Properties -->
 <owl:DatatypeProperty rdf:about="&pupp;hasYearsActive"
@@ -187,12 +229,21 @@
 </owl:DatatypeProperty> 
 
 
-<owl:ObjectProperty rdf:about="&pupp;isBeautiful" 
+<owl:DatatypeProperty rdf:about="&pupp;isBeautiful" 
 						rdfs:label="isBeautiful">
 <rdfs:comment>Beautiful property</rdfs:comment>
 <rdfs:domain rdf:resource="&ptop;Person"/>
 <rdfs:range rdf:resource="&xsd;string"/>
-</owl:ObjectProperty>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="&pupp;hasAge" 
+						rdfs:label="hasAge">
+<rdfs:comment></rdfs:comment>
+<rdfs:domain rdf:resource="&ptop;Person"/>
+<rdfs:range rdf:resource="&xsd;string"/>
+</owl:DatatypeProperty>
+
+
 
 <!-- Object Properties -->
 <owl:ObjectProperty rdf:about="&pupp;hasFriend" rdfs:label="hasFriend">
@@ -231,9 +282,45 @@
 <rdfs:range rdf:resource="&pupp;Person"/>
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="&pupp;hasSignatureLine" rdfs:label="hasSignatureLine">
+<rdfs:comment> 202 </rdfs:comment>
+<rdfs:domain rdf:resource="&pupp;Comedian"/>
+<rdfs:range rdf:resource="&pupp;SignatureLine"/>
+</owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="&pupp;hasPresident" rdfs:label="hasPresident">
+<rdfs:comment> 202 </rdfs:comment>
+<rdfs:domain rdf:resource="&pupp;Country"/>
+<rdfs:range rdf:resource="&pupp;President"/>
+</owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="&pupp;hasCreator" 
+						rdfs:label="hasCreator">
+<rdfs:comment></rdfs:comment>
+<rdfs:domain rdf:resource="&ptop;Movie"/>
+<rdfs:range rdf:resource="&ptop;Person"/>
+</owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="&pupp;hasWinner" 
+						rdfs:label="hasWinner">
+<rdfs:comment></rdfs:comment>
+<rdfs:domain rdf:resource="&ptop;Object"/>
+<rdfs:range rdf:resource="&ptop;Team"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pupp;belongTo" 
+						rdfs:label="belongTo">
+<rdfs:comment></rdfs:comment>
+<rdfs:domain rdf:resource="&pupp;ZipCode"/>
+<rdfs:range rdf:resource="&pupp;Country"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pupp;liveIn" 
+						rdfs:label="liveIn">
+<rdfs:comment></rdfs:comment>
+<rdfs:domain rdf:resource="&ptop;Person"/>
+<rdfs:range rdf:resource="&ptop;Location"/>
+</owl:ObjectProperty>
 
 
 <!--

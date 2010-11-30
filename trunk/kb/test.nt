@@ -12,6 +12,13 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Sam_Joh_Frie_1" .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_test_SJFriend.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Billy.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Billy.1> <http://www.w3.org/2000/01/rdf-schema#label> "Billy Joel" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Billy.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_Billy.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Billy.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Billy.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Billy Joel" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Billy.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 <http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Person> .
 <http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://www.w3.org/2000/01/rdf-schema#label> "Sam_Joh_Frie_2" .
 <http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1.0> .
@@ -236,3 +243,24 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> <http://proton.semanticweb.org/2006/05/protont#populationCount> "295734134" .
 <http://www.ontotext.com/kim/2006/05/wkb#Country_T.VM> <http://proton.semanticweb.org/2006/05/protont#populationCount> "86210781" .
 <http://www.ontotext.com/kim/2006/05/wkb#Country_T.FR> <http://proton.semanticweb.org/2006/05/protont#populationCount> "60656178" .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Entity_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Entity> .
+<http://www.ontotext.com/kim/2006/05/wkb#Entity_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Chiricahua" .
+<http://www.ontotext.com/kim/2006/05/wkb#Entity_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Entity_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Entity_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Entity_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Chiricahua" .
+<http://www.ontotext.com/kim/2006/05/wkb#Entity_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Dog_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Dog> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dog_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Yellow Labrador" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dog_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Dog_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dog_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dog_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Yellow Labrador" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dog_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Language_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Language> .
+<http://www.ontotext.com/kim/2006/05/wkb#Language.1> <http://www.w3.org/2000/01/rdf-schema#label> "English" .
+<http://www.ontotext.com/kim/2006/05/wkb#Language.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Language.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Language.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Language.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "English" .
+<http://www.ontotext.com/kim/2006/05/wkb#Language.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .

@@ -1,12 +1,20 @@
-package org.me.VNKIMService;
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package test;
+
 /**
- * 
+ *
  * @author Hoang Anh
  *
  */
 public class Constants {
+
 	// Adjective type
 	public static final String SUPERLATIVE_QUANTITATIVE_ADJ = "SQTA";
+    public static final String COMPARATIVE_QUANTITATIVE_ADJ = "CQTA";
     public static final String SUPERLATIVE_QUANLITATIVE_ADJ = "SQLA";
 	public static final String QUANTITATIVE_ADJ = "QTA";
 	public static final String QUANLITATIVE_ADJ = "QLA";
@@ -14,6 +22,11 @@ public class Constants {
     // Order Type
     public static final String DESC = "DESC";
     public static final String ASC = "ASC";
+
+    // Comparative Relations
+    public static final String GREATER = "isGreaterThan";
+    public static final String SMALLER = "isSmallerThan";
+
 
 	// Query Type
 	public static final String ALL = "ALL";
@@ -52,6 +65,8 @@ public class Constants {
 	public static final String UE = "UE";
 	public static final String RW = "RW";
 	public static final String CONJ = "CONJ";
+
+    public static final String REAL_NUMBER = "REALNUM";
 
 	public static final String UE_ = "UE_";
 	public static final String UE_AGENT = "UE_Agent";
@@ -101,6 +116,11 @@ public class Constants {
     public static final String OT_ENTRY_TAG = "entry";
 	public static final String OT_ADJ_VALUE_ATTR = "ADJvalue";
 	public static final String OT_ORDER_TYPE_ATTR = "OrderType";
+
+    //Format of ComparativeRelDic.xml
+    public static final String CR_ENTRY_TAG = "entry";
+	public static final String CR_ADJ_VALUE_ATTR = "ADJvalue";
+	public static final String CR_REL_ATTR = "Rel";
 
 	// For QueryBuffer
 	public static final int IGNORE_POS = -2;
@@ -163,8 +183,11 @@ public class Constants {
 	public static final String HOW_MUCH_STRING = "how much";
 	public static final String MOST_STRING = "most";
 	public static final String LEAST_STRING = "least";
+    public static final String MORE_STRING = "more";
+    public static final String LESS_STRING = "less";
 	public static final String AVERAGE_STRING = "average";
 	public static final String QUOTE_STRING = "Quote";
 	public static final String LANGUAGE_STRING = "Language";
 	public static final String TIGER_STRING = "Tiger";
+
 }

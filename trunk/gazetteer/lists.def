@@ -15,6 +15,9 @@ FaultLine.lst:FaultLine
 MostCommonSkinCancer.lst:MostCommonSkinCancer
 Dynasty.lst:Dynasty
 HealthyPerson.lst:HealthyPerson
+HeartRate.lst:HeartRate
+NormalHeartRate.lst:NormalHeartRate
+Area.lst:Area
 Property.lst:Property
 Dam.lst:Dam
 SuspensionBridge.lst:SuspensionBridge

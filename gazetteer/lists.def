@@ -19,10 +19,15 @@ HeartRate.lst:HeartRate
 NormalHeartRate.lst:NormalHeartRate
 Area.lst:Area
 Property.lst:Property
+Casino.lst:Casino
+MusicalInstrument.lst:MusicalInstrument
+SuperBowl.lst:SuperBowl
+Soldier.lst:Soldier
 Dam.lst:Dam
 SuspensionBridge.lst:SuspensionBridge
 GovernmentAgency.lst:GovernmentAgency
 TradeMark.lst:TradeMark
+SignatureLine.lst:SignatureLine
 TouristAttraction.lst:TouristAttraction
 Abstract.lst:Abstract
 Agent.lst:Agent
@@ -262,6 +267,9 @@ Street.lst:Street
 TVChannel.lst:TVChannel
 TVCompany.lst:TVCompany
 Team.lst:Team
+ZipCode.lst:ZipCode
+TenKRun.lst:TenKRun
+Producer.lst:Producer
 Telecom.lst:Telecom
 TelecomFacility.lst:TelecomFacility
 TemporalAbstraction.lst:TemporalAbstraction

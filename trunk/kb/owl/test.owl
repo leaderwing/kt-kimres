@@ -136,6 +136,30 @@
 <rdfs:subClassOf rdf:resource="&psys;Entity"/>
 </owl:Class>
 
+<owl:Class rdf:ID="HealthyPerson">
+<rdfs:label> Healthy Person </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Person"/>
+</owl:Class>
+
+<owl:Class rdf:ID="HeartRate">
+<rdfs:label> Heart Rate </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="NormalHeartRate">
+<rdfs:label> Heart Rate </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&pupp;HeartRate"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Area">
+<rdfs:label> Area </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
 
 <!-- Datatype Properties -->
 <owl:DatatypeProperty rdf:about="&pupp;hasYearsActive"

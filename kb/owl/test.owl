@@ -88,6 +88,55 @@
 <rdfs:subClassOf rdf:resource="&ptop;Person"/>
 </owl:Class>
 
+<owl:Class rdf:ID="FamousModel">
+<rdfs:label> Famous Model </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Person"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Horse">
+<rdfs:label> Horse </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Dog">
+<rdfs:label> Dog </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Word">
+<rdfs:label> Word </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="FaultLine">
+<rdfs:label> Fault Line </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="MostCommonSkinCancer">
+<rdfs:label> Most Common Skin Cancer </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&pupp;Disease"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Dynasty">
+<rdfs:label> Dynasty </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="TouristAttraction">
+<rdfs:label> Tourist Attraction </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&psys;Entity"/>
+</owl:Class>
+
+
 <!-- Datatype Properties -->
 <owl:DatatypeProperty rdf:about="&pupp;hasYearsActive"
                         rdfs:label="hasYearsActive">
@@ -103,9 +152,16 @@
  
 <owl:DatatypeProperty rdf:about="&pupp;hasLength"
                         rdfs:label="hasLength">
+    <rdfs:domain rdf:resource="&ptop;Entity"/>
+    <rdf:range rdf:resource="&xsd;string"/>
+</owl:DatatypeProperty> 
+
+<owl:DatatypeProperty rdf:about="&pupp;hasSpeed"
+                        rdfs:label="hasSpeed">
     <rdfs:domain rdf:resource="&ptop;Object"/>
     <rdf:range rdf:resource="&xsd;string"/>
 </owl:DatatypeProperty> 
+
 
 <owl:ObjectProperty rdf:about="&pupp;isBeautiful" 
 						rdfs:label="isBeautiful">
@@ -144,6 +200,17 @@
 <rdfs:domain rdf:resource="&pupp;King"/>
 <rdfs:range rdf:resource="&pupp;Event"/>
 </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="&pupp;hasWife" rdfs:label="hasWife">
+<rdfs:comment>Q 40 What famous model was married to Billy Joe</rdfs:comment>
+<rdfs:domain rdf:resource="&pupp;Person"/>
+<rdfs:range rdf:resource="&pupp;Person"/>
+</owl:ObjectProperty>
+
+
+
+
+
 
 <!--
 <owl:Class rdf:ID="Robot">

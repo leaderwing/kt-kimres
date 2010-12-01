@@ -1,0 +1,145 @@
+What French province is cognac produced in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Province>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.FR>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.1>} <http://proton.semanticweb.org/2006/05/protonu#producedIn> {x1}
+
+------------------------------------------------
+What format was VHS's main competitor?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Format>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Competitor>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasFormat> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#MediaType_test.1>} <http://proton.semanticweb.org/2006/05/protonu#hasCompetitor> {y1}
+
+------------------------------------------------
+What is "Chiricahua" the name of?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Entity_t.1>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+Entity_t.1.0:"Chiricahua"
+
+------------------------------------------------
+What is the longest suspension bridge in the U.S.?
+
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#SuspensionBridge>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasLength> {y1}
+where xsd:double(y1) >= ALL (select xsd:double(y1temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protonu#SuspensionBridge>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasLength> {y1temp})
+SuspensionBridge_test.1:"Verrazano-Narrows"
+
+------------------------------------------------
+What is the highest dam in the U.S.?
+
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Dam>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasHeight> {y1}
+where xsd:double(y1) >= ALL (select xsd:double(y1temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Dam>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasHeight> {y1temp})
+Dam_test.1:"Oroville"
+
+------------------------------------------------
+What is the name of the longest ruling dynasty of Japan?
+
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Dynasty>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.JA>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> {y1}
+where xsd:double(y1) >= ALL (select xsd:double(y1temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Dynasty>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> {y1temp})
+
+------------------------------------------------
+What is the oldest city in the United States?
+
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#City>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> {y1}
+where xsd:double(y1) >= ALL (select xsd:double(y1temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protonu#City>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> {y1temp})
+
+------------------------------------------------
+What is the oldest university in the US?
+
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#University>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> {y1}
+where xsd:double(y1) >= ALL (select xsd:double(y1temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protonu#University>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> {y1temp})
+University_test.1:"Harvard"
+
+------------------------------------------------
+What king was forced to agree to the Magna Carta?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#King>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#involvedIn> {<http://www.ontotext.com/kim/2006/05/wkb#Event_test.1>}
+
+------------------------------------------------
+What's the most famous tourist attraction in Rome?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#TouristAttraction>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#CountryCapital_T.91>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#isFamous> {y1}
+where y1 like "most"
+
+------------------------------------------------
+What's the tallest building in New York City?
+
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Building>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#City_t.1>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasHeight> {y1}
+where xsd:double(y1) >= ALL (select xsd:double(y1temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Building>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasHeight> {y1temp})
+
+------------------------------------------------
+Who was biographer and Samuel Johnsons 's friend?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#hasPosition> {<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_Test.1>} INTERSECT select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_test.1>} <http://proton.semanticweb.org/2006/05/protonu#hasFriend> {x1}
+Man_test_SJFriend.1:"Sam_Joh_Frie_1";Person_test_SJFriend.1:"Sam_Joh_Frie_2"
+
+------------------------------------------------

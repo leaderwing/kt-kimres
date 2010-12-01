@@ -7,7 +7,7 @@ QLA.lst:QLA
 SQLA.lst:SQLA
 testrelation.lst:RW
 CONJ.lst:CONJ
-FamousModel.lst:FamousModel
+Model.lst:Model
 Horse.lst:Horse
 Dog.lst:Dog
 Word.lst:Word

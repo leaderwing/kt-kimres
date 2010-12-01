@@ -356,3 +356,10 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Event_2.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Event_2.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "World War II" .
 <http://www.ontotext.com/kim/2006/05/wkb#Event_2.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#City_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#City> .
+<http://www.ontotext.com/kim/2006/05/wkb#City_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Atlantic City" .
+<http://www.ontotext.com/kim/2006/05/wkb#City_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#City_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#City_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#City_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Atlantic City" .
+<http://www.ontotext.com/kim/2006/05/wkb#City_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .

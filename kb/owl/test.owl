@@ -118,10 +118,16 @@
 <rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
 </owl:Class>
 
+<owl:Class rdf:ID="SkinCancer">
+<rdfs:label> Skin Cancer </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&pupp;Disease"/>
+</owl:Class>
+
 <owl:Class rdf:ID="MostCommonSkinCancer">
 <rdfs:label> Most Common Skin Cancer </rdfs:label>
 <rdfs:comment>  </rdfs:comment>
-<rdfs:subClassOf rdf:resource="&pupp;Disease"/>
+<rdfs:subClassOf rdf:resource="&pupp;SkinCancer"/>
 </owl:Class>
 
 <owl:Class rdf:ID="Dynasty">

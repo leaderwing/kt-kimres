@@ -12,6 +12,7 @@ Horse.lst:Horse
 Dog.lst:Dog
 Word.lst:Word
 FaultLine.lst:FaultLine
+SkinCancer.lst:SkinCancer
 MostCommonSkinCancer.lst:MostCommonSkinCancer
 Dynasty.lst:Dynasty
 HealthyPerson.lst:HealthyPerson

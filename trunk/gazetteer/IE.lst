@@ -3274,13 +3274,7 @@ woodman
 chimneysweep
 wainwright
 bell captain
-town
-province
-state
-island
 township
-village
-city
 Hills
 Ocean
 Fjord
@@ -3288,7 +3282,6 @@ District
 Desert
 Basin
 ocean
-Hill
 Bay
 Springs
 Mountain
@@ -3296,32 +3289,21 @@ Parkway
 Lakes
 Harbor
 Channel
-sea
 County
 Creek
 Estates
-Sea
-City
-Beach
 Belt
 Straits
-Canal
-Valley
-Province
 Boulevard
-Island
 River
 Strait
 Everglades
-Plains
 Republic
 Delta
 Blvd.
 Heights
 Islands
 Bay Area
-Village
-Mountains
 Sands
 southwestern
 SouthWestern
@@ -3567,7 +3549,6 @@ ocD
 CV
 GIE
 N.V.
-Company
 F.C.
 Sa
 BROS

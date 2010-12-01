@@ -209,6 +209,13 @@
 <rdfs:subClassOf rdf:resource="&ptop;Person"/>
 </owl:Class>
 
+<owl:Class rdf:ID="Competition">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+
 <!-- Datatype Properties -->
 <owl:DatatypeProperty rdf:about="&pupp;hasYearsActive"
                         rdfs:label="hasYearsActive">

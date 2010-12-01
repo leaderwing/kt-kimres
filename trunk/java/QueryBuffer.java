@@ -1,4 +1,4 @@
-package org.me.VNKIMService;
+package test;
 
 import java.io.Serializable;
 import java.lang.Exception;
@@ -8,7 +8,7 @@ class ItemType implements Serializable {
 
     public String value = "";
     public String className = "";
-    public String classType = ""; // IE, UE, RW, CONJ
+    public String classType = ""; // IE, UE, RW, CONJ, QTA, SQTA, QLA, SQLA
     public String ID = "";
     public String name = "";
     public String variable = "";
@@ -25,13 +25,13 @@ class ItemType implements Serializable {
     public String wordfollow = "";
     public String wordbefore = "";
     public boolean delete = false;
-    public boolean valueOfNormalQTA = false;
+    public boolean valueOfNormalQTA = false; //use for obj of a relation identified from quantitative adj
 
 
     public int subindex = 0; // use for relation only
     public int objindex = 0; // use for relation only
-    private boolean identifiedFromQTA = false; //use for relation only
-    private boolean toFindSuperlativeQTA = false; //use for relation only
+    private boolean identifiedFromQTA = false; //use for classType = RW (relation) only
+    private boolean identifiedFromSQTA = false; //use for relation only
 
 
     public int row = 0; // use for drawing
@@ -57,12 +57,12 @@ class ItemType implements Serializable {
         this.valueOfNormalQTA = valueOfNormalQTA;
     }
 
-    public boolean isToFindSuperlativeQTA() {
-        return toFindSuperlativeQTA;
+    public boolean isIdentifiedFromSQTA() {
+        return identifiedFromSQTA;
     }
 
-    public void setToFindSuperlativeQTA(boolean isToFindSuperlativeQTA) {
-        this.toFindSuperlativeQTA = isToFindSuperlativeQTA;
+    public void setIdentifiedFromSQTA(boolean isIdentifiedFromSQTA) {
+        this.identifiedFromSQTA = isIdentifiedFromSQTA;
     }
 
     public boolean isIdentifiedFromQTA() {
@@ -165,7 +165,7 @@ public class QueryBuffer implements Serializable {
     private RelationType relToNextAtomQuery = null;
     private boolean containSuperlativeQTA = false;
     private boolean containQTA = false;
-
+    private boolean containCQTA = false;
 
 
     public QueryBuffer() {
@@ -188,6 +188,15 @@ public class QueryBuffer implements Serializable {
         this.containSuperlativeQTA = containSuperlativeQTA;
     }
 
+
+    public boolean isContainCQTA() {
+        return containCQTA;
+    }
+
+    public void setContainCQTA(boolean containCQTA) {
+        this.containCQTA = containCQTA;
+    }
+    
     public ItemType InsertItemOrg(String value, String className, String classType, long start, long end, String progreg, String wordfollow, String wordbefore) throws Exception {
         if (length == MaxItem) //maximum item limit
         {

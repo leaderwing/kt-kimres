@@ -215,6 +215,23 @@
 <rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
 </owl:Class>
 
+<owl:Class rdf:ID="American">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Person"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Disaster">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Character">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
 
 <!-- Datatype Properties -->
 <owl:DatatypeProperty rdf:about="&pupp;hasYearsActive"
@@ -335,6 +352,12 @@
 <rdfs:range rdf:resource="&ptop;Location"/>
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="&pupp;hasMusic" 
+						rdfs:label="hasMusic">
+<rdfs:comment></rdfs:comment>
+<rdfs:domain rdf:resource="&pupp;Movie"/>
+<rdfs:range rdf:resource="&pupp;MusicalComposition"/>
+</owl:ObjectProperty>
 
 <!--
 <owl:Class rdf:ID="Robot">

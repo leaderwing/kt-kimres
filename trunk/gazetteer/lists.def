@@ -31,6 +31,9 @@ GovernmentAgency.lst:GovernmentAgency
 TradeMark.lst:TradeMark
 SignatureLine.lst:SignatureLine
 TouristAttraction.lst:TouristAttraction
+American.lst:American
+Disaster.lst:Disaster
+Character.lst:Character
 Abstract.lst:Abstract
 Agent.lst:Agent
 ContactInformation.lst:ContactInformation

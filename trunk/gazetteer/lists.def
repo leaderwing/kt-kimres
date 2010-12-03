@@ -34,6 +34,7 @@ TouristAttraction.lst:TouristAttraction
 American.lst:American
 Disaster.lst:Disaster
 Character.lst:Character
+Hospital.lst:Hospital
 Abstract.lst:Abstract
 Agent.lst:Agent
 ContactInformation.lst:ContactInformation
@@ -297,6 +298,7 @@ WeaponModelOrSystem.lst:WeaponModelOrSystem
 WebPage.lst:WebPage
 Week.lst:Week
 Woman.lst:Woman
+Line.lst:Line
 Competitor.lst:Competitor
 Format.lst:Format
 MediaType.lst:MediaType

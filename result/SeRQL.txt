@@ -259,3 +259,184 @@ from {x1} rdfs:label {z1},
  :1
 
 ------------------------------------------------
+What actress starred in "The Lion in Winter"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.1>} <http://proton.semanticweb.org/2006/05/protonu#hasActor> {x1}
+
+ProcessingXML.FindClassofAgent(atomBuffer); //error
+
+------------------------------------------------
+What American composer wrote the music for "West Side Story"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#American>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#MusicalComposition>},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.2>} <http://proton.semanticweb.org/2006/05/protonu#hasMusic> {y1}
+
+------------------------------------------------
+What are the two houses of the Legislative branch?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Building>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Organization_t.1>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+What body of water are the Canary Islands in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Ocean>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Island_t.1>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+What card company sells Christmas ornaments?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Company>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.2>} <http://proton.semanticweb.org/2006/05/protont#producedBy> {x1}
+
+------------------------------------------------
+What city did the Flintstones live in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#City>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Character_t.1>} <http://proton.semanticweb.org/2006/05/protonu#liveIn> {x1}
+
+------------------------------------------------
+What city in Florida is Sea World in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#City>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.3990>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.1>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+What city is 94.5 KDGE Radio located in? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#City>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#RadioStation_t.1>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+What city is Massachusetts General Hospital located in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#City>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Hospital_t.1>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+What city's newspaper is called "The Enquirer"? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#City>},
+        {<>} <http://proton.semanticweb.org/2006/05/protonu#producedIn> {x1}
+SeRQL : error
+
+------------------------------------------------
+What country are Godiva chocolates from?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Country>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.3>} <http://proton.semanticweb.org/2006/05/protonu#producedIn> {x1}
+
+------------------------------------------------
+What country did Ponce de Leon come from?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Country>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_PdL.1>} <http://proton.semanticweb.org/2006/05/protonu#hasNationality> {x1}
+
+------------------------------------------------
+What Cruise Line does Kathie Lee Gifford advertise for?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Line>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.2>} <http://proton.semanticweb.org/2006/05/protonu#advertiseFor> {x1}
+
+------------------------------------------------
+What day and month did John Lennon die?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_JL.1>} <http://proton.semanticweb.org/2006/05/protonu#dateOfDeath> {x1} INTERSECT select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Month>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_JL.1>} <http://proton.semanticweb.org/2006/05/protonu#dateOfDeath> {x1}
+
+------------------------------------------------
+What did Vasco da Gama discover?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Entity>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#discoverBy> {<http://www.ontotext.com/kim/2006/05/wkb#Man_VdG.1>}
+
+------------------------------------------------
+What does Nicholas Cage do for a living?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#JobPosition>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_NC.1>} <http://proton.semanticweb.org/2006/05/protont#hasPosition> {x1}
+
+------------------------------------------------
+What famous model was married to Billy Joel?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Model>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_Billy.1>} <http://proton.semanticweb.org/2006/05/protonu#hasWife> {x1},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#isFamous> {y1}
+
+------------------------------------------------
+What flower did Vincent Van Gogh paint?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Flower>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Person_T.123>} <http://proton.semanticweb.org/2006/05/protonu#paint> {x1}
+
+------------------------------------------------
+What hemisphere is the Philippines in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Hemisphere>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.RP>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+How many films did Ingmar Bergman make?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Movie>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {<http://www.ontotext.com/kim/2006/05/wkb#Man_test.3>}
+ :1
+
+------------------------------------------------
+What is the normal resting heart rate of a healthy adult?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#HeartRate>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#HealthyPerson>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasHeartRate> {y1},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#isNormal> {y2}
+
+------------------------------------------------

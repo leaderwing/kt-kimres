@@ -143,3 +143,119 @@ from {x1} rdfs:label {z1},
 Man_test_SJFriend.1:"Sam_Joh_Frie_1";Person_test_SJFriend.1:"Sam_Joh_Frie_2"
 
 ------------------------------------------------
+What is the average speed of the horses at the Kentucky Derby?
+
+select x1
+from {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Horse>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasSpeed> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#liveIn> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4210>}
+
+------------------------------------------------
+What is the average weight of a Yellow Labrador?
+
+select x1
+from {<http://www.ontotext.com/kim/2006/05/wkb#Dog_t.1>} <http://proton.semanticweb.org/2006/05/protonkm#hasWeight> {x1}
+
+------------------------------------------------
+What is the major fault line near Kentucky?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#FaultLine>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#nearBy> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4210>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#isMajor> {y1}
+
+------------------------------------------------
+What is the most common kind of skin cancer in the U.S.?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#SkinCancer>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#isCommon> {y1}
+where y1 like "most"
+
+------------------------------------------------
+What state in the United States covers the largest area?
+
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Province>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasSize> {y1}
+where xsd:double(y1) >= ALL (select xsd:double(y1temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Province>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasSize> {y1temp})
+
+------------------------------------------------
+How many counties are in Indiana?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#County>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4207>}
+ :1
+
+------------------------------------------------
+How many island does Fiji have?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Island>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.FJ>}
+ :1
+
+------------------------------------------------
+How many people die from snakebite poisoning in the U.S. per year?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#dieBy> {<http://www.ontotext.com/kim/2006/05/wkb#Disease_t.1>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#liveIn> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>}
+
+------------------------------------------------
+How many zip codes are there in the U.S.?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#ZipCode>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#belongTo> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>}
+ :1
+
+------------------------------------------------
+In Poland, where do most people live?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.PL>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#liveIn> {x1}
+
+------------------------------------------------
+Italy is the largest producer of what?
+
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Executive>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.IT>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasSize> {y1}
+where xsd:double(y1) >= ALL (select xsd:double(y1temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Executive>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasSize> {y1temp})
+
+------------------------------------------------
+About how many soldiers died in World War II?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Soldier>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#diedIn> {<http://www.ontotext.com/kim/2006/05/wkb#Event_2.1>}
+ :1
+
+------------------------------------------------

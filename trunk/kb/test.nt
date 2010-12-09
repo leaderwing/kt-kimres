@@ -239,6 +239,14 @@
 <http://www.ontotext.com/kim/2006/05/wkb#University_test.4> <http://proton.semanticweb.org/2006/05/protont#locatedIn> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
 <http://www.ontotext.com/kim/2006/05/wkb#University_test.4> <http://proton.semanticweb.org/2006/05/protonu#hasYearsActive> "264" .
 
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#University> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.5> <http://www.w3.org/2000/01/rdf-schema#label> "Notre Dame University" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.5> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#University_test.5.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.5.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.5.0> <http://www.w3.org/2000/01/rdf-schema#label> "Notre Dame University" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.5> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 
 
 <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Dam> .
@@ -445,6 +453,13 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Province_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "AZ" .
 <http://www.ontotext.com/kim/2006/05/wkb#Province_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Province_t.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Province> .
+<http://www.ontotext.com/kim/2006/05/wkb#Province_t.3> <http://www.w3.org/2000/01/rdf-schema#label> "state of Alaska" .
+<http://www.ontotext.com/kim/2006/05/wkb#Province_t.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Province_t.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Province_t.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Province_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "state of Alaska" .
+<http://www.ontotext.com/kim/2006/05/wkb#Province_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 <http://www.ontotext.com/kim/2006/05/wkb#City_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#City> .
 <http://www.ontotext.com/kim/2006/05/wkb#City_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "New York City" .
 <http://www.ontotext.com/kim/2006/05/wkb#City_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#City_t.1.0> .
@@ -599,6 +614,13 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Sea World" .
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Company> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.2> <http://www.w3.org/2000/01/rdf-schema#label> "Sea of Tranquility" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Company_t.2.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "Sea of Tranquility" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 <http://www.ontotext.com/kim/2006/05/wkb#RadioStation_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#RadioStation> .
 <http://www.ontotext.com/kim/2006/05/wkb#RadioStation_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "94.5 KDGE Radio" .
 <http://www.ontotext.com/kim/2006/05/wkb#RadioStation_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#RadioStation_t.1.0> .
@@ -619,6 +641,15 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "The Enquirer" .
 <http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Newspaper> .
+<http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.2> <http://www.w3.org/2000/01/rdf-schema#label> "Salt Lake City newspaper" .
+<http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.2.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "Salt Lake City newspaper" .
+<http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 
 <http://www.ontotext.com/kim/2006/05/wkb#Festival_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Festival> .
 <http://www.ontotext.com/kim/2006/05/wkb#Festival_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "national day of prayer" .
@@ -655,3 +686,20 @@
 <http://www.ontotext.com/kim/2006/05/wkb#River_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#River_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Nile river" .
 <http://www.ontotext.com/kim/2006/05/wkb#River_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Country> .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "the Netherlands" .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Country_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "the Netherlands" .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#God_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#God> .
+<http://www.ontotext.com/kim/2006/05/wkb#God_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Greek god" .
+<http://www.ontotext.com/kim/2006/05/wkb#God_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#God_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#God_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#God_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Greek god" .
+<http://www.ontotext.com/kim/2006/05/wkb#God_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .

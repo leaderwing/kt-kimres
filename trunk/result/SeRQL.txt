@@ -440,3 +440,238 @@ from {x1} rdfs:label {z1},
         {x1} <http://proton.semanticweb.org/2006/05/protonu#isNormal> {y2}
 
 ------------------------------------------------
+What is Australia's national flower?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Flower>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.AS>} <http://proton.semanticweb.org/2006/05/protonu#hasSymbol> {x1}
+
+------------------------------------------------
+What is Betsy Ross famous for? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Entity>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.3>} <http://proton.semanticweb.org/2006/05/protonu#famousFor> {x1}
+
+error
+
+------------------------------------------------
+What is Dick Clark's birthday?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_DC.1>} <http://proton.semanticweb.org/2006/05/protonu#birthDay> {x1}
+
+------------------------------------------------
+What is another name for vitamin B1? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.4>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+Product_test.4.0:"vitamin B1"
+
+------------------------------------------------
+What is California's state tree? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Tree>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4198>} <http://proton.semanticweb.org/2006/05/protonu#hasSymbol> {x1}
+
+------------------------------------------------
+What is Hawaii's state flower?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Flower>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4204>} <http://proton.semanticweb.org/2006/05/protonu#hasSymbol> {x1}
+
+------------------------------------------------
+What is the abbreviation for Original Equipment Manufacturer? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Organization_t.5>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+Organization_t.5.0:"Original Equipment Manufacturer"
+
+------------------------------------------------
+What is the airport code for Los Angeles International?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Code>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Airport_t.1>} <http://proton.semanticweb.org/2006/05/protonu#hasAirportCode> {x1}
+
+------------------------------------------------
+What is the length of the coastline of the state of Alaska?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Property>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Coastline>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasLength> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_t.3>}
+
+------------------------------------------------
+What is the location of the Sea of Tranquility?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.2>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+What is the longest word in the English language?
+
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Word>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#belongTo> {<http://www.ontotext.com/kim/2006/05/wkb#Language_t.1>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasLength> {y1}
+where xsd:double(y1) >= ALL (select xsd:double(y1temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Word>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasLength> {y1temp})
+
+------------------------------------------------
+What is the mascot for Notre Dame University?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Entity>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#University_test.5>} <http://proton.semanticweb.org/2006/05/protonu#hasMascot> {x1}
+
+------------------------------------------------
+What is the most frequently spoken language in the Netherlands?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Language>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_t.1>} <http://proton.semanticweb.org/2006/05/protonu#hasLanguage> {x1},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#isCommon> {y1}
+where y1 like "most"
+
+------------------------------------------------
+What is the name of a Greek god?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#God_t.1>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+God_t.1.0:"Greek god"
+
+------------------------------------------------
+What is the name of a Salt Lake City newspaper?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.2>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+Newspaper_t.2.0:"Salt Lake City newspaper"
+
+------------------------------------------------
+What does EKG stand for?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Organization_t.2>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+Organization_t.2.0:"EKG"
+
+FindClassofAgent error
+
+------------------------------------------------
+What is another astronomic term for the Northern Lights?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#NaturalPhenomenon_t.1>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+NaturalPhenomenon_t.1.0:"Northern Lights"
+
+------------------------------------------------
+What hockey team did Wayne Gretzky play for?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Team>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#hasMember> {<http://www.ontotext.com/kim/2006/05/wkb#Man_WG.1>}
+
+------------------------------------------------
+What is the distance in miles from the earth to the sun?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Distance>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#distanceFrom> {<http://www.ontotext.com/kim/2006/05/wkb#Planet_t.1>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#distanceTo> {<http://www.ontotext.com/kim/2006/05/wkb#Planet_t.2>}
+
+------------------------------------------------
+What does NAFTA stand for?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Organization_t.3>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+Organization_t.3.0:"NAFTA"
+
+------------------------------------------------
+What does SIDS stand for?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Organization_t.4>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+Organization_t.4.0:"SIDS"
+
+------------------------------------------------
+What is the electrical output in Madrid, Spain?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#ElectricalOutput>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.3242>} <http://proton.semanticweb.org/2006/05/protonu#hasOutput> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.3242>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.SP>}
+
+------------------------------------------------
+What county is Phoenix, AZ in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#County>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#City_T.3018>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#City_T.3018>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_t.2>}
+
+------------------------------------------------
+What is Black Hills, South Dakota most famous for? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Entity>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#MountainRange_T.86>} <http://proton.semanticweb.org/2006/05/protonu#famousFor> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#MountainRange_T.86>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4234>}
+
+------------------------------------------------
+How many casinos are in Atlantic City , NJ?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Casino>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#City_t.1>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#City_t.1>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_t.1>}
+
+------------------------------------------------
+How many Superbowls have the 49ers won?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#SuperBowl>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasWinner> {<http://www.ontotext.com/kim/2006/05/wkb#Team_1.1>}
+
+------------------------------------------------

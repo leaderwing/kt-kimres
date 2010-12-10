@@ -7,6 +7,9 @@ QLA.lst:QLA
 SQLA.lst:SQLA
 testrelation.lst:RW
 CONJ.lst:CONJ
+Alias.lst:Alias
+Tiger.lst:Tiger
+ElectricalOutput.lst:ElectricalOutput
 Model.lst:Model
 Horse.lst:Horse
 Dog.lst:Dog

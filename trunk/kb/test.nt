@@ -117,6 +117,24 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Martin Luther King Jr." .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1> <http://www.w3.org/2000/01/rdf-schema#label> "Roy Roger" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_DC.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Roy Roger" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Person_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Person> .
+<http://www.ontotext.com/kim/2006/05/wkb#Person_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Joan Jett" .
+<http://www.ontotext.com/kim/2006/05/wkb#Person_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Person_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Person_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Person_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Joan Jett" .
+<http://www.ontotext.com/kim/2006/05/wkb#Person_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 <http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Person> .
 <http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://www.w3.org/2000/01/rdf-schema#label> "Sam_Joh_Frie_2" .
 <http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Person_test_SJFriend.1.0> .
@@ -191,6 +209,18 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Product_test.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 <http://www.ontotext.com/kim/2006/05/wkb#Product_test.4> <http://proton.semanticweb.org/2006/05/protonu#producedIn> <http://www.ontotext.com/kim/2006/05/wkb#Province_T.4103> .
 <http://www.ontotext.com/kim/2006/05/wkb#Product_test.4> <http://proton.semanticweb.org/2006/05/protonu#producedIn> <http://www.ontotext.com/kim/2006/05/wkb#Province_T.956> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Product> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.5> <http://www.w3.org/2000/01/rdf-schema#label> "chocolate" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.5> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Product_test.5.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.5.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.5.0> <http://www.w3.org/2000/01/rdf-schema#label> "chocolate" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.5> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.5> <http://proton.semanticweb.org/2006/05/protonu#producedIn> <http://www.ontotext.com/kim/2006/05/wkb#Province_T.4103> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.5> <http://proton.semanticweb.org/2006/05/protonu#producedIn> <http://www.ontotext.com/kim/2006/05/wkb#Province_T.956> .
+
+
+
 
 <http://www.ontotext.com/kim/2006/05/wkb#Event_test.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Event> .
 <http://www.ontotext.com/kim/2006/05/wkb#Event_test.1> <http://www.w3.org/2000/01/rdf-schema#label> "Magna Carta" .

@@ -49,6 +49,9 @@ Distance.lst:Distance
 Coastline.lst:Coastline
 Entity.lst:Entity
 God.lst:God
+Alphabet.lst:Alphabet
+Bird.lst:Bird
+Unknown.lst:Unknown
 Abstract.lst:Abstract
 Agent.lst:Agent
 ContactInformation.lst:ContactInformation

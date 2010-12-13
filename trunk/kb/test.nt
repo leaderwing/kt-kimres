@@ -276,6 +276,14 @@
 <http://www.ontotext.com/kim/2006/05/wkb#University_test.5.0> <http://www.w3.org/2000/01/rdf-schema#label> "Notre Dame University" .
 <http://www.ontotext.com/kim/2006/05/wkb#University_test.5> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#University> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.6> <http://www.w3.org/2000/01/rdf-schema#label> "University of Kentucky" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.6> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#University_test.6.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.6.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.6.0> <http://www.w3.org/2000/01/rdf-schema#label> "University of Kentucky" .
+<http://www.ontotext.com/kim/2006/05/wkb#University_test.6> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 
 
 
@@ -581,6 +589,15 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "West Side Story" .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Movie> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.3> <http://www.w3.org/2000/01/rdf-schema#label> "The Lion King" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "The Lion King" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
 <http://www.ontotext.com/kim/2006/05/wkb#Organization_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Organization> .
 <http://www.ontotext.com/kim/2006/05/wkb#Organization_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Legislative branch" .
 <http://www.ontotext.com/kim/2006/05/wkb#Organization_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Organization_t.1.0> .
@@ -636,6 +653,15 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Character_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Character_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Flintstones" .
 <http://www.ontotext.com/kim/2006/05/wkb#Character_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Character> .
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.2> <http://www.w3.org/2000/01/rdf-schema#label> "the Lion King" .
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Character_t.2.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "the Lion King" .
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Company> .
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Sea World" .
@@ -733,3 +759,11 @@
 <http://www.ontotext.com/kim/2006/05/wkb#God_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#God_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Greek god" .
 <http://www.ontotext.com/kim/2006/05/wkb#God_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Alphabet_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Alphabet> .
+<http://www.ontotext.com/kim/2006/05/wkb#Alphabet_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Jewish alphabet" .
+<http://www.ontotext.com/kim/2006/05/wkb#Alphabet_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Alphabet_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Alphabet_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Alphabet_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Jewish alphabet" .
+<http://www.ontotext.com/kim/2006/05/wkb#Alphabet_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .

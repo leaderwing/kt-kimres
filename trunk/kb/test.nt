@@ -105,21 +105,21 @@
 
 <http://www.ontotext.com/kim/2006/05/wkb#Man_Dr.Ruth.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_Dr.Ruth.1> <http://www.w3.org/2000/01/rdf-schema#label> "Dr. Ruth" .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_Dr.Ruth.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_DC.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Dr.Ruth.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_Dr.Ruth.1.0> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_Dr.Ruth.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_Dr.Ruth.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Dr. Ruth" .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_Dr.Ruth.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1> <http://www.w3.org/2000/01/rdf-schema#label> "Martin Luther King Jr." .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_DC.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1.0> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Martin Luther King Jr." .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 <http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1> <http://www.w3.org/2000/01/rdf-schema#label> "Roy Roger" .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_DC.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1.0> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Roy Roger" .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .

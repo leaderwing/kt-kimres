@@ -52,6 +52,13 @@ God.lst:God
 Alphabet.lst:Alphabet
 Bird.lst:Bird
 Unknown.lst:Unknown
+Year.lst:Year
+Type.lst:Type
+Animal.lst:Animal
+Party.lst:Party
+Store.lst:Store
+Task.lst:Task
+Position.lst:Position
 Abstract.lst:Abstract
 Agent.lst:Agent
 ContactInformation.lst:ContactInformation

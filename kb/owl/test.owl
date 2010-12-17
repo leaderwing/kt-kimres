@@ -377,6 +377,12 @@
 <rdfs:subClassOf rdf:resource="&ptop;Object"/>
 </owl:Class>
 
+<owl:Class rdf:ID="Battle">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
 
 <!-- Datatype Properties -->
 <owl:DatatypeProperty rdf:about="&pupp;hasYearsActive"

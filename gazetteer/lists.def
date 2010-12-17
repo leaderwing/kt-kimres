@@ -59,6 +59,10 @@ Party.lst:Party
 Store.lst:Store
 Task.lst:Task
 Position.lst:Position
+Hunting.lst:Hunting
+Retriever.lst:Retriever
+Game.lst:Game
+People.lst:People
 Abstract.lst:Abstract
 Agent.lst:Agent
 ContactInformation.lst:ContactInformation

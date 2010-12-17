@@ -64,6 +64,7 @@ Hunting.lst:Hunting
 Retriever.lst:Retriever
 Game.lst:Game
 People.lst:People
+Battle.lst:Battle
 Abstract.lst:Abstract
 Agent.lst:Agent
 ContactInformation.lst:ContactInformation

@@ -675,3 +675,280 @@ from {x1} rdfs:label {z1},
         {x1} <http://proton.semanticweb.org/2006/05/protonu#hasWinner> {<http://www.ontotext.com/kim/2006/05/wkb#Team_1.1>}
 
 ------------------------------------------------
+What is the name of Joan Jett's band?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Team>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#hasMember> {<http://www.ontotext.com/kim/2006/05/wkb#Person_t.1>}
+
+------------------------------------------------
+What is the name of Roy Roger's dog?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Dog>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1>} <http://proton.semanticweb.org/2006/05/protonu#hasDog> {y1}
+
+------------------------------------------------
+What is the name of the Jewish alphabet?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Alphabet_t.1>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+Alphabet_t.1.0:"Jewish alphabet"
+
+------------------------------------------------
+What is the name of the Lion King's son in the movie, "The Lion King"?
+
+ select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Man>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Character_t.2>} <http://proton.semanticweb.org/2006/05/protonu#hasSon> {y1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.3>} <http://proton.semanticweb.org/2006/05/protonu#hasCharacter> {<http://www.ontotext.com/kim/2006/05/wkb#Character_t.2>}
+
+------------------------------------------------
+What is the name of the satellite that the Soviet Union sent into space in 1957?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Satellite>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#sendBy> {<http://www.ontotext.com/kim/2006/05/wkb#Country_t.2>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#sendIn> {<http://www.ontotext.com/kim/2006/05/wkb#Year_t.1>}
+
+------------------------------------------------
+What is the Ohio state bird?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Bird>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4228>} <http://proton.semanticweb.org/2006/05/protonu#hasSymbol> {x1}
+
+------------------------------------------------
+What is the Pennsylvania state income tax rate?
+
+select x1
+from {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4231>} <http://proton.semanticweb.org/2006/05/protonu#incomeTaxRate> {x1}
+
+------------------------------------------------
+What is the sales tax in Minnesota?
+
+select x1
+from {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4216>} <http://proton.semanticweb.org/2006/05/protonu#saleTax> {x1}
+
+------------------------------------------------
+What is the size of Argentina? 
+
+select x1
+from {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.AR>} <http://proton.semanticweb.org/2006/05/protonu#hasSize> {x1}
+
+------------------------------------------------
+What is the telephone number for the University of Kentucky?
+
+select x1
+from {<http://www.ontotext.com/kim/2006/05/wkb#University_test.6>} <http://proton.semanticweb.org/2006/05/protonu#hasPhoneNumber> {x1}
+
+------------------------------------------------
+What is the zip code for Fremont, California?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#ZipCode>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#City_T.2929>} <http://proton.semanticweb.org/2006/05/protonu#hasZipCode> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#City_T.2929>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4198>}
+
+------------------------------------------------
+What is the zip code for Parsippany, NJ?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#ZipCode>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#City_t.3>} <http://proton.semanticweb.org/2006/05/protonu#hasZipCode> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#City_t.3>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_t.1>}
+
+------------------------------------------------
+What kind of a sports team is the Wisconsin Badgers?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Type>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Team_1.3>} <http://proton.semanticweb.org/2006/05/protonu#hasType> {x1}
+
+------------------------------------------------
+What kind of animal was Winnie the Pooh?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Type>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Animal_t.1>} <http://proton.semanticweb.org/2006/05/protonu#hasType> {x1}
+
+------------------------------------------------
+What kind of sports team is the Buffalo Sabres?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Type>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Team_1.4>} <http://proton.semanticweb.org/2006/05/protonu#hasType> {x1}
+
+------------------------------------------------
+What language is mostly spoken in Brazil? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Language>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.BR>} <http://proton.semanticweb.org/2006/05/protonu#hasLanguage> {x1}
+
+------------------------------------------------
+What movie did Madilyn Kahn star in with Gene Wilder?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Movie>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasActor> {<http://www.ontotext.com/kim/2006/05/wkb#Man_MK.1>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasActor> {<http://www.ontotext.com/kim/2006/05/wkb#Man_GW.1>}
+
+------------------------------------------------
+What nationality was Jackson Pollock?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Country>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_JP.1>} <http://proton.semanticweb.org/2006/05/protonu#hasNationality> {x1}
+
+------------------------------------------------
+What ocean did the Titanic sink in? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Ocean>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Ship_t.1>} <http://proton.semanticweb.org/2006/05/protonu#sinkIn> {x1}
+
+------------------------------------------------
+What party was Winston Churchill a member of?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Party>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#hasMember> {<http://www.ontotext.com/kim/2006/05/wkb#Person_T.128>}
+
+------------------------------------------------
+What position did Willie Davis play in baseball? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Position>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_WD.1>} <http://proton.semanticweb.org/2006/05/protont#hasPosition> {x1},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#positionSport> {<http://www.ontotext.com/kim/2006/05/wkb#Sport_t.1>}
+
+------------------------------------------------
+What radio station did Paul Harvey work for?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Organization>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#hasEmployee> {<http://www.ontotext.com/kim/2006/05/wkb#Man_PH.1>}
+
+------------------------------------------------
+What sport do the Cleaveland Cavaliers play?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Sport>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Team_1.5>} <http://proton.semanticweb.org/2006/05/protonu#playSport> {x1}
+
+------------------------------------------------
+What state did the Battle of Bighorn take place in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Province>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Event_2.2>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+What state does Martha Stewart live in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Province>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.5>} <http://proton.semanticweb.org/2006/05/protonu#liveIn> {x1}
+
+------------------------------------------------
+What state does NJ stand for?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Province>},
+        {x1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {<http://www.ontotext.com/kim/2006/05/wkb#Province_t.1>}
+
+------------------------------------------------
+What state is Niagra Falls located in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Province>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#River_t.2>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+What state is the Filenes store located in?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Province>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Store>},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#childOrganizationOf> {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.3>}
+RemoveTriple error
+
+------------------------------------------------
+What store does Martha Stewart advertise for?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Store>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.5>} <http://proton.semanticweb.org/2006/05/protonu#advertiseFor> {x1}
+
+------------------------------------------------
+What task does the Bouvier breed of dog perform?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Task>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Dog>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#performTask> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasType> {<http://www.ontotext.com/kim/2006/05/wkb#Type_t.1>}
+
+------------------------------------------------
+What is Dr. Ruth's last name?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_Dr.Ruth.1>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+Man_Dr.Ruth.1.0:"Dr. Ruth"
+
+------------------------------------------------
+What is Martin Luther King Jr.'s real birthday? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1>} <http://proton.semanticweb.org/2006/05/protonu#birthDay> {x1}
+
+------------------------------------------------
+What is the birthstone for June?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Birthstone>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.4>} <http://proton.semanticweb.org/2006/05/protonu#hasBirthstone> {x1}
+
+------------------------------------------------

@@ -13,6 +13,7 @@ ElectricalOutput.lst:ElectricalOutput
 Model.lst:Model
 Horse.lst:Horse
 Dog.lst:Dog
+Structure.lst:Structure
 Word.lst:Word
 FaultLine.lst:FaultLine
 SkinCancer.lst:SkinCancer

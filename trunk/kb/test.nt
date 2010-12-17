@@ -159,6 +159,13 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Man_WD.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Willie Davis" .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_WD.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Man_WWP.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_WWP.1> <http://www.w3.org/2000/01/rdf-schema#label> "Woodrow Wilson President" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_WWP.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_WWP.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_WWP.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_WWP.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Woodrow Wilson President" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_WWP.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 
 
 
@@ -712,6 +719,15 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "The Lion King" .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Movie> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.4> <http://www.w3.org/2000/01/rdf-schema#label> "Budweiser commercials" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.4> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.4.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "Budweiser commercials" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
 
 
 <http://www.ontotext.com/kim/2006/05/wkb#Organization_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Organization> .
@@ -961,3 +977,30 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Sport_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Sport_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "baseball" .
 <http://www.ontotext.com/kim/2006/05/wkb#Sport_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Bridge_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Bridge> .
+<http://www.ontotext.com/kim/2006/05/wkb#Bridge_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Golden Gate Bridge" .
+<http://www.ontotext.com/kim/2006/05/wkb#Bridge_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Bridge_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Bridge_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Bridge_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Golden Gate Bridge" .
+<http://www.ontotext.com/kim/2006/05/wkb#Bridge_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#People_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#People> .
+<http://www.ontotext.com/kim/2006/05/wkb#People_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Mayans" .
+<http://www.ontotext.com/kim/2006/05/wkb#People_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#People_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#People_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#People_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Mayans" .
+<http://www.ontotext.com/kim/2006/05/wkb#People_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Disaster> .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "eruption of Mount Pinatubo" .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "eruption of Mount Pinatubo" .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .

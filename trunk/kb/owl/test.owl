@@ -353,6 +353,31 @@
 <rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
 </owl:Class>
 
+<owl:Class rdf:ID="Hunting">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Retriever">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Game">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="People">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
+
 <!-- Datatype Properties -->
 <owl:DatatypeProperty rdf:about="&pupp;hasYearsActive"
                         rdfs:label="hasYearsActive">

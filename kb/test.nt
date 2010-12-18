@@ -115,6 +115,9 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1.0> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Martin Luther King Jr." .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1> <http://proton.semanticweb.org/2006/05/protons#hasAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1.1> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1.1> <http://www.w3.org/2000/01/rdf-schema#label> "Martin Luther King" .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 <http://www.ontotext.com/kim/2006/05/wkb#Man_RR.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
@@ -231,6 +234,35 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Man_McKinley.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_McKinley.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "President McKinley" .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_McKinley.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Caesar.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Caesar.1> <http://www.w3.org/2000/01/rdf-schema#label> "Caesar" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Caesar.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_Caesar.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Caesar.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Caesar.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Caesar" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Caesar.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BtK.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BtK.1> <http://www.w3.org/2000/01/rdf-schema#label> "Billy the Kid" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BtK.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_BtK.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BtK.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BtK.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Billy the Kid" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BtK.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_CL.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_CL.1> <http://www.w3.org/2000/01/rdf-schema#label> "Charles Lindbergh" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_CL.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_CL.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_CL.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_CL.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Charles Lindbergh" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_CL.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_DV.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_DV.1> <http://www.w3.org/2000/01/rdf-schema#label> "Darth Vader" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_DV.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_DV.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_DV.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_DV.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Darth Vader" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_DV.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 
 
 
@@ -362,6 +394,35 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Product_test.9.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Product_test.9.0> <http://www.w3.org/2000/01/rdf-schema#label> "Macintosh computer" .
 <http://www.ontotext.com/kim/2006/05/wkb#Product_test.9> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Product> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.10> <http://www.w3.org/2000/01/rdf-schema#label> "Magic Chef applicances" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.10> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Product_test.10.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.10.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.10.0> <http://www.w3.org/2000/01/rdf-schema#label> "Magic Chef applicances" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.10> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Product> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.11> <http://www.w3.org/2000/01/rdf-schema#label> "PhotoShop" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.11> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Product_test.11.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.11.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.11.0> <http://www.w3.org/2000/01/rdf-schema#label> "PhotoShop" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.11> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Product> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.12> <http://www.w3.org/2000/01/rdf-schema#label> "Olympia" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.12> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Product_test.12.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.12.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.12.0> <http://www.w3.org/2000/01/rdf-schema#label> "Olympia" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.12> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Product> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.13> <http://www.w3.org/2000/01/rdf-schema#label> "telephone service" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.13> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Product_test.13.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.13.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.13.0> <http://www.w3.org/2000/01/rdf-schema#label> "telephone service" .
+<http://www.ontotext.com/kim/2006/05/wkb#Product_test.13> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 
 
 
@@ -851,6 +912,13 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.6.0> <http://www.w3.org/2000/01/rdf-schema#label> "pyramid of Giza" .
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.6> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Location> .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7> <http://www.w3.org/2000/01/rdf-schema#label> "Harper’s Ferry" .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Location_t.7.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7.0> <http://www.w3.org/2000/01/rdf-schema#label> "Harper’s Ferry" .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 
 
 
@@ -940,6 +1008,10 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Competition_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Kentucky Dery" .
 <http://www.ontotext.com/kim/2006/05/wkb#Competition_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+
+
+
+
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Movie> .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "The Lion in Winter" .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.1.0> .
@@ -988,6 +1060,21 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.7.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.7.0> <http://www.w3.org/2000/01/rdf-schema#label> "Galloping Gourmet" .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.7> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Movie> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8> <http://www.w3.org/2000/01/rdf-schema#label> "Dead Poet’s Society" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8.0> <http://www.w3.org/2000/01/rdf-schema#label> "Dead Poet’s Society" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Movie> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9> <http://www.w3.org/2000/01/rdf-schema#label> "Jake and the Fatman" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9.0> <http://www.w3.org/2000/01/rdf-schema#label> "Jake and the Fatman" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 
 
 
@@ -1075,6 +1162,14 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Character_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "the Lion King" .
 <http://www.ontotext.com/kim/2006/05/wkb#Character_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Character> .
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.3> <http://www.w3.org/2000/01/rdf-schema#label> "Jake" .
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Character_t.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "Jake" .
+<http://www.ontotext.com/kim/2006/05/wkb#Character_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 
 
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Company> .
@@ -1125,6 +1220,27 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.7.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.7.0> <http://www.w3.org/2000/01/rdf-schema#label> "Orange Bowl" .
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.7> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Company> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.8> <http://www.w3.org/2000/01/rdf-schema#label> "Wal-Mart" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.8> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Company_t.8.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.8.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.8.0> <http://www.w3.org/2000/01/rdf-schema#label> "Wal-Mart" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.8> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Company> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.9> <http://www.w3.org/2000/01/rdf-schema#label> "St. Louis Rams" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.9> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Company_t.9.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.9.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.9.0> <http://www.w3.org/2000/01/rdf-schema#label> "St. Louis Rams" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.9> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Company> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.10> <http://www.w3.org/2000/01/rdf-schema#label> "Dominos Pizza" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.10> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Company_t.10.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.10.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.10.0> <http://www.w3.org/2000/01/rdf-schema#label> "Dominos Pizza" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.10> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 
 
@@ -1325,6 +1441,16 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Year_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "1836" .
 <http://www.ontotext.com/kim/2006/05/wkb#Year_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Year> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.3> <http://www.w3.org/2000/01/rdf-schema#label> "1859" .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Year_t.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "1859" .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
 
 <http://www.ontotext.com/kim/2006/05/wkb#Animal_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Animal> .
 <http://www.ontotext.com/kim/2006/05/wkb#Animal_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Winnie the Pooh" .
@@ -1488,3 +1614,24 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Game_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Game_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Scrabble" .
 <http://www.ontotext.com/kim/2006/05/wkb#Game_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#ReligiousOrganization_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#ReligiousOrganization> .
+<http://www.ontotext.com/kim/2006/05/wkb#ReligiousOrganization_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "religion of Islam" .
+<http://www.ontotext.com/kim/2006/05/wkb#ReligiousOrganization_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#ReligiousOrganization_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#ReligiousOrganization_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#ReligiousOrganization_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "religion of Islam" .
+<http://www.ontotext.com/kim/2006/05/wkb#ReligiousOrganization_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#County_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#County> .
+<http://www.ontotext.com/kim/2006/05/wkb#County_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Orange County" .
+<http://www.ontotext.com/kim/2006/05/wkb#County_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#County_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#County_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#County_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Orange County" .
+<http://www.ontotext.com/kim/2006/05/wkb#County_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .

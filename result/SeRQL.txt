@@ -952,3 +952,513 @@ from {x1} rdfs:label {z1},
         {<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.4>} <http://proton.semanticweb.org/2006/05/protonu#hasBirthstone> {x1}
 
 ------------------------------------------------
+What tourist attractions are there in Reims?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#TouristAttraction>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#City_T.2566>}
+
+------------------------------------------------
+What type of bridge is the Golden Gate Bridge?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Type>},
+        {<>} <http://proton.semanticweb.org/2006/05/protonu#hasType> {x1}
+
+------------------------------------------------
+What type of currency is used in Australia?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Type>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Currency>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasType> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.AS>} <http://proton.semanticweb.org/2006/05/protonu#hasCurrency> {y1}
+
+------------------------------------------------
+What type of horses appear on the Budweiser commercials?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Type>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Horse>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasType> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.4>} <http://proton.semanticweb.org/2006/05/protonu#hasCharacter> {y1}
+
+------------------------------------------------
+What type of hunting are retrievers used for?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Type>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Hunting>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasType> {x1},
+        {y2} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Retriever>},
+        {y2} <http://proton.semanticweb.org/2006/05/protonu#used> {y1}
+
+------------------------------------------------
+What U.S. Government agency registers trademarks?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#GovernmentAgency>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#TradeMark>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#registerTrademark> {y1}
+
+------------------------------------------------
+What university was Woodrow Wilson President of?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#University>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_WWP.1>} <http://proton.semanticweb.org/2006/05/protont#withinOrganization> {x1}
+
+------------------------------------------------
+What was the ball game of ancient Mayans called?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Game>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#ownedBy> {<http://www.ontotext.com/kim/2006/05/wkb#People_t.1>}
+
+------------------------------------------------
+What was the death toll at the eruption of Mount Pinatubo?
+
+select x1
+from {<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.2>} <http://proton.semanticweb.org/2006/05/protonu#deathToll> {x1}
+
+------------------------------------------------
+What was the name of Jacques Cousteau's ship?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Ship>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#ownedBy> {<http://www.ontotext.com/kim/2006/05/wkb#Man_JC.1>}
+
+------------------------------------------------
+What was the name of the sitcom that Alyssa Milano starred in with Tony Danza?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Movie>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasActor> {<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.6>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasActor> {<http://www.ontotext.com/kim/2006/05/wkb#Man_TD.1>}
+
+------------------------------------------------
+What was the name of the Titanic's captain? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Man>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Ship_t.1>} <http://proton.semanticweb.org/2006/05/protonu#ownedBy> {y1}
+
+------------------------------------------------
+What was the purpose of the Manhattan project?
+
+select x1
+from {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Project>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasPurpose> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#City_t.7>}
+
+------------------------------------------------
+What was W.C. Fields' real name?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Organization_t.6>} <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> {x1}
+Organization_t.6.0:"W.C.Fields"
+
+------------------------------------------------
+What were Christopher Columbus' three ships?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Ship>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#ownedBy> {<http://www.ontotext.com/kim/2006/05/wkb#Man_CC.1>}
+
+------------------------------------------------
+What were the names of the three ships used by Columbus?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Ship>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#usedBy> {<http://www.ontotext.com/kim/2006/05/wkb#Man_CC.1>}
+
+------------------------------------------------
+What wrestling star became "The Incredible Hulk"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.5>} <http://proton.semanticweb.org/2006/05/protonu#hasActor> {x1}
+
+------------------------------------------------
+What year did Hitler die?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Year>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Person_T.137>} <http://proton.semanticweb.org/2006/05/protonu#dieIn> {x1}
+
+------------------------------------------------
+What year did the Titanic sink? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Year>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Ship_t.1>} <http://proton.semanticweb.org/2006/05/protonu#sinkIn> {x1}
+
+------------------------------------------------
+What year did the Vietnam War end?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Year>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Event_test.2>} <http://proton.semanticweb.org/2006/05/protonu#endYear> {x1}
+
+------------------------------------------------
+What year did WWII begin?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Year>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Event_test.3>} <http://proton.semanticweb.org/2006/05/protonu#beginYear> {x1}
+
+------------------------------------------------
+What year was the Avery Dennison company founded?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Year>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_T.1628>} <http://proton.semanticweb.org/2006/05/protonu#establishmentYear> {x1}
+
+------------------------------------------------
+What year was the Mona Lisa painted? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Year>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.6>} <http://proton.semanticweb.org/2006/05/protonu#producedDate> {x1}
+
+------------------------------------------------
+What's the formal name for Lou Gehrig's disease?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Disease>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#discoveredBy> {<http://www.ontotext.com/kim/2006/05/wkb#Man_LG.1>}
+
+------------------------------------------------
+What's the name of a golf course in Myrtle Beach?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Tournament>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#City_t.8>}
+
+------------------------------------------------
+What's the name of the actress who starred in the movie, "Silence of the Lambs"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Woman>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.6>} <http://proton.semanticweb.org/2006/05/protonu#hasActor> {y1}
+
+------------------------------------------------
+What's the name of the star of the cooking show, "Galloping Gourmet"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.7>} <http://proton.semanticweb.org/2006/05/protonu#hasActor> {y1}
+
+------------------------------------------------
+What's the name of the Tampa newspaper?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Newspaper_t.3>} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1}
+Newspaper_t.3.0:"Tampa newspaper"
+
+------------------------------------------------
+Which mountain range in North America stretches from Maine to Georgia?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#MountainRange>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Continent_T.6>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4212>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.GG>}
+
+------------------------------------------------
+Which U.S. President is buried in Washington, D.C.?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#President>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>} <http://proton.semanticweb.org/2006/05/protonu#hasPresident> {x1},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#burryIn> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4240>}
+
+------------------------------------------------
+Where are the headquarters of Eli Lilly?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Organization>},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#PublicCompany_T.1993>} <http://proton.semanticweb.org/2006/05/protonu#hasHeadquarter> {y1}
+
+------------------------------------------------
+Where are the National Archives?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.6>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+Where are the U.S. headquarters for Procter and Gamble? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Organization_t.7>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+Where did Bill Gates go to college?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#University>},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Person_T.40>} <http://proton.semanticweb.org/2006/05/protonu#studyAt> {y1}
+
+------------------------------------------------
+Where did Hillary Clinton graduate college?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#University>},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Person_T.58>} <http://proton.semanticweb.org/2006/05/protonu#graduateAt> {y1}
+
+------------------------------------------------
+Where did Howard Hughes die?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_HH.1>} <http://proton.semanticweb.org/2006/05/protonu#dieIn> {x1}
+
+------------------------------------------------
+Where did the Inuits live?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Person_t.2>} <http://proton.semanticweb.org/2006/05/protonu#liveIn> {x1}
+
+------------------------------------------------
+Where did the Maya people live?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#People_t.2>} <http://proton.semanticweb.org/2006/05/protonu#liveIn> {x1}
+
+------------------------------------------------
+Where did Woodstock take place?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Event_test.4>} <http://proton.semanticweb.org/2006/05/protonu#happenIn> {x1}
+
+------------------------------------------------
+Where does Mother Angelica live?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Person_t.3>} <http://proton.semanticweb.org/2006/05/protonu#liveIn> {x1}
+
+------------------------------------------------
+Where is Basque country located?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_t.3>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is John Wayne airport?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Airport_t.2>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is Kings Canyon?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#City_t.9>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is Logan International located?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Organization_t.8>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+Where is McCarren Airport?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Airport_t.3>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is Ocho Rios?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#City_t.10>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is Rider College located?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#University_test.7>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+Where is the bridge over the river Kwai?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Bridge>},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#layOver> {<http://www.ontotext.com/kim/2006/05/wkb#River_t.3>}
+
+------------------------------------------------
+Where is the Euphrates River?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#River_t.4>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is the Grand Canyon?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Province_t.5>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is the Holland Tunnel?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Location_t.2>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is the Kalahari desert?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Desert_t.1>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is the location of the Orange Bowl?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.7>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+Where is the Mall of the America?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Building_t.2>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+Where is the Mayo Clinic?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Hospital_t.2>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+Where is the Orinoco River?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#River_T.26>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+Country_T.VE:"Bolivarian Republic of Venezuela";Continent_T.5:"South America";GlobalRegion_T.22:"Northern South America"
+
+------------------------------------------------
+Where is the Shawnee National Forest?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Location_t.3>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is the Smithsonian Institute located?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#University_test.8>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+Where is the Thomas Edison Museum? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Building_t.3>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------

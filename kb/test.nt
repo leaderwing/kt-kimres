@@ -906,17 +906,20 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.5> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Location> .
-<http://www.ontotext.com/kim/2006/05/wkb#Location_t.6> <http://www.w3.org/2000/01/rdf-schema#label> "pyramid of Giza" .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.6> <http://www.w3.org/2000/01/rdf-schema#label> "great pyramid of Giza" .
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.6> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Location_t.6.0> .
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.6.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
-<http://www.ontotext.com/kim/2006/05/wkb#Location_t.6.0> <http://www.w3.org/2000/01/rdf-schema#label> "pyramid of Giza" .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.6.0> <http://www.w3.org/2000/01/rdf-schema#label> "great pyramid of Giza" .
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.6> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Location> .
-<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7> <http://www.w3.org/2000/01/rdf-schema#label> "Harper’s Ferry" .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7> <http://www.w3.org/2000/01/rdf-schema#label> "Harper's Ferry" .
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.7> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Location_t.7.0> .
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.7.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
-<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7.0> <http://www.w3.org/2000/01/rdf-schema#label> "Harper’s Ferry" .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7.0> <http://www.w3.org/2000/01/rdf-schema#label> "Harper's Ferry" .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7> <http://proton.semanticweb.org/2006/05/protons#hasAlias> <http://www.ontotext.com/kim/2006/05/wkb#Location_t.7.1> .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7.1> <http://www.w3.org/2000/01/rdf-schema#label> "Harper 's Ferry" .
 <http://www.ontotext.com/kim/2006/05/wkb#Location_t.7> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 
@@ -1062,10 +1065,13 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.7> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Movie> .
-<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8> <http://www.w3.org/2000/01/rdf-schema#label> "Dead Poet’s Society" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8> <http://www.w3.org/2000/01/rdf-schema#label> "Dead Poet's Society" .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8.0> .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
-<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8.0> <http://www.w3.org/2000/01/rdf-schema#label> "Dead Poet’s Society" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8.0> <http://www.w3.org/2000/01/rdf-schema#label> "Dead Poet's Society" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8> <http://proton.semanticweb.org/2006/05/protons#hasAlias> <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8.1> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8.1> <http://www.w3.org/2000/01/rdf-schema#label> "Dead Poet 's Society" .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.8> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Movie> .
@@ -1561,6 +1567,9 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Mountain_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Mountain_t.1.0> .
 <http://www.ontotext.com/kim/2006/05/wkb#Mountain_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Mountain_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Ayer's rock" .
+<http://www.ontotext.com/kim/2006/05/wkb#Mountain_t.1> <http://proton.semanticweb.org/2006/05/protons#hasAlias> <http://www.ontotext.com/kim/2006/05/wkb#Mountain_t.1.1> .
+<http://www.ontotext.com/kim/2006/05/wkb#Mountain_t.1.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Mountain_t.1.1> <http://www.w3.org/2000/01/rdf-schema#label> "Ayer 's rock" .
 <http://www.ontotext.com/kim/2006/05/wkb#Mountain_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 
@@ -1635,3 +1644,14 @@
 <http://www.ontotext.com/kim/2006/05/wkb#County_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#County_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Orange County" .
 <http://www.ontotext.com/kim/2006/05/wkb#County_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Motto_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Motto> .
+<http://www.ontotext.com/kim/2006/05/wkb#Motto_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Live free or Die" .
+<http://www.ontotext.com/kim/2006/05/wkb#Motto_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Motto_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Motto_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Motto_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Live free or Die" .
+<http://www.ontotext.com/kim/2006/05/wkb#Motto_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .

@@ -1757,3 +1757,386 @@ from {x1} rdfs:label {z1},
         {<http://www.ontotext.com/kim/2006/05/wkb#County_t.1>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4198>}
 
 ------------------------------------------------
+Who was the abolitionist who led the raid on Harper's Ferry in 1859?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Battle>},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#hasLeader> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#Location_t.7>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {<http://www.ontotext.com/kim/2006/05/wkb#Year_t.3>}
+
+------------------------------------------------
+Who was the architect of Central Park?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#designed> {<http://www.ontotext.com/kim/2006/05/wkb#Park_t.1>}
+
+------------------------------------------------
+Who was the author of the book about computer hackers called "The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Book>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasAuthor> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {<http://www.ontotext.com/kim/2006/05/wkb#Book_t.4.0>}
+
+------------------------------------------------
+Who was the founding member of the Pink Floyd band?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Team_1.6>} <http://proton.semanticweb.org/2006/05/protonu#hasFounder> {x1}
+
+------------------------------------------------
+Who won Ms. American in 1989?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.1>} <http://proton.semanticweb.org/2006/05/protonu#hasWinner> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.1>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {<http://www.ontotext.com/kim/2006/05/wkb#Year_t.4>}
+
+------------------------------------------------
+Who won the nobel prize in literature in 1988?
+
+ select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Prize_t.1>} <http://proton.semanticweb.org/2006/05/protonu#hasWinner> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Prize_t.1>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {<http://www.ontotext.com/kim/2006/05/wkb#Year_t.5>}
+
+------------------------------------------------
+Who won the rugby world cup in 1987?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.2>} <http://proton.semanticweb.org/2006/05/protonu#hasWinner> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.2>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {<http://www.ontotext.com/kim/2006/05/wkb#Year_t.6>}
+
+------------------------------------------------
+Who won the Superbowl in 1982?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#SuperBowl>},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasWinner> {x1},
+        {y1} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {<http://www.ontotext.com/kim/2006/05/wkb#Year_t.7>}
+
+------------------------------------------------
+Who wrote "An Ideal Husband"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Book_t.2>} <http://proton.semanticweb.org/2006/05/protonu#hasAuthor> {x1}
+
+------------------------------------------------
+Who wrote "The Pit and the Pendulum"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Book_t.3>} <http://proton.semanticweb.org/2006/05/protonu#hasAuthor> {x1}
+
+------------------------------------------------
+Who wrote "The Scarlet Letter"? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Book_t.4>} <http://proton.semanticweb.org/2006/05/protonu#hasAuthor> {x1}
+
+------------------------------------------------
+Who wrote the book, "Huckleberry Finn"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Book_t.5>} <http://proton.semanticweb.org/2006/05/protonu#hasAuthor> {x1}
+
+------------------------------------------------
+Who wrote the book, "Song of Solomon"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Book_t.6>} <http://proton.semanticweb.org/2006/05/protonu#hasAuthor> {x1}
+
+------------------------------------------------
+Who wrote the book, "The Grinch Who Stole Christmas"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Book_t.7>} <http://proton.semanticweb.org/2006/05/protonu#hasAuthor> {x1}
+
+------------------------------------------------
+Who wrote the hymn "Amazing Grace"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Book_t.8>} <http://proton.semanticweb.org/2006/05/protonu#hasAuthor> {x1}
+
+------------------------------------------------
+Who wrote the song, "Boys of Summer"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Song_t.2>} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1}
+
+------------------------------------------------
+Who wrote the song, "Silent Night"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Song_t.3>} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1}
+
+------------------------------------------------
+Who's the lead singer of the Led Zeppelin band?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Team_1.7>} <http://proton.semanticweb.org/2006/05/protont#hasMember> {x1}
+
+------------------------------------------------
+When did Aldous Huxley write, "Brave New World"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Book_t.9>} <http://proton.semanticweb.org/2006/05/protonu#producedDate> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Book_t.9>} <http://proton.semanticweb.org/2006/05/protonu#hasAuthor> {<http://www.ontotext.com/kim/2006/05/wkb#Man_AH.1>}
+
+------------------------------------------------
+When did Amtrak begin operations?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.11>} <http://proton.semanticweb.org/2006/05/protont#establishmentDate> {x1}
+
+------------------------------------------------
+When did Elvis Presley die?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Person_T.83>} <http://proton.semanticweb.org/2006/05/protonu#dateOfDeath> {x1}
+
+------------------------------------------------
+When did Muhammad live? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_Muhammad.1>} <http://proton.semanticweb.org/2006/05/protonu#birthDay> {x1}
+
+------------------------------------------------
+When did the California lottery begin?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Event_test.5>} <http://proton.semanticweb.org/2006/05/protonu#beginDate> {x1}
+
+------------------------------------------------
+When did the Carolingian period begin?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Event_test.6>} <http://proton.semanticweb.org/2006/05/protonu#beginDate> {x1}
+
+------------------------------------------------
+When did the Chernobyl nuclear accident occur?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Event_test.7>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {x1}
+
+------------------------------------------------
+When did the Hindenberg crash?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.3>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {x1}
+
+------------------------------------------------
+When did World War I start?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Event_2.3>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {x1}
+
+------------------------------------------------
+When is Bastille Day?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Event_2.4>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {x1}
+
+------------------------------------------------
+When is Boxing Day? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Festival_T.9>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {x1}
+
+------------------------------------------------
+When is the Tulip Festival in Michigan?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.2>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.2>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4215>}
+
+------------------------------------------------
+When is hurricane season in the Caribbean?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Season_t.1>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Sea_T.6>} <http://proton.semanticweb.org/2006/05/protonu#hasSeason> {<http://www.ontotext.com/kim/2006/05/wkb#Season_t.1>}
+
+------------------------------------------------
+When was "the Great Depression"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.3>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {x1}
+
+------------------------------------------------
+When was Babe Ruth born?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_BR.1>} <http://proton.semanticweb.org/2006/05/protonu#birthDay> {x1}
+
+------------------------------------------------
+When was Beethoven born?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_Beeth.1>} <http://proton.semanticweb.org/2006/05/protonu#birthDay> {x1}
+
+------------------------------------------------
+When was Hurricane Hugo? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.4>} <http://proton.semanticweb.org/2006/05/protonu#hasTime> {x1}
+
+------------------------------------------------
+When was John D. Rockefeller born?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_JDR.1>} <http://proton.semanticweb.org/2006/05/protonu#birthDay> {x1}
+
+------------------------------------------------
+When was Lyndon B. Johnson born?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_LBJ.1>} <http://proton.semanticweb.org/2006/05/protonu#birthDay> {x1}
+
+------------------------------------------------
+When was Nostradamus born?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_Nostra.1>} <http://proton.semanticweb.org/2006/05/protonu#birthDay> {x1}
+
+------------------------------------------------
+When was Rosa Parks born?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_Rosa.1>} <http://proton.semanticweb.org/2006/05/protonu#birthDay> {x1}
+
+------------------------------------------------
+When was the Brandenburg Gate in Berlin built?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Building_t.4>} <http://proton.semanticweb.org/2006/05/protonu#builtDate> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Building_t.4>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#CountryCapital_T.212>}
+
+------------------------------------------------
+When was the Hoover Dam constructed?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2>} <http://proton.semanticweb.org/2006/05/protonu#builtDate> {x1}
+
+------------------------------------------------
+When was the movie, Caligula, made?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.10>} <http://proton.semanticweb.org/2006/05/protonu#producedDate> {x1}
+
+------------------------------------------------
+When was the NFL established?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.12>} <http://proton.semanticweb.org/2006/05/protont#establishmentDate> {x1}
+
+------------------------------------------------
+When was the San Francisco fire?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#City_T.3042>} <http://proton.semanticweb.org/2006/05/protonu#fireDate> {x1}
+
+------------------------------------------------
+When was the Triangle Shirtwaist fire? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.13>} <http://proton.semanticweb.org/2006/05/protonu#fireDate> {x1}
+
+------------------------------------------------
+When was Algeria colonized?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Date>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.AG>} <http://proton.semanticweb.org/2006/05/protonu#colonizedTime> {x1}
+
+------------------------------------------------
+

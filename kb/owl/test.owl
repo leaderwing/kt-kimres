@@ -389,6 +389,12 @@
 <rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
 </owl:Class>
 
+<owl:Class rdf:ID="Prize">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
 
 <!-- Datatype Properties -->
 <owl:DatatypeProperty rdf:about="&pupp;hasYearsActive"

@@ -263,6 +263,76 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Man_DV.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Darth Vader" .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_DV.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Man_AH.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_AH.1> <http://www.w3.org/2000/01/rdf-schema#label> "Aldous Huxley" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_AH.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_AH.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_AH.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_AH.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Aldous Huxley" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_AH.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JFK.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JFK.1> <http://www.w3.org/2000/01/rdf-schema#label> "John F. Kennedy" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JFK.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_JFK.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JFK.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JFK.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "John F. Kennedy" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JFK.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Muhammad.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Muhammad.1> <http://www.w3.org/2000/01/rdf-schema#label> "Muhammad" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Muhammad.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_Muhammad.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Muhammad.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Muhammad.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Muhammad" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Muhammad.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Prince_A.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Prince_A.1> <http://www.w3.org/2000/01/rdf-schema#label> "Prince Andrew" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Prince_A.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_Prince_A.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Prince_A.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Prince_A.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Prince Andrew" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Prince_A.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BR.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BR.1> <http://www.w3.org/2000/01/rdf-schema#label> "Babe Ruth" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BR.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_BR.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BR.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BR.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Babe Ruth" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_BR.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Beeth.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Beeth.1> <http://www.w3.org/2000/01/rdf-schema#label> "Beethoven" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Beeth.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_Beeth.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Beeth.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Beeth.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Beethoven" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Beeth.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JDR.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JDR.1> <http://www.w3.org/2000/01/rdf-schema#label> "John D. Rockefeller" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JDR.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_JDR.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JDR.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JDR.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "John D. Rockefeller" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_JDR.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_LBJ.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_LBJ.1> <http://www.w3.org/2000/01/rdf-schema#label> "Lyndon B. Johnson" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_LBJ.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_LBJ.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_LBJ.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_LBJ.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Lyndon B. Johnson" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_LBJ.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Nostra.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Nostra.1> <http://www.w3.org/2000/01/rdf-schema#label> "Nostradamus" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Nostra.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_Nostra.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Nostra.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Nostra.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Nostradamus" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Nostra.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Rosa.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Rosa.1> <http://www.w3.org/2000/01/rdf-schema#label> "Rosa Parks" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Rosa.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_Rosa.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Rosa.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Rosa.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Rosa Parks" .
+<http://www.ontotext.com/kim/2006/05/wkb#Man_Rosa.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 
 
 
@@ -456,6 +526,28 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Event_test.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "Woodstock" .
 <http://www.ontotext.com/kim/2006/05/wkb#Event_test.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Event> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.5> <http://www.w3.org/2000/01/rdf-schema#label> "California lottery" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.5> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Event_test.5.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.5.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.5.0> <http://www.w3.org/2000/01/rdf-schema#label> "California lottery" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.5> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Event> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.6> <http://www.w3.org/2000/01/rdf-schema#label> "Carolingian period" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.6> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Event_test.6.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.6.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.6.0> <http://www.w3.org/2000/01/rdf-schema#label> "Carolingian period" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.6> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protont#Event> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.7> <http://www.w3.org/2000/01/rdf-schema#label> "Chernobyl nuclear accident" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.7> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Event_test.7.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.7.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.7.0> <http://www.w3.org/2000/01/rdf-schema#label> "Chernobyl nuclear accident" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_test.7> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 
 
 
@@ -560,6 +652,9 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2.0> .
 <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "Hoover" .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2> <http://proton.semanticweb.org/2006/05/protons#hasAlias> <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2.1> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2.1> <http://www.w3.org/2000/01/rdf-schema#label> "Hoover Dam" .
 <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 <http://www.ontotext.com/kim/2006/05/wkb#Dam_test.2> <http://proton.semanticweb.org/2006/05/protont#subRegionOf> <http://www.ontotext.com/kim/2006/05/wkb#Country_T.4> .
@@ -689,6 +784,17 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Woman_test.6.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Woman_test.6.0> <http://www.w3.org/2000/01/rdf-schema#label> "Alyssa Milano" .
 <http://www.ontotext.com/kim/2006/05/wkb#Woman_test.6> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Woman> .
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.7> <http://www.w3.org/2000/01/rdf-schema#label> "Fergie" .
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.7> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Woman_test.7.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.7.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.7.0> <http://www.w3.org/2000/01/rdf-schema#label> "Fergie" .
+<http://www.ontotext.com/kim/2006/05/wkb#Woman_test.7> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
 
 
 
@@ -978,6 +1084,21 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Team_1.5.0> <http://www.w3.org/2000/01/rdf-schema#label> "Cleaveland Cavaliers" .
 <http://www.ontotext.com/kim/2006/05/wkb#Team_1.5> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Team> .
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.6> <http://www.w3.org/2000/01/rdf-schema#label> "Pink Floyd" .
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.6> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Team_1.6.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.6.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.6.0> <http://www.w3.org/2000/01/rdf-schema#label> "Pink Floyd" .
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.6> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Team> .
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.7> <http://www.w3.org/2000/01/rdf-schema#label> "Led Zeppelin" .
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.7> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Team_1.7.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.7.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.7.0> <http://www.w3.org/2000/01/rdf-schema#label> "Led Zeppelin" .
+<http://www.ontotext.com/kim/2006/05/wkb#Team_1.7> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 
 
 
@@ -994,6 +1115,22 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Event_2.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Event_2.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "Battle of Bighorn" .
 <http://www.ontotext.com/kim/2006/05/wkb#Event_2.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Event> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.3> <http://www.w3.org/2000/01/rdf-schema#label> "World War I" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Event_2.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "World War I" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Event> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.4> <http://www.w3.org/2000/01/rdf-schema#label> "Bastille Day" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.4> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Event_2.4.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "Bastille Day" .
+<http://www.ontotext.com/kim/2006/05/wkb#Event_2.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 
 
 
@@ -1080,6 +1217,13 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9.0> <http://www.w3.org/2000/01/rdf-schema#label> "Jake and the Fatman" .
 <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Movie> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.10> <http://www.w3.org/2000/01/rdf-schema#label> "Caligula" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.10> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Movie_t.10.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.10.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.10.0> <http://www.w3.org/2000/01/rdf-schema#label> "Caligula" .
+<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.10> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 
 
@@ -1248,6 +1392,27 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.10.0> <http://www.w3.org/2000/01/rdf-schema#label> "Dominos Pizza" .
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.10> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Company> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.11> <http://www.w3.org/2000/01/rdf-schema#label> "Amtrak" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.11> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Company_t.11.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.11.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.11.0> <http://www.w3.org/2000/01/rdf-schema#label> "Amtrak" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.11> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Company> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.12> <http://www.w3.org/2000/01/rdf-schema#label> "NFL" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.12> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Company_t.12.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.12.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.12.0> <http://www.w3.org/2000/01/rdf-schema#label> "NFL" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.12> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Company> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.13> <http://www.w3.org/2000/01/rdf-schema#label> "Triangle Shirtwaist" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.13> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Company_t.13.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.13.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.13.0> <http://www.w3.org/2000/01/rdf-schema#label> "Triangle Shirtwaist" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.13> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 
 
 
@@ -1310,6 +1475,24 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Festival_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Festival_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "national day of prayer" .
 <http://www.ontotext.com/kim/2006/05/wkb#Festival_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Festival> .
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.2> <http://www.w3.org/2000/01/rdf-schema#label> "Tulip Festival" .
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Festival_t.2.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "Tulip Festival" .
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Festival> .
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.3> <http://www.w3.org/2000/01/rdf-schema#label> "the Great Depression" .
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Festival_t.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "the Great Depression" .
+<http://www.ontotext.com/kim/2006/05/wkb#Festival_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
 
 <http://www.ontotext.com/kim/2006/05/wkb#NaturalPhenomenon_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#NaturalPhenomenon> .
 <http://www.ontotext.com/kim/2006/05/wkb#NaturalPhenomenon_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Northern Lights" .
@@ -1412,6 +1595,13 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Country_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "Basque" .
 <http://www.ontotext.com/kim/2006/05/wkb#Country_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Country> .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.4> <http://www.w3.org/2000/01/rdf-schema#label> "Vichy France" .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.4> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Country_t.4.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "Vichy France" .
+<http://www.ontotext.com/kim/2006/05/wkb#Country_t.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 
 
 
@@ -1454,6 +1644,36 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Year_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "1859" .
 <http://www.ontotext.com/kim/2006/05/wkb#Year_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Year> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.4> <http://www.w3.org/2000/01/rdf-schema#label> "1989" .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.4> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Year_t.4.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "1989" .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Year> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.5> <http://www.w3.org/2000/01/rdf-schema#label> "1988" .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.5> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Year_t.5.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.5.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.5.0> <http://www.w3.org/2000/01/rdf-schema#label> "1988" .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.5> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Year> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.6> <http://www.w3.org/2000/01/rdf-schema#label> "1987" .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.6> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Year_t.6.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.6.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.6.0> <http://www.w3.org/2000/01/rdf-schema#label> "1987" .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.6> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Year> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.7> <http://www.w3.org/2000/01/rdf-schema#label> "1982" .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.7> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Year_t.7.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.7.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.7.0> <http://www.w3.org/2000/01/rdf-schema#label> "1982" .
+<http://www.ontotext.com/kim/2006/05/wkb#Year_t.7> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
 
 
 
@@ -1488,6 +1708,14 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Building_t.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Building_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "Thomas Edison Museum" .
 <http://www.ontotext.com/kim/2006/05/wkb#Building_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Building_t.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Building> .
+<http://www.ontotext.com/kim/2006/05/wkb#Building_t.4> <http://www.w3.org/2000/01/rdf-schema#label> "Brandenburg Gate" .
+<http://www.ontotext.com/kim/2006/05/wkb#Building_t.4> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Building_t.4.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Building_t.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Building_t.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "Brandenburg Gate" .
+<http://www.ontotext.com/kim/2006/05/wkb#Building_t.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
 
 
 
@@ -1559,6 +1787,21 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "eruption of Mount Pinatubo" .
 <http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Disaster> .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.3> <http://www.w3.org/2000/01/rdf-schema#label> "Hindenberg" .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "Hindenberg" .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Disaster> .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.4> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane Hugo" .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.4> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.4.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane Hugo" .
+<http://www.ontotext.com/kim/2006/05/wkb#Disaster_t.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 
 
 
@@ -1602,6 +1845,63 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Book_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Neuromancer" .
 <http://www.ontotext.com/kim/2006/05/wkb#Book_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Book> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.2> <http://www.w3.org/2000/01/rdf-schema#label> "An Ideal Husband" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Book_t.2.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "An Ideal Husband" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Book> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.3> <http://www.w3.org/2000/01/rdf-schema#label> "The Pit and the Pendulum" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Book_t.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "The Pit and the Pendulum" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Book> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.4> <http://www.w3.org/2000/01/rdf-schema#label> "The Scarlet Letter" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.4> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Book_t.4.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.4.0> <http://www.w3.org/2000/01/rdf-schema#label> "The Scarlet Letter" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.4> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Book> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.5> <http://www.w3.org/2000/01/rdf-schema#label> "Huckleberry Finn" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.5> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Book_t.5.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.5.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.5.0> <http://www.w3.org/2000/01/rdf-schema#label> "Huckleberry Finn" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.5> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Book> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.6> <http://www.w3.org/2000/01/rdf-schema#label> "Song of Solomon" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.6> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Book_t.6.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.6.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.6.0> <http://www.w3.org/2000/01/rdf-schema#label> "Song of Solomon" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.6> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Book> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.7> <http://www.w3.org/2000/01/rdf-schema#label> "The Grinch Who Stole Christmas" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.7> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Book_t.7.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.7.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.7.0> <http://www.w3.org/2000/01/rdf-schema#label> "The Grinch Who Stole Christmas" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.7> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Book> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.8> <http://www.w3.org/2000/01/rdf-schema#label> "Amazing Grace" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.8> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Book_t.8.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.8.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.8.0> <http://www.w3.org/2000/01/rdf-schema#label> "Amazing Grace" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.8> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Book> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.9> <http://www.w3.org/2000/01/rdf-schema#label> "Brave New World" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.9> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Book_t.9.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.9.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.9.0> <http://www.w3.org/2000/01/rdf-schema#label> "Brave New World" .
+<http://www.ontotext.com/kim/2006/05/wkb#Book_t.9> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
 
 
 
@@ -1612,6 +1912,20 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Song_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Song_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "The Muppets" .
 <http://www.ontotext.com/kim/2006/05/wkb#Song_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Song> .
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.2> <http://www.w3.org/2000/01/rdf-schema#label> "Boys of Summer" .
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Song_t.2.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "Boys of Summer" .
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Song> .
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.3> <http://www.w3.org/2000/01/rdf-schema#label> "Silent Night" .
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Song_t.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "Silent Night" .
+<http://www.ontotext.com/kim/2006/05/wkb#Song_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 
 
@@ -1655,3 +1969,66 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Motto_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Motto_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Live free or Die" .
 <http://www.ontotext.com/kim/2006/05/wkb#Motto_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Park_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Park> .
+<http://www.ontotext.com/kim/2006/05/wkb#Park_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Central Park" .
+<http://www.ontotext.com/kim/2006/05/wkb#Park_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Park_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Park_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Park_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Central Park" .
+<http://www.ontotext.com/kim/2006/05/wkb#Park_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Tournament> .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "Ms. American" .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Ms. American" .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Tournament> .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.2> <http://www.w3.org/2000/01/rdf-schema#label> "rugby world cup" .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.2> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.2.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.2.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.2.0> <http://www.w3.org/2000/01/rdf-schema#label> "rugby world cup" .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.2> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Tournament> .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.3> <http://www.w3.org/2000/01/rdf-schema#label> "Superbowl" .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.3> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.3.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.3.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.3.0> <http://www.w3.org/2000/01/rdf-schema#label> "Superbowl" .
+<http://www.ontotext.com/kim/2006/05/wkb#Tournament_t.3> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Prize_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Prize> .
+<http://www.ontotext.com/kim/2006/05/wkb#Prize_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "nobel prize in literature" .
+<http://www.ontotext.com/kim/2006/05/wkb#Prize_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Prize_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Prize_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Prize_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "nobel prize in literature" .
+<http://www.ontotext.com/kim/2006/05/wkb#Prize_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Season_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Season> .
+<http://www.ontotext.com/kim/2006/05/wkb#Season_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "hurricane season" .
+<http://www.ontotext.com/kim/2006/05/wkb#Season_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Season_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Season_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Season_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "hurricane season" .
+<http://www.ontotext.com/kim/2006/05/wkb#Season_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Sea_T.6> <http://proton.semanticweb.org/2006/05/protons#hasAlias> <http://www.ontotext.com/kim/2006/05/wkb#Season_t.1.1> .
+<http://www.ontotext.com/kim/2006/05/wkb#Season_t.1.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Season_t.1.1> <http://www.w3.org/2000/01/rdf-schema#label> "the Caribbean" .

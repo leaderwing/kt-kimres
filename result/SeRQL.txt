@@ -1462,3 +1462,298 @@ from {x1} rdfs:label {z1},
         {<http://www.ontotext.com/kim/2006/05/wkb#Building_t.3>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
 
 ------------------------------------------------
+Where is the volcano Mauna Loa?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Mountain_T.48>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+Country_T.4:"United States";Province_T.4204:"Hawaii";Continent_T.6:"North America"
+
+------------------------------------------------
+Where is the volcano Olympus Mons located?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Volcano_t.1>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where is Tornado Alley? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#University_test.9>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+Where is Tufts University?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#University_test.10>} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {x1}
+
+------------------------------------------------
+Where is Windsor Castle?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Location_t.5>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {x1}
+
+------------------------------------------------
+Where was John Adams born?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_JA.1>} <http://proton.semanticweb.org/2006/05/protonu#birthPlace> {x1}
+
+------------------------------------------------
+Where was Pythagoras born?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_Pyth.1>} <http://proton.semanticweb.org/2006/05/protonu#birthPlace> {x1}
+
+------------------------------------------------
+Where was Poe born?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_P.1>} <http://proton.semanticweb.org/2006/05/protonu#birthPlace> {x1}
+
+------------------------------------------------
+Where was Tesla born?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Location>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_Tesla.1>} <http://proton.semanticweb.org/2006/05/protonu#birthPlace> {x1}
+
+------------------------------------------------
+Who assassinated President McKinley?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_McKinley.1>} <http://proton.semanticweb.org/2006/05/protonu#killedBy> {x1}
+
+------------------------------------------------
+Who created "The Muppets"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Song_t.1>} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1}
+
+------------------------------------------------
+Who created the character James Bond? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Character_t.9>} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1}
+
+------------------------------------------------
+Who created the character of Scrooge?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Character>},
+        {y1} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.7>} <http://proton.semanticweb.org/2006/05/protonu#hasCharacter> {y1}
+
+------------------------------------------------
+Who created the comic strip, "Garfield"?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.8>} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1}
+
+------------------------------------------------
+Who developed the Macintosh computer?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.9>} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1}
+
+------------------------------------------------
+Who discovered America?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>} <http://proton.semanticweb.org/2006/05/protonu#discoverBy> {x1}
+
+------------------------------------------------
+Who found Hawaii?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4204>} <http://proton.semanticweb.org/2006/05/protonu#discoverBy> {x1}
+
+------------------------------------------------
+Who invented the game Scrabble? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Game_t.1>} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1}
+
+------------------------------------------------
+Who is a German philosopher? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasNationality> {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.GM>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#hasPosition> {<http://www.ontotext.com/kim/2006/05/wkb#JobPosition_t.4>}
+
+------------------------------------------------
+Who is buried in the great pyramid of Giza?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#buryIn> {<http://www.ontotext.com/kim/2006/05/wkb#Location_t.6>}
+
+------------------------------------------------
+Who is the emperor of Japan?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#King>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.JA>} <http://proton.semanticweb.org/2006/05/protonu#hasKing> {x1}
+
+------------------------------------------------
+Who is the founder of the Wal-Mart stores?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.8>} <http://proton.semanticweb.org/2006/05/protonu#hasFounder> {x1}
+
+------------------------------------------------
+Who is the monarch of the United Kingdom?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.UK>} <http://proton.semanticweb.org/2006/05/protonu#hasKing> {x1}
+
+------------------------------------------------
+Who is the prophet of the religion of Islam?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#ReligiousOrganization_t.1>} <http://proton.semanticweb.org/2006/05/protonu#hasFounder> {x1}
+
+------------------------------------------------
+Who killed Caesar?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_Caesar.1>} <http://proton.semanticweb.org/2006/05/protonu#killedBy> {x1}
+
+------------------------------------------------
+Who killed Martin Luther King?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_MLK.1>} <http://proton.semanticweb.org/2006/05/protonu#killedBy> {x1}
+
+------------------------------------------------
+Who manufacturers Magic Chef applicances?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.10>} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1}
+
+------------------------------------------------
+Who manufactures the software, "PhotoShop"? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.11>} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1}
+
+------------------------------------------------
+Who owns the St. Louis Rams?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.9>} <http://proton.semanticweb.org/2006/05/protonu#ownedBy> {x1}
+
+------------------------------------------------
+Who painted Olympia?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.12>} <http://proton.semanticweb.org/2006/05/protont#hasCreator> {x1}
+
+------------------------------------------------
+Who portrayed Jake in the television show, "Jake and the Fatman"? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#portray> {<http://www.ontotext.com/kim/2006/05/wkb#Character_t.3>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Movie_t.9>} <http://proton.semanticweb.org/2006/05/protonu#hasCharacter> {<http://www.ontotext.com/kim/2006/05/wkb#Character_t.3>}
+
+------------------------------------------------
+Who shot Billy the Kid? 
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Man_BtK.1>} <http://proton.semanticweb.org/2006/05/protonu#killedBy> {x1}
+
+------------------------------------------------
+Who started the Dominos Pizza chain?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Company_t.10>} <http://proton.semanticweb.org/2006/05/protonu#hasFounder> {x1}
+
+------------------------------------------------
+Who was Charles Lindbergh's wife?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Woman>},
+        {<>} <http://proton.semanticweb.org/2006/05/protonu#hasWife> {x1}
+
+------------------------------------------------
+Who was Darth Vader's son?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#Man>},
+        {<>} <http://proton.semanticweb.org/2006/05/protonu#hasSon> {x1}
+
+------------------------------------------------
+Who provides telephone service in Orange County, California?
+
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Organization>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_test.13>} <http://proton.semanticweb.org/2006/05/protonu#provideBy> {x1},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#locatedIn> {<http://www.ontotext.com/kim/2006/05/wkb#County_t.1>},
+        {<http://www.ontotext.com/kim/2006/05/wkb#County_t.1>} <http://proton.semanticweb.org/2006/05/protont#subRegionOf> {<http://www.ontotext.com/kim/2006/05/wkb#Province_T.4198>}
+
+------------------------------------------------

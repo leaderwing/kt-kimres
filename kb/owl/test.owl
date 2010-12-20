@@ -395,6 +395,38 @@
 <rdfs:subClassOf rdf:resource="&ptop;Object"/>
 </owl:Class>
 
+<owl:Class rdf:ID="Core">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Bond">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Ticket">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Gallery">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
+<owl:Class rdf:ID="Clock">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Object"/>
+</owl:Class>
+
+
+
 
 <!-- Datatype Properties -->
 <owl:DatatypeProperty rdf:about="&pupp;hasYearsActive"

@@ -13,20 +13,30 @@
 89 3 ngôi
 103 xác định sai
 106 xác định sai
-110 sai
+110 3 ngôi
 112 3 ngôi
 113 xác định sai
 117 nhận diện sai
 118 xác định sai
 124 3 ngôi
+136 có vẻ sai
+141 sai, ko chắc, hỏi thầy
+142 sai, ko chắc, hỏi thầy
 162 nhận diện sai
 188 sai
+193 sai
+202 xác định sai
 207 3 ngôi
 210 sai
 216 sai
+226 dư
+240 sai
 241 xác định sai
 251 sai
 
+213 làm ra giống, nhưng hình như 3 ngôi
+214 làm ra giống, nhưng hình như 3 ngôi
+215 làm ra giống, nhưng hình như 3 ngôi
 
 19 tạm chấp nhận
 169 tạm chấp nhận

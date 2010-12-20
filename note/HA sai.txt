@@ -1,0 +1,33 @@
+﻿17
+22 sai
+35
+40
+52
+53 quan hệ 3 ngôi
+65 nhận diện sai
+66
+67
+75 thiếu quan hệ
+76 thiếu quan hệ
+80
+89 3 ngôi
+103 xác định sai
+106 xác định sai
+110 sai
+112 3 ngôi
+113 xác định sai
+117 nhận diện sai
+118 xác định sai
+124 3 ngôi
+162 nhận diện sai
+188 sai
+207 3 ngôi
+210 sai
+216 sai
+241 xác định sai
+251 sai
+
+
+19 tạm chấp nhận
+169 tạm chấp nhận
+170 tạm chấp nhận

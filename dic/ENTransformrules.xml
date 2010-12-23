@@ -1195,7 +1195,7 @@
 			<premise>
 				<subject var="a" className="Company,Organization" />
 				<relation var="b"
-					value="stand for" />
+					value="stand for, known for" />
 				<object var="c" value="What" />
 			</premise>
 		</premiselist>

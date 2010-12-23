@@ -425,6 +425,12 @@
 <rdfs:subClassOf rdf:resource="&ptop;Object"/>
 </owl:Class>
 
+<owl:Class rdf:ID="Cause">
+<rdfs:label>  </rdfs:label>
+<rdfs:comment>  </rdfs:comment>
+<rdfs:subClassOf rdf:resource="&ptop;Abstract"/>
+</owl:Class>
+
 
 
 

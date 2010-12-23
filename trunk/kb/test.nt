@@ -19,20 +19,6 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Man_Billy.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Billy Joel" .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_Billy.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
-<http://www.ontotext.com/kim/2006/05/wkb#Man_CM.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_CM.1> <http://www.w3.org/2000/01/rdf-schema#label> "Crushman" .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_CM.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_CM.1.0> .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_CM.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_CM.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Crushman" .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_CM.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
-
-<http://www.ontotext.com/kim/2006/05/wkb#Man_WF.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_WF.1> <http://www.w3.org/2000/01/rdf-schema#label> "Wakefield" .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_WF.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_WF.1.0> .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_WF.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_WF.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Wakefield" .
-<http://www.ontotext.com/kim/2006/05/wkb#Man_WF.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
-
 <http://www.ontotext.com/kim/2006/05/wkb#Man_JCC.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Man> .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_JCC.1> <http://www.w3.org/2000/01/rdf-schema#label> "John C. Calhoun" .
 <http://www.ontotext.com/kim/2006/05/wkb#Man_JCC.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Man_JCC.1.0> .
@@ -1622,6 +1608,13 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.14.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.14.0> <http://www.w3.org/2000/01/rdf-schema#label> "De Beers" .
 <http://www.ontotext.com/kim/2006/05/wkb#Company_t.14> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Company> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.15> <http://www.w3.org/2000/01/rdf-schema#label> "Cushman and Wakefield" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.15> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Company_t.15.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.15.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.15.0> <http://www.w3.org/2000/01/rdf-schema#label> "Cushman and Wakefield" .
+<http://www.ontotext.com/kim/2006/05/wkb#Company_t.15> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
 
 
 

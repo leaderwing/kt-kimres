@@ -2329,3 +2329,11 @@
 <http://www.ontotext.com/kim/2006/05/wkb#Drug_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
 <http://www.ontotext.com/kim/2006/05/wkb#Drug_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "Sinemet" .
 <http://www.ontotext.com/kim/2006/05/wkb#Drug_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .
+
+
+<http://www.ontotext.com/kim/2006/05/wkb#Battle_t.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protonu#Battle> .
+<http://www.ontotext.com/kim/2006/05/wkb#Battle_t.1> <http://www.w3.org/2000/01/rdf-schema#label> "battle of Waterloo" .
+<http://www.ontotext.com/kim/2006/05/wkb#Battle_t.1> <http://proton.semanticweb.org/2006/05/protons#hasMainAlias> <http://www.ontotext.com/kim/2006/05/wkb#Battle_t.1.0> .
+<http://www.ontotext.com/kim/2006/05/wkb#Battle_t.1.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://proton.semanticweb.org/2006/05/protons#Alias> .
+<http://www.ontotext.com/kim/2006/05/wkb#Battle_t.1.0> <http://www.w3.org/2000/01/rdf-schema#label> "battle of Waterloo" .
+<http://www.ontotext.com/kim/2006/05/wkb#Battle_t.1> <http://proton.semanticweb.org/2006/05/protons#generatedBy> <http://www.ontotext.com/kim/2006/05/wkb#Gazetteer> .

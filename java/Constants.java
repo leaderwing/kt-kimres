@@ -122,6 +122,10 @@ public class Constants {
 	public static final String CR_ADJ_VALUE_ATTR = "ADJvalue";
 	public static final String CR_REL_ATTR = "Rel";
 
+    //Format of ExceptionRelDic.xml
+    public static final String ER_ENTRY_TAG = "entry";
+	public static final String ER_REL_VALUE_ATTR = "Relvalue";
+
 	// For QueryBuffer
 	public static final int IGNORE_POS = -2;
 	public static final int CREATE_POS = -1;

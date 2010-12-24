@@ -22,7 +22,7 @@
 	<rule name="notName" priority="-1">
 		<premiselist>
 			<premise>
-				<subject var="a" classType="UE" />
+				<subject var="a" classType="UE" value="Who,What"/>
 				<relation var="b" value="is,are,was,were,'s,'re" />
 				<object var="c" className="subjclass" classType="IE" />
 			</premise>
@@ -42,7 +42,7 @@
 		<premiselist>
 			<premise>
 				<subject var="a" className="objclass" classType="IE" />
-				<relation var="b" value="is,are,was,were,'s,'re" />
+				<relation var="b" value="is,are,was,were,'re" />
 				<object var="c" classType="UE" />
 			</premise>
 		</premiselist>
@@ -71,6 +71,99 @@
 			</consequent>
 		</consequentlist>
 	</rule>
+	
+	<!-- KHOA -->
+	<rule name="hasAlias" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" />
+				<relation var="b"
+					value="known as" />
+				<object var="c" value="What" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasAlias" />
+				<object var="c" className="Alias" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="hasAlias" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Company,Organization" />
+				<relation var="b"
+					value="known for" />
+				<object var="c" value="What"/>
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasAlias" />
+				<object var="c" className="Alias" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="hasSon" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Person,Man,Woman,Character" />
+				<relation var="b" value="of,has,'s" />
+				<object var="c" className="Man" value="son,sons,Son,Sons" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasSon" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="hasCause" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Disaster" />
+				<relation var="b" value="cause,causes,caused" />
+				<object var="c" value="What" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasCause" />
+				<object var="c" className="Cause"/>
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	    <rule name="playSport" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Team,Person,Man,Woman" />
+				<relation var="b"
+					value="refer to" />
+				<object var="c" className="Sport" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="playSport" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+    </rule>
+	
+	<!-- END OF KHOA -->
+	
+	
 	
 	<!--  NEW -->
 
@@ -1193,9 +1286,9 @@
     <rule name="hasAlias" priority="198">
 		<premiselist>
 			<premise>
-				<subject var="a" className="Company,Organization" />
+				<subject var="a" className="Company,Organization,Procedure" />
 				<relation var="b"
-					value="stand for, known for" />
+					value="stand for" />
 				<object var="c" value="What" />
 			</premise>
 		</premiselist>
@@ -2521,7 +2614,7 @@
 			<premise>
 				<subject var="a" className="Battle,Tournament,Prize,SuperBowl,Event,Disaster,Festival,Season" />
 				<relation var="b"
-					value="in,did,occur,is,was,were" />
+					value="in,did,occur,is,was,were,is known as" />
 				<object var="c" className="Year,Date" />
 			</premise>
 		</premiselist>

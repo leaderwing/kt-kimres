@@ -1253,44 +1253,74 @@ public class LTLL {
 
     public static void RemoveTriple(QueryTriple tripleset, QueryBuffer buffer)
             throws Exception {
+
+        TripleType trip;
+        ItemType Ei = null;
+        ItemType Eiplus1 = null;
+
         for (int i = tripleset.length - 1; i >= 0; i--) {
-            TripleType tmp1 = tripleset.getItem(i);
-            if (!tmp1.isDelete) {
+
+            trip = tripleset.getItem(i);
+
+            if (!trip.isDelete) {
 
                 // Get string between subject and object
                 String st = "ABC";
-                if (tmp1.subject.end < tmp1.object.start) {
-                    st = ProcessingXML.GetStringBetween2Item(tmp1.subject,
-                            tmp1.object, buffer);
+                if (trip.subject.end < trip.object.start) {
+                    st = ProcessingXML.GetStringBetween2Item(trip.subject,
+                            trip.object, buffer);
+                    Ei = trip.subject;
+                    Eiplus1 = trip.object;
                 }
-                if (tmp1.object.end < tmp1.subject.start) {
-                    st = ProcessingXML.GetStringBetween2Item(tmp1.object,
-                            tmp1.subject, buffer);
+                if (trip.object.end < trip.subject.start) {
+                    st = ProcessingXML.GetStringBetween2Item(trip.object,
+                            trip.subject, buffer);
+                    Ei = trip.object;
+                    Eiplus1 = trip.subject;
                 }
                 if ((st.trim().compareToIgnoreCase("and") == 0) || (st.trim().compareToIgnoreCase("or") == 0)) {
-                    tmp1.isDelete = true;
+                    trip.isDelete = true;
                 }// Case "and", "or"
 
+                if ((st.trim().compareToIgnoreCase("") == 0)) {
+                    //Implement: Neu Ei va Ei+1 lien ke nhau, hoac cach nhau bang “ ’s ”
+                    //quan he cua Ei voi cac thuc the truoc no se bi xoa bo
+                    //*Chu y: tai day da xet truong hop "fakeRW", vi "fakeRW"
+                    //chi duoc them vao khi st == ""
+                    for (int j = 0; j < i; j++) {
+                        if (i != j) {
+                            if ((tripleset.getItem(j).subject == Ei) || (tripleset.getItem(j).object == Ei)) {
+                                tripleset.getItem(j).isDelete = true;
+                            }
+                        }
+                    }
+                }
+
                 // Get relation between subject and object
-                ItemType item = ProcessingXML.GetItemBetween2Item(tmp1.subject,
-                        tmp1.object, buffer);
+                ItemType item = ProcessingXML.GetItemBetween2Item(trip.subject,
+                        trip.object, buffer);
+                
                 if (item != null) {
-                    if (item.value.trim().compareToIgnoreCase("'s") == 0) {
-                        // Process for case relation 's between subject and
-                        // object
+                    if (item.value.trim().compareToIgnoreCase("'s") == 0
+                        || item.value.trim().compareToIgnoreCase("fakeRW") == 0) {
+                        //Implement: Neu Ei va Ei+1 lien ke nhau, hoac cach nhau bang “ ’s”
+                        //quan he cua Ei voi cac thuc the truoc no se bi xoa bo
                         for (int j = 0; j < i; j++) {
                             if (i != j) {
-                                if ((tripleset.getItem(j).subject == tmp1.subject) || (tripleset.getItem(j).object == tmp1.subject)) {
+                                if ((tripleset.getItem(j).subject == Ei) || (tripleset.getItem(j).object == Ei)) {
                                     tripleset.getItem(j).isDelete = true;
                                 }
                             }
                         }
                     }
                 }
-                if ((st.replace('"', ' ').trim().compareTo(",") == 0) || (st.trim().length() == 0)) {
+                if ((st.replace('"', ' ').trim().compareTo(",") == 0)) {
+                    //Neu Ei và Ei+1 cach nhau boi "," thi Ei+1 chi quan he voi Ei
+                    //cac moi quan he cua Ei+1 voi cac thuc the khac se bi xoa bo
                     for (int j = 0; j < i; j++) {
                         if (i != j) {
-                            if ((tripleset.getItem(j).object == tmp1.object) || (tripleset.getItem(j).subject == tmp1.object)) {
+                            if ((tripleset.getItem(j).object == Eiplus1)
+                                || (tripleset.getItem(j).subject == Eiplus1)) {
                                 tripleset.getItem(j).isDelete = true;
                             }
                         }
@@ -1299,45 +1329,117 @@ public class LTLL {
 
             }
         }
-        for (int i = tripleset.length - 1; i >= 0; i--) {
-            TripleType tmp1 = tripleset.getItem(i);
-            if (!tmp1.isDelete) {
-                if (tmp1.subject.classType.compareTo(Constants.IE) == 0) {
-                    for (int j = i - 1; j >= 0; j--) {
-                        if ((tripleset.getItem(j).object == tripleset.getItem(i).object) & (!tripleset.getItem(j).isDelete)) {
-                            // object of triple j == object of triple i (1
-                            // object has 2 relation)
-                            if (tripleset.getItem(j).subject.classType.compareTo(Constants.UE) == 0) {
-                                for (int k = tripleset.length - 1; k >= 0; k--) {
-                                    if (k != j & k != i & !tripleset.getItem(k).isDelete & ((tmp1.subject == tripleset.getItem(k).object) || (tmp1.subject == tripleset.getItem(k).subject))) {
-                                        // Case subject is the immediate node,
-                                        // so it could be remove
-                                        tmp1.isDelete = true;
-                                        break;
-                                    }
-                                }
 
-                            }
-                        }
-                    }
+        //Neu 1 thuc the co quan he voi nhieu thuc the ?ung truoc no,
+        //thi chi giu lai moi quan he voi thuc the khong xac ?inh ?ung truoc, gan no nhat.
+        TripleType walker;
+        for (int i = tripleset.length - 1; i>= 0; i--) {
+            
+            trip = tripleset.getItem(i);
+            
+            if (!trip.isDelete) {
+                
+                if (trip.subject.end < trip.object.start) {
+                    Ei = trip.subject;
+                    Eiplus1 = trip.object;
                 }
-                if (tmp1.subject.classType.compareTo(Constants.UE) == 0) {
-                    for (int j = i - 1; j >= 0; j--) {
-                        // object of triple j == object of triple i (1 object
-                        // has 2 relation)
-                        if ((tripleset.getItem(j).object == tripleset.getItem(i).object) & (!tripleset.getItem(j).isDelete)) {
-                            for (int k = tripleset.length - 1; k >= 0; k--) {
-                                if (k != j & k != i & !tripleset.getItem(k).isDelete & ((tripleset.getItem(j).subject == tripleset.getItem(k).object) || (tripleset.getItem(j).subject == tripleset.getItem(k).subject))) {
-                                    // Case subject is the immediate node, so it
-                                    // could be remove
-                                    tripleset.getItem(j).isDelete = true;
-                                    break;
-                                }
-                            }
+                if (trip.object.end < trip.subject.start) {
+                    Ei = trip.object;
+                    Eiplus1 = trip.subject;
+                }
+
+                //Neu co UE dung truoc, tien hanh xoa quan he voi nhung thuc the dung truoc
+                if (Eiplus1.preNearestUE != null) {
+
+                    if (!(Eiplus1.start - Ei.end == 1) //ko lien ke
+                        && !(Eiplus1.preNearestUE == Ei) //ko phai quan he can giu lai
+                       ){
+
+                        if (!(ProcessingXML.GetItemBetween2Item(trip.subject, trip.object, buffer) != null)
+                            && (ProcessingXML.GetItemBetween2Item(trip.subject,
+                                trip.object, buffer).value.trim().compareToIgnoreCase("'s") == 0)) { //ko quan he so huu)
+                            
+                            trip.isDelete = true;
                         }
+
                     }
+                   
+                    for (int j = i - 1; j >= 0; j--) {
+                        
+                        walker =  tripleset.getItem(j);
+                        if (!walker.isDelete) {
+                            
+                            if ((Eiplus1 == walker.subject
+                                    && walker.object != Eiplus1.preNearestUE)
+                                || (Eiplus1 == walker.object
+                                    && walker.subject != Eiplus1.preNearestUE)) {
+                                
+                                walker.isDelete = true;
+                                
+                            } 
+                            
+                        } 
+                        
+                    }                    
+                    
                 }
             }
+            
         }
+
+//        for (int i = tripleset.length - 1; i >= 0; i--) {
+//
+//            trip = tripleset.getItem(i);
+//
+//            if (!trip.isDelete) {
+//
+//                if (trip.subject.classType.compareTo(Constants.IE) == 0) {
+//                    for (int j = i - 1; j >= 0; j--) {
+//                        if ((tripleset.getItem(j).object == tripleset.getItem(i).object) & (!tripleset.getItem(j).isDelete)) {
+//                            // object of triple j == object of triple i (1
+//                            // object has 2 relation)
+//                            if (tripleset.getItem(j).subject.classType.compareTo(Constants.UE) == 0) {
+//                                for (int k = tripleset.length - 1; k >= 0; k--) {
+//                                    if (k != j
+//                                        & k != i
+//                                        & !tripleset.getItem(k).isDelete
+//                                        & ((trip.subject == tripleset.getItem(k).object)
+//                                            || (trip.subject == tripleset.getItem(k).subject))) {
+//                                        // Case subject is the immediate node,
+//                                        // so it could be remove
+//                                        trip.isDelete = true;
+//                                        break;
+//                                    }
+//                                }
+//
+//                            }
+//                        }
+//                    }
+//                }
+//
+//                if (trip.subject.classType.compareTo(Constants.UE) == 0) {
+//                    for (int j = i - 1; j >= 0; j--) {
+//                        if ((tripleset.getItem(j).object == tripleset.getItem(i).object) & (!tripleset.getItem(j).isDelete)) {
+//                            // object of triple j == object of triple i (1 object
+//                            // has 2 relation)
+//                            for (int k = tripleset.length - 1; k >= 0; k--) {
+//                                if (k != j
+//                                    & k != i
+//                                    & !tripleset.getItem(k).isDelete
+//                                    & ((tripleset.getItem(j).subject == tripleset.getItem(k).object)
+//                                        || (tripleset.getItem(j).subject == tripleset.getItem(k).subject))) {
+//                                    // Case subject is the immediate node, so it
+//                                    // could be remove
+//                                    tripleset.getItem(j).isDelete = true;
+//                                    break;
+//                                }
+//                            }
+//                        }
+//                    }
+//                }
+//
+//            }
+//        }
+
     }
 }

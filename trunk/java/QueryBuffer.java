@@ -18,7 +18,7 @@ class ItemType implements Serializable {
     // KIM(K)
     public String relation = ""; // relation collection
     public int direction = 1; // 1: left->right 2: right->left
-    public int relcount = 0;
+    public int relcount = 0; //relation only
     public int violation = 0;
     public String var = "";
     public String quantifier;
@@ -44,10 +44,14 @@ class ItemType implements Serializable {
     public String text = ""; // use for drawing;
     public boolean isUsed = false;
 
+    //New added for RemoveTriple()
+    public ItemType preNearestUE = null; //Entity only
+    
     // Mark entity that connected to in case MAX MIN relation.
     private boolean isMarkMaxMinRel = false;
     private boolean isTmpRel = false;
     private boolean isNotEntity = false;
+
 
     public boolean isValueOfNormalQTA() {
         return valueOfNormalQTA;
@@ -196,7 +200,7 @@ public class QueryBuffer implements Serializable {
     public void setContainCQTA(boolean containCQTA) {
         this.containCQTA = containCQTA;
     }
-    
+
     public ItemType InsertItemOrg(String value, String className, String classType, long start, long end, String progreg, String wordfollow, String wordbefore) throws Exception {
         if (length == MaxItem) //maximum item limit
         {
@@ -233,7 +237,7 @@ public class QueryBuffer implements Serializable {
 
         //check to find position to insert
         int index = CheckItemType(start, end, className);
-        if (index == -1) {
+        if (value.equalsIgnoreCase("fakeRW") || (index == -1)) {
             buffer[length] = tmp;
             length++;
             SortBuffer();

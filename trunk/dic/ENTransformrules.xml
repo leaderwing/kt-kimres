@@ -109,6 +109,24 @@
 		</consequentlist>
 	</rule>
 	
+	<rule name="hasAlias_K" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Company,Organization" />
+				<relation var="b"
+					value="of" />
+				<object var="c" className="Alias"/>
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasAlias" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
 	<rule name="hasSon" priority="198">
 		<premiselist>
 			<premise>
@@ -143,7 +161,7 @@
 		</consequentlist>
 	</rule>
 	
-	    <rule name="playSport" priority="198">
+	<rule name="playSport" priority="198">
 		<premiselist>
 			<premise>
 				<subject var="a" className="Team,Person,Man,Woman" />
@@ -160,6 +178,98 @@
 			</consequent>
 		</consequentlist>
     </rule>
+	
+	<rule name="hasLeader" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Country" />
+				<relation var="b"
+					value="fakeRW"/>
+				<object var="c" className="Person" value="ruler" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasLeader" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+    </rule>
+	
+	<rule name="involvedIn" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Person" />
+				<relation var="b"
+					value="defeated at" />
+				<object var="c" className="Battle" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="involvedIn" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="hasDepth" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="River" />
+				<relation var="b"
+					value="of" />
+				<object var="c" className="Property" value="depth"/>
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasDepth" />
+				<object var="c" className="String" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="producedByF" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Company" />
+				<relation var="b"
+					value="fakeRW" />
+				<object var="c" className="Product" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="producedBy" />
+				<object var="a" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
+	<rule name="hasSalary_K" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Person" />
+				<relation var="b"
+					value="of" />
+				<object var="c" className="Unknown" value="salary" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" quantifier="*" />
+				<relation var="b" value="hasSalary" />
+				<object var="c" className="String" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+
 	
 	<!-- END OF KHOA -->
 	

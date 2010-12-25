@@ -1,0 +1,67 @@
+
+
+
+How many Great Lakes are there? Q
+
+
+
+
+
+
+
+
+
+
+
+
+
+Who was the oldest U.S. president? Q
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#President>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#hasPosition> {y1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>} <http://proton.semanticweb.org/2006/05/protonu#hasPresident> {y1},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasAge> {y2}
+where xsd:double(y2) >= ALL (select xsd:double(y2temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasAge> {y2temp})
+
+
+Who was the tallest U.S. president? Q
+select x1,z1
+
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#President>},
+        {x1} <http://proton.semanticweb.org/2006/05/protont#hasPosition> {y1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Country_T.4>} <http://proton.semanticweb.org/2006/05/protonu#hasPresident> {y1},
+        {x1} <http://proton.semanticweb.org/2006/05/protonu#hasHeight> {y2}
+where xsd:double(y2) >= ALL (select xsd:double(y2temp)
+
+from {x1temp}rdf:type {<http://proton.semanticweb.org/2006/05/protont#Person>},
+        {x1temp} <http://proton.semanticweb.org/2006/05/protonu#hasHeight> {y2temp})
+
+
+
+
+
+
+
+Name an American made motorcycle?M
+select x1,z1
+from {x1} rdfs:label {z1},
+        {x1} rdf:type {<http://proton.semanticweb.org/2006/05/protons#Alias>},
+        {y1} rdf:type {<http://proton.semanticweb.org/2006/05/protonu#American>},
+        {y1} <http://proton.semanticweb.org/2006/05/protons#hasAlias> {x1},
+        {<http://www.ontotext.com/kim/2006/05/wkb#Product_t.6.0>} <http://proton.semanticweb.org/2006/05/protont#producedBy> {y1}
+
+
+
+
+
+
+
+

@@ -45,12 +45,12 @@ class ProcessingQuery {
 
 		TripleType tmp = new TripleType();
 		if (subject.delete
-				|| subject.value.equalsIgnoreCase(Constants.HOW_MANY_STRING)
-				|| subject.value.equalsIgnoreCase(Constants.HOW_MUCH_STRING))
+				|| subject.value.equalsIgnoreCase(Constants.HOW_MANY_STRING))
+				//|| subject.value.equalsIgnoreCase(Constants.HOW_MUCH_STRING))
 			return tmp;
 		if (object.delete
-				|| object.value.equalsIgnoreCase(Constants.HOW_MANY_STRING)
-				|| object.value.equalsIgnoreCase(Constants.HOW_MUCH_STRING))
+				|| object.value.equalsIgnoreCase(Constants.HOW_MANY_STRING))
+				//|| object.value.equalsIgnoreCase(Constants.HOW_MUCH_STRING))
 			return tmp;
 		if (relation.delete)
 			return tmp;
@@ -210,13 +210,13 @@ class ProcessingQuery {
             if (!buffer.getItem(i).delete) {
                 if ((buffer.getItem(i).classType.compareTo("IE") == 0) || (buffer.getItem(i).classType.compareTo("UE") == 0)) {
                     for (int j = i + 1; j < buffer.length; j++) {
-                        if (((buffer.getItem(j).classType.compareTo("IE") == 0) || (buffer.getItem(j).classType.compareTo("UE") == 0)) & (!buffer.getItem(j).delete)) {
+                        if (((buffer.getItem(j).classType.compareTo("IE") == 0) || (buffer.getItem(j).classType.compareTo("UE") == 0)) && (!buffer.getItem(j).delete)) {
                             boolean check = false;
                             for (int k = j - 1; k > i; k--) {
                                 if (buffer.getItem(k).classType.compareTo("RW") == 0) {
                                     String oldValue = buffer.getItem(j).value;
-                                    if ((buffer.getItem(j).classType.compareToIgnoreCase("UE") == 0) &
-                                            (buffer.getItem(j - 2).classType.compareToIgnoreCase("UE") == 0) &
+                                    if ((buffer.getItem(j).classType.compareToIgnoreCase("UE") == 0) &&
+                                            (buffer.getItem(j - 2).classType.compareToIgnoreCase("UE") == 0) &&
                                             (buffer.getItem(j - 2).delete)) {
 
                                         buffer.getItem(j).value = buffer.getItem(j - 2).value;
@@ -229,6 +229,16 @@ class ProcessingQuery {
                                     if ((tmp.relationName.length() != 0)) {
                                         tripleset.tripleset[tripleset.length] = tmp;
                                         tripleset.length++;
+
+                                        //For RemoveTriple()
+                                        if (buffer.getItem(i).classType.equalsIgnoreCase(Constants.UE)
+                                            && (buffer.getItem(j).start - buffer.getItem(i).end > 1)) {
+
+                                            //Save the previous nearest UE, except for which right before it
+                                            buffer.getItem(j).preNearestUE = buffer.getItem(i);
+                                            
+                                        }
+                                        
                                         check = true;
                                         debug += tmp.relationName + ";" + i + ";" + k + ";" + j + ";";
 
@@ -244,7 +254,7 @@ class ProcessingQuery {
                                         if (tmp.relationName.length() == 0) {
                                             tmp = InterRE(buffer.getItem(i), buffer.getItem(k), buffer.getItem(j));
                                         }
-                                        if ((tmp.relationName.length() != 0) & (CheckValidRE(tmp, buffer))) {
+                                        if ((tmp.relationName.length() != 0) && (CheckValidRE(tmp, buffer))) {
                                             //debug += tmp.relationName+"vao day sau";
                                             tripleset.tripleset[tripleset.length] = tmp;
                                             tripleset.length++;
@@ -261,7 +271,7 @@ class ProcessingQuery {
                                         if (tmp.relationName.length() == 0) {
                                             tmp = InterRE(buffer.getItem(i), buffer.getItem(k), buffer.getItem(j));
                                         }
-                                        if ((tmp.relationName.length() != 0) & (CheckValidRE(tmp, buffer))) {
+                                        if ((tmp.relationName.length() != 0) && (CheckValidRE(tmp, buffer))) {
                                             //debug = tmp.relationName+"vao day";
                                             tripleset.tripleset[tripleset.length] = tmp;
                                             tripleset.length++;
@@ -526,7 +536,7 @@ class ProcessingQuery {
                     if (tmp.className.substring(0, 2).compareTo("UE") == 0) {
                         if (!check) {
                             buffer.getItem(i).quantifier = "?";
-                            if (buffer.query.toLowerCase().contains("bao nhiÃªu")) {
+                            if (buffer.query.toLowerCase().contains("how many")) {
                                 //buffer.getItem(i).quantifier="{*}@?";
                             }
                             if (((buffer.length - i) > 2) && (buffer.getItem(i + 1).value.equalsIgnoreCase("vÃ ")) && (buffer.getItem(i + 2).className.substring(0, 2).compareTo("UE") == 0)) {
@@ -631,7 +641,7 @@ class ProcessingQuery {
                     if (consequentlist != null) {
                         processConsequentlist(consequentlist, tripleset);
                        // Element temp = (Element) premiselist.get
-                        System.out.println("Used rule: " + rule.getAttribute("name"));
+                        System.out.println(rule.getAttribute("name"));
                     }
                     break;
                 }
@@ -877,6 +887,7 @@ class ProcessingQuery {
         String wordfollow = orgitem.getAttribute("wordfollow");
         String wordbefore = orgitem.getAttribute("wordbefore");
         String itemClass = item.className;
+        if ((item.value.trim().compareToIgnoreCase(",") == 0) && (value.contains("+c"))) return true;
         if (itemClass.length() > 3 && itemClass.substring(0, 2).compareTo("UE") == 0) {
             itemClass = itemClass.substring(3);
         }
@@ -1281,19 +1292,19 @@ class ProcessingQuery {
 	 */
 	public static void processQuantitativeAdjective(QueryTriple tripleset,
 			QueryBuffer buffer) throws Exception {
-        
+
         /* Process for QTA, SA */
-        
+
 		if (buffer.length < 2)
 			return;
-        
+
 		for (int i = 0; i < buffer.length; i++) {
-            
+
 			if ((buffer.getItem(i).classType
 							.compareTo(Constants.QUANTITATIVE_ADJ) == 0)
                  || (buffer.getItem(i).classType
 							.compareTo(Constants.SUPERLATIVE_QUANTITATIVE_ADJ) == 0)) {
-				
+
                 boolean check = false;
                 int afterUE = -1;
                 int beforeUE = -1;
@@ -1301,7 +1312,7 @@ class ProcessingQuery {
 				// Heuristic 1: adjs always stand before entity. So, find the
 				// UE that is closest with adj in the next.
 				for (int j = i + 1; j < buffer.length; j++) {
-					
+
 					if ((buffer.getItem(j).classType.compareTo(Constants.UE) == 0)
 						&& (!buffer.getItem(j).delete)) {
 
@@ -1311,16 +1322,16 @@ class ProcessingQuery {
                             check = true;
                             break;
                         }
-                        
+
 					}//end of if UE found
-                    
+
 				}//end of heuristic 1
 
 				if (!check) {
 					// Heuristic 2: adjs stand after entity. So, find the
 					// entity that is closest with adj in the previous.
 					for (int j = i - 1; j > 0; j--) {
-                        
+
                         if ((buffer.getItem(j).classType.compareTo(Constants.UE) == 0)
                             && (!buffer.getItem(j).delete)) {
 
@@ -1329,12 +1340,12 @@ class ProcessingQuery {
                                                                 buffer, i, j) ) {
                                 check = true;
                                 break;
-                            }                            
+                            }
 
                         }//end of if UE found
 
                     }//end of heuristic 2
-				
+
                 }//end of if(!check)
 
                 if (!check) {
@@ -1470,7 +1481,7 @@ class ProcessingQuery {
 
                 //Identify name of the comparative relation ( Greater / Smaller )
                 String comADJ = buffer.getItem(i).value;
-                
+
                 String rel = specifyComparativeRel(comADJ);
 
                 if (rel == null) {
@@ -1485,7 +1496,7 @@ class ProcessingQuery {
                 //Add to tripleset
                 tripleset.tripleset[tripleset.length] = relationA;
                 tripleset.length++;
-                if (relationB != null) {            
+                if (relationB != null) {
                     tripleset.tripleset[tripleset.length] = relationB;
                     tripleset.length++;
                 }
@@ -1498,7 +1509,7 @@ class ProcessingQuery {
 
 	}
 
-    private static void addFakeRelForADJ (QueryTriple tripleSet,
+     private static void addFakeRelForADJ (QueryTriple tripleSet,
                             ItemType adj, ItemType subject) throws Exception {
 
         //Create Relation
@@ -1618,7 +1629,6 @@ class ProcessingQuery {
         return result;
     }
 
-
     /**
      * @param tripleset
      * @param buffer
@@ -1629,7 +1639,7 @@ class ProcessingQuery {
      */
     public static boolean addRelationFromQuantitatidveAdj(QueryTriple tripleset,
         QueryBuffer buffer, int adjIndex, int subjectIndex) throws Exception {
-        
+
         // Get triple from relation between ADJ and UE
         TripleType tmp = getTripleFromRelationshipOfAdjAndEntity(
                 buffer.getItem(adjIndex), buffer.getItem(subjectIndex));
@@ -1725,8 +1735,8 @@ class ProcessingQuery {
 		result.rel = new ItemType();
 		result.rel.className = Constants.RW;
 		result.rel.classType = Constants.RW;
-//        result.rel.setIdentifiedFromQTA(true); 
-        
+//        result.rel.setIdentifiedFromQTA(true);
+
 		result.object = new ItemType();
 
 //        boolean hasRule = false;
@@ -1804,27 +1814,28 @@ class ProcessingQuery {
 
 	}
 
-//    //parse file xml ?? bi?t ?ó là property hay subclass
-//    public static String getAdjectiveTypeInOntology(ItemType adj, ItemType entity) {
-//        if ((adj.value.compareToIgnoreCase("famous") == 0) && (adj.wordbefore.compareToIgnoreCase("most") == 0)) {
-//            return "Class#MostFamousWoman";
-//        }
-//        if (adj.value.compareToIgnoreCase("beautiful") == 0) {
-//            return "Relation#isBeautiful";
-//        }
-//        if (adj.value.compareToIgnoreCase("famous") == 0) {
-//            return "Class#FamousWoman";
-//        }
-//
-//        return "";
-//    }
+
+    //parse file xml ?? bi?t ?ó là property hay subclass
+    public static String getAdjectiveTypeInOntology(ItemType adj, ItemType entity) {
+        if ((adj.value.compareToIgnoreCase("famous") == 0) && (adj.wordbefore.compareToIgnoreCase("most") == 0)) {
+            return "Class#MostFamousWoman";
+        }
+        if (adj.value.compareToIgnoreCase("beautiful") == 0) {
+            return "Relation#isBeautiful";
+        }
+        if (adj.value.compareToIgnoreCase("famous") == 0) {
+            return "Class#FamousWoman";
+        }
+
+        return "";
+    }
 
     //thêm vào tripleset ho?c thay tên class c?a entity thành subclass, tùy k?t qu? tr? v? t? hàm getAdjectiveType
     //n?u là so sánh nh?t thì ?ánh d?u quantifier là most ho?c lease ?? t?o câu SeRQL
-    public static boolean addRelationFromQuanlitatidveAdj(QueryTriple tripleset,
-                        ItemType adj, ItemType entity) throws Exception {
+    public static boolean addRelationFromQuanlitatidveAdj(QueryTriple tripleset, ItemType adj, ItemType entity) {
+        try {
         if (((entity.classType.compareTo("IE") == 0) || (entity.classType.compareTo("UE") == 0)) && (!entity.delete)) {
-            String prop = ProcessingXML.specifyPresentationOfAdj(adj, entity);
+            String prop = ProcessingXML.getAdjectiveTypeInOntology(adj, entity);
             String type = prop.split("#")[0];
 
             if (type.equalsIgnoreCase("Relation")) {
@@ -1867,17 +1878,22 @@ class ProcessingQuery {
             } else {
                 return false;
             }
+
+            return true;
+        }
+        
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return false;
     }
 
     //duy?t qua buffer, khi g?p QLA hay SQLA thì x? lý
-    public static void processQuanlitativeAdjective(QueryTriple tripleset, 
-                        QueryBuffer buffer) throws Exception {
+    public static void processQuanlitativeAdjective(QueryTriple tripleset, QueryBuffer buffer) {
         if (buffer.length < 2) {
             return;
         }
-        for (int i = 0; i < buffer.length - 1; i++) {
+        for (int i = 0; i < buffer.length; i++) {
             ItemType adj = buffer.getItem(i);
             if ((adj.classType.compareTo(Constants.QUANLITATIVE_ADJ) == 0)||(adj.classType
                             .compareTo(Constants.SUPERLATIVE_QUANLITATIVE_ADJ) == 0)) {
@@ -1904,7 +1920,6 @@ class ProcessingQuery {
             }
         }
     }
-
 
     private static String specifyComparativeRel(String cqta) {
 		String result = null;

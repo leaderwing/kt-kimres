@@ -2539,7 +2539,7 @@
 				<subject var="a" className="Distance"/>
 				<relation var="b"
 					value="from" />
-				<object var="c" className="Planet" />
+				<object var="c" className="Planet,Province,CountryCapital" />
 			</premise>
 		</premiselist>
 		<consequentlist>
@@ -2557,7 +2557,7 @@
 				<subject var="a" className="Distance"/>
 				<relation var="b"
 					value="to" />
-				<object var="c" className="Planet" />
+				<object var="c" className="Planet,Province,CountryCapital" />
 			</premise>
 		</premiselist>
 		<consequentlist>
@@ -3202,4 +3202,184 @@
 			</consequent>
 		</consequentlist>
     </rule>
+	
+	
+   <rule name="populationCount3" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" value="population" />
+				<relation var="b"
+					value="of,'s" />
+				<object var="c" className="Country,Province,City,Location" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="populationCount" />
+				<object var="a" className="String" quantifier="?" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+     <rule name="hasAliasF" priority="10">
+		<premiselist>
+			<premise>
+				<subject var="a"
+					className="Alias" value="Name" />
+				<relation var="b" value="fakeRW" />
+				<object var="c" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasAlias" />
+				<object var="a" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+    <rule name="knownAs" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" />
+				<relation var="b"
+					value="is also known as" />
+				<object var="c" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="knownAs" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+    <rule name="locatedInF" priority="10">
+		<premiselist>
+			<premise>
+				<subject var="a"
+					className="Country,City" />
+				<relation var="b" value="fakeRW" />
+				<object var="c" classType="UE" className="Structure" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="locatedIn" />
+				<object var="a" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+    <rule name="hasGroom" priority="10">
+		<premiselist>
+			<premise>
+				<subject var="a"
+					className="Wedding" />
+				<relation var="b" value="of" />
+				<object var="c" className="Man" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasGroom" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+    <rule name="hasBride" priority="10">
+		<premiselist>
+			<premise>
+				<subject var="a"
+					className="Wedding" />
+				<relation var="b" value="of" />
+				<object var="c" className="Woman" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasBride" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+    <rule name="hasTime" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Wedding" />
+				<relation var="b"
+					value="take place" />
+				<object var="c" className="Year,Date" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasTime" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+    </rule>
+
+    <rule name="hasPosition" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Person" />
+				<relation var="b"
+					value="was" />
+				<object var="c" className="President" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasPosition" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+    </rule>
+
+    <rule name="subRegionOfF2" priority="3">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Province,CountryCapital" />
+				<relation var="b" value="fakeRW" />
+				<object var="c" className="PoliticalRegion" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="subRegionOf" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+     <rule name="producedBy" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Country,American,America" />
+				<relation var="b"
+					value="made" />
+				<object var="c" className="Product" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="producedBy" />
+				<object var="a" />
+			</consequent>
+		</consequentlist>
+	</rule>
 </TransformRules>

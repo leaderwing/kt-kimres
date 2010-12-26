@@ -1257,6 +1257,7 @@ public class LTLL {
         TripleType trip;
         ItemType Ei = null;
         ItemType Eiplus1 = null;
+        ItemType relationBtw;
 
         for (int i = tripleset.length - 1; i >= 0; i--) {
 
@@ -1297,12 +1298,11 @@ public class LTLL {
                 }
 
                 // Get relation between subject and object
-                ItemType item = ProcessingXML.GetItemBetween2Item(trip.subject,
-                        trip.object, buffer);
+                relationBtw = trip.rel;
                 
-                if (item != null) {
-                    if (item.value.trim().compareToIgnoreCase("'s") == 0
-                        || item.value.trim().compareToIgnoreCase("fakeRW") == 0) {
+                if (relationBtw != null) {
+                    if (relationBtw.value.trim().compareToIgnoreCase("'s") == 0
+                        || relationBtw.value.trim().compareToIgnoreCase("fakeRW") == 0) {
                         //Implement: Neu Ei va Ei+1 lien ke nhau, hoac cach nhau bang “ ’s”
                         //quan he cua Ei voi cac thuc the truoc no se bi xoa bo
                         for (int j = 0; j < i; j++) {
@@ -1355,9 +1355,11 @@ public class LTLL {
                         && !(Eiplus1.preNearestUE == Ei) //ko phai quan he can giu lai
                        ){
 
-                        if (!(ProcessingXML.GetItemBetween2Item(trip.subject, trip.object, buffer) != null)
-                            && (ProcessingXML.GetItemBetween2Item(trip.subject,
-                                trip.object, buffer).value.trim().compareToIgnoreCase("'s") == 0)) { //ko quan he so huu)
+                        relationBtw = trip.rel;
+                        if ( !( (relationBtw != null)
+                                && (relationBtw.value.trim().compareToIgnoreCase("'s") == 0)
+                              )
+                           ) { //ko quan he so huu)
                             
                             trip.isDelete = true;
                         }
@@ -1374,7 +1376,15 @@ public class LTLL {
                                 || (Eiplus1 == walker.object
                                     && walker.subject != Eiplus1.preNearestUE)) {
                                 
-                                walker.isDelete = true;
+                                relationBtw = walker.rel;
+                                if ( !( (walker.subject.start - walker.object.end == 1 || walker.subject.start - walker.object.end == -1)
+                                        ||
+                                        ((relationBtw != null) && (relationBtw.value.trim().compareToIgnoreCase("'s") == 0) )
+                                      )
+                                   ) {
+
+                                    walker.isDelete = true;
+                                }
                                 
                             } 
                             

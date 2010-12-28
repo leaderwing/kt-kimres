@@ -276,8 +276,8 @@ public class LTLL {
                 System.out.println("5.12 Identify the relationship between Adjective and Entity.");
 
                 System.out.println("5.12a Identify the relationship between Quantitative Adjective and Entity.");
-                //ProcessingQuery.processQuantitativeAdjective(tripleAtomSet,
-                 //       atomBuffer);
+                ProcessingQuery.processQuantitativeAdjective(tripleAtomSet,
+                        atomBuffer);
 
                 System.out.println("5.12b Identify the relationship between Quanlitative Adjective and Entity.");
                 ProcessingQuery.processQuanlitativeAdjective(tripleAtomSet,
@@ -432,7 +432,7 @@ public class LTLL {
                 result.setCg(out);
 
                 System.out.println("SeRQL is: " + SeRQL);
-                String entities = "";// ENSearch.runSeRQL(SeRQL);
+                String entities = ENSearch.runSeRQL(SeRQL);
                 if (!entities.equalsIgnoreCase("")) {
                     entities = entities.substring(0, entities.length() - 1);
                 }
@@ -1012,12 +1012,12 @@ public class LTLL {
                 if (tmp.rel.isIdentifiedFromQTA()) {
                     rel.setIdentifiedFromQTA(tmp.rel.isIdentifiedFromQTA());
                     buffer.setContainQTA(true); //for generating SeRQL
-                }
-
-
-                if (tmp.rel.isIdentifiedFromSQTA()) {
+                } else if (tmp.rel.isIdentifiedFromSQTA()) {
                     rel.setIdentifiedFromSQTA(tmp.rel.isIdentifiedFromSQTA());
                     buffer.setContainSuperlativeQTA(true); //for generating SeRQL
+                } else if (tmp.relationName.contains(Constants.GREATER)
+                            || tmp.relationName.contains(Constants.SMALLER)) {
+                    buffer.setContainCQTA(true);
                 }
 
                 rel.subindex = subindex;
@@ -1053,7 +1053,7 @@ public class LTLL {
         return buffer;
     }
 
-    public static String appendWhereClauseForSQTA(String query, QueryBuffer buf, TopRelationType topRe) {
+   public static String appendWhereClauseForSQTA(String query, QueryBuffer buf, TopRelationType topRe) {
 
         /*To create the template:
          *select...
@@ -1075,25 +1075,28 @@ public class LTLL {
         //seperate clauses
         int sStart = query.indexOf("select");
         int fStart = query.indexOf("from");
-        int wStart = query.indexOf("where") != -1 ? query.indexOf("where") : -1;
+        int wStart = query.indexOf("where") != -1 ?
+                        query.indexOf("where") : -1;
 
         sClause = query.substring(sStart, fStart);
-        fClause = wStart != -1 ? query.substring(fStart, wStart) : query.substring(fStart);
+        fClause = wStart != -1 ? query.substring(fStart, wStart) :
+                                query.substring(fStart);
         wClause = wStart != -1 ? query.substring(wStart) : "where";
 
 
-        operator = topRe.name().equals(TopRelationType.MAX.name()) ? ">= ALL" : "<= ALL";
+        operator = topRe.name().equals(TopRelationType.MAX.name()) ?
+                   ">= ALL" : "<= ALL";
 
-        leftOperand = "xsd:double";
+        leftOperand = "xsd:double" ;
 
-        for (int i = 0; i < buf.length; i++) {
+
+        for(int i = 0; i < buf.length; i++) {
             ItemType tmp = buf.getItem(i);
 
-            if (tmp.delete) {
-                continue;
-            }
+            if (tmp.delete) { continue; }
 
-            if (tmp.className.compareTo("RW") == 0 && tmp.isIdentifiedFromSQTA()) {
+            if (tmp.className.compareTo("RW") == 0
+                && tmp.isIdentifiedFromSQTA()) {
 
                 int[] domain = {tmp.subindex, tmp.objindex};
                 ItemType concept;
@@ -1101,29 +1104,85 @@ public class LTLL {
                 for (int j = 0; j < domain.length; j++) {
                     concept = buf.getItem(domain[j]);
 
-                    if (concept.quantifier.equals("?")) {
+                    if (concept.quantifier.equals("?")){
                         subFromClause =
-                                SeRQLMapping.addStmToExternalFromClause(
-                                "{" + concept.variable + "temp" + "}" + "rdf:type {<" + ENSearch.getNS(concept.className.replaceAll("UE_", "")) + concept.className.replaceAll("UE_", "") + ">}",
-                                subFromClause);
+                            SeRQLMapping.addStmToExternalFromClause(
+                            "{" + concept.variable + "temp"
+                            + "}" + "rdf:type {<"
+                            + ENSearch.getNS(concept.className.replaceAll("UE_", ""))
+                            + concept.className.replaceAll("UE_", "")+">}"
+                            ,
+                            subFromClause);
                     } else {
                         if (concept.quantifier.equals("*")) {
-                            subSelClause = subSelClause + "xsd:double(" + concept.variable + "temp" + ")";
+                            subSelClause = subSelClause + "xsd:double("
+                                      + concept.variable + "temp"
+                                      + ")";
 
                             leftOperand += "(" +
-                                    concept.variable + ")";
-                        }
-                    }
-                }
-                if (tmp.direction == 1) {
+                                           concept.variable
+                                            + ")";
+                            }
+                   }
+               }
+               if (tmp.direction == 1) {
                     subFromClause = SeRQLMapping.addStmToExternalFromClause(
-                            "{" + buf.getItem(tmp.subindex).variable + "temp" + "}" + " <" + ENSearch.getNS(tmp.relation) + tmp.relation + "> " + "{" + buf.getItem(tmp.objindex).variable + "temp" + "}", subFromClause);
-                } else {
+                        "{" + buf.getItem(tmp.subindex).variable + "temp" + "}"
+                        + " <" + ENSearch.getNS(tmp.relation) + tmp.relation
+                        + "> " + "{" + buf.getItem(tmp.objindex).variable
+                        + "temp" + "}", subFromClause);
+               } else {
                     subFromClause = SeRQLMapping.addStmToExternalFromClause(
-                            "{" + buf.getItem(tmp.objindex).variable + "temp" + "}" + " <" + ENSearch.getNS(tmp.relation) + tmp.relation + "> " + "{" + buf.getItem(tmp.subindex).variable + "temp" + "}", subFromClause);
-                }
+                        "{" + buf.getItem(tmp.objindex).variable + "temp" + "}"
+                        + " <" + ENSearch.getNS(tmp.relation) + tmp.relation
+                        + "> " + "{" + buf.getItem(tmp.subindex).variable
+                        + "temp" + "}", subFromClause);
+               }
 
-                break;
+               //Add all other constraints on the subject to the nested FROM clause
+               ItemType rel;
+               for (int relIndex = 0; relIndex < buf.length; relIndex++) {
+
+                   if (buf.getItem(relIndex).className.compareTo("RW") == 0) {
+                       rel = buf.getItem(relIndex);
+
+                       if ((relIndex != i) && (rel.subindex == tmp.subindex)) {
+
+                           if (rel.direction == 1) {
+                               subFromClause = SeRQLMapping.addStmToExternalFromClause(
+                                "{" + buf.getItem(rel.subindex).variable + "temp" + "}"
+                                + " <" + ENSearch.getNS(rel.relation) + rel.relation
+                                + "> " + "{" + buf.getItem(rel.objindex).variable
+                                + "}", subFromClause);
+                           } else {
+                               subFromClause = SeRQLMapping.addStmToExternalFromClause(
+                                "{" + buf.getItem(rel.objindex).variable + "}"
+                                + " <" + ENSearch.getNS(rel.relation) + rel.relation
+                                + "> " + "{" + buf.getItem(rel.subindex).variable
+                                + "temp" + "}", subFromClause);
+                           }
+
+                       } else if ((relIndex != i) && (rel.objindex == tmp.subindex)) {
+
+                           if (rel.direction == 1) {
+                               subFromClause = SeRQLMapping.addStmToExternalFromClause(
+                                "{" + buf.getItem(rel.subindex).variable + "}"
+                                + " <" + ENSearch.getNS(rel.relation) + rel.relation
+                                + "> " + "{" + buf.getItem(rel.objindex).variable
+                                + "temp" + "}", subFromClause);
+                           } else {
+                               subFromClause = SeRQLMapping.addStmToExternalFromClause(
+                                "{" + buf.getItem(rel.objindex).variable + "temp" + "}"
+                                + " <" + ENSearch.getNS(rel.relation) + rel.relation
+                                + "> " + "{" + buf.getItem(rel.subindex).variable
+                                + "}", subFromClause);
+                           }
+
+                       }
+                   }
+               }
+
+               break;
             }//end of if(RW && Superlative)
         }//end of for
         rightOperand = "(" + subSelClause + "\n" + subFromClause + ")";
@@ -1134,7 +1193,7 @@ public class LTLL {
             wClause += " " + leftOperand + " " + operator + " " + rightOperand;
         }
 
-        return (sClause + "\n" + fClause + "\n" + wClause);
+        return (sClause + "\n" + fClause + "\n"  + wClause);
     }
 
     public static String appendOrderByClause(String query, QueryBuffer buf) {
@@ -1152,14 +1211,13 @@ public class LTLL {
         fClause = "\n" + query.substring(endIndex);
 
         //Modify SeRQL query to order result
-        for (int i = 0; i < buf.length; i++) {
+        for(int i=0; i<buf.length; i++) {
             ItemType tmp = buf.getItem(i);
 
-            if (tmp.delete) {
-                continue;
-            }
+            if (tmp.delete) { continue; }
 
-            if (tmp.className.compareTo("RW") == 0 && tmp.isIdentifiedFromQTA()) {
+            if (tmp.className.compareTo("RW") == 0
+                && tmp.isIdentifiedFromQTA()) {
 
                 //Seperate "Select" and "From" clause
                 sClause += "," + buf.getItem(tmp.objindex).variable;
@@ -1173,14 +1231,15 @@ public class LTLL {
                 }
 
 //                oClause = "\norder by xsd:double("
-                oClause += "xsd:double(" + buf.getItem(tmp.objindex).variable + ")" + " " + OrderType + ",";
+                oClause += "xsd:double("
+                        + buf.getItem(tmp.objindex).variable + ")" + " "
+                        + OrderType + ",";
 
             }
-        }
-        System.out.println(sClause + fClause + oClause);
-        return (sClause + fClause + oClause.substring(0, oClause.length() - 1));
+         }
+         System.out.println(sClause + fClause + oClause);
+         return (sClause + fClause + oClause.substring(0, oClause.length() - 1));
     }
-
 
     public static String appendWhereClauseForCQTA(String query, QueryBuffer buf) {
         String sClause = "";
@@ -1199,6 +1258,7 @@ public class LTLL {
         fClause = wStart != -1 ? query.substring(fStart, wStart) :
                                 query.substring(fStart);
         wClause = wStart != -1 ? query.substring(wStart) : "where";
+
 
 
 
@@ -1235,7 +1295,7 @@ public class LTLL {
                                 + " " + operator + " "
                                 + "xsd:double("
                                 + (
-                                buf.getItem(tmp.objindex).className
+                                buf.getItem(tmp.objindex).classType
                                                 .equals(Constants.REAL_NUMBER) ?
                                  buf.getItem(tmp.objindex).quantifier :
                                  buf.getItem(tmp.objindex).variable

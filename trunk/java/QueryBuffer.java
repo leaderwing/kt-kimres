@@ -265,7 +265,7 @@ public class QueryBuffer implements Serializable {
         tmp.wordbefore = wordbefore;
 
         //check to find position to insert
-        int index = CheckItemType(start, end, className);
+        int index = CheckItemType(start, end, classType);
         if (index == -1) {
             buffer[length] = tmp;
             length++;

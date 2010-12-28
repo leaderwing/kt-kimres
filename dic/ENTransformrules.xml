@@ -3382,4 +3382,76 @@
 			</consequent>
 		</consequentlist>
 	</rule>
+	
+	 <rule name="endDate" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Event" />
+				<relation var="b"
+					value="end" />
+				<object var="c" className="Date" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="endDate" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+    <rule name="hasSense" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="String" />
+				<relation var="b"
+					value="mean" />
+				<object var="c" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasSense" />
+				<object var="c" className="String" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+    <rule name="hasAliasC" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="String" />
+				<relation var="b"
+					value="of" />
+				<object var="c" className="Agent" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" className="Entity" />
+				<relation var="b" value="hasAlias" />
+				<object var="a" />
+			</consequent>
+		</consequentlist>
+	</rule>
+
+    <rule name="hasAliasD" priority="198">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Alias" />
+				<relation var="b"
+					value="of" />
+				<object var="c" className="Dynasty" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="c" />
+				<relation var="b" value="hasAlias" />
+				<object var="a" />
+			</consequent>
+		</consequentlist>
+	</rule>
 </TransformRules>

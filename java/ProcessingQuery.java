@@ -490,18 +490,19 @@ class ProcessingQuery {
             ItemType tmp = buffer.getItem(i);
             if ((!tmp.delete) & (buffer.getItem(i).quantifier == null)) {
                 if (tmp.className.length() == 0) {
-                    tmp.className = "UE_Entity";
+                    tmp.className = Constants.UE_ENTITY;
                 }
                 if (tmp.className.length() > 2) {
-                    if (tmp.className.substring(0, 2).compareTo("UE") == 0) {
+                    if (tmp.className.substring(0, 2).compareTo(Constants.UE) == 0) {
                         if (!check) {
-                            buffer.getItem(i).quantifier = "?";
-                            if (buffer.query.toLowerCase().contains("bao nhiêu")) {
-                                buffer.getItem(i).quantifier = "{*}@?";
+                            buffer.getItem(i).quantifier = Constants.QUESTION_SYMBOL;
+                            if (buffer.query.toLowerCase().contains(
+                                    Constants.HOW_MANY_STRING)) {
+                                buffer.getItem(i).quantifier = Constants.QUESTION_SYMBOL;
                             }
                             if (((buffer.length - i) > 2)
                                  && (buffer.getItem(i + 1).value
-                                                    .equalsIgnoreCase("và"))
+                                                    .equalsIgnoreCase("and"))
                                  && (buffer.getItem(i + 2).className.contains("UE_"))) {
                                 check = false;
                             } else {
@@ -528,18 +529,19 @@ class ProcessingQuery {
             }
             if (!tmp.delete) {
                 if (tmp.className.length() > 2) {
-                    if (tmp.value.trim().compareToIgnoreCase("Dân số") == 0) {
+                    if (tmp.value.trim().compareToIgnoreCase("population") == 0) {
                         tmp.className = "String";
-                        tmp.quantifier = "?";
+                        tmp.quantifier = Constants.QUESTION_SYMBOL;
                     }
 
-                    if (tmp.className.substring(0, 2).compareTo("UE") == 0) {
+                    if (tmp.className.substring(0, 2).compareTo(Constants.UE) == 0) {
                         if (!check) {
-                            buffer.getItem(i).quantifier = "?";
-                            if (buffer.query.toLowerCase().contains("how many")) {
+                            buffer.getItem(i).quantifier = Constants.QUESTION_SYMBOL;
+                            if (buffer.query.toLowerCase().contains(Constants.HOW_MANY_STRING)) {
                                 //buffer.getItem(i).quantifier="{*}@?";
                             }
-                            if (((buffer.length - i) > 2) && (buffer.getItem(i + 1).value.equalsIgnoreCase("và")) && (buffer.getItem(i + 2).className.substring(0, 2).compareTo("UE") == 0)) {
+                            if (((buffer.length - i) > 2) && (buffer.getItem(i + 1).value.equalsIgnoreCase("and"))
+                                    && (buffer.getItem(i + 2).className.substring(0, 2).compareTo("UE") == 0)) {
                                 check = false;
                             } else if (buffer.getItem(i).totalrel > 0) {
                                 check = true;
@@ -1457,6 +1459,7 @@ class ProcessingQuery {
                         found = true;
                         objectB = new ItemType();
                         objectB.className = "(String)";
+                        objectB.classType = Constants.REAL_NUMBER;
                         objectB.quantifier = buffer.getItem(j).value;
 
                         break;

@@ -1,0 +1,10 @@
+// $ANTLR 2.7.6 (2005-12-22): QueryGrammar.g -> QueryGrammarParserTokenTypes.txt$
+QueryGrammarParser    // output token vocab name
+RW=4
+CONJ=5
+IE=6
+UE=7
+WS=8
+PLUS=9
+STAR=10
+INT=11

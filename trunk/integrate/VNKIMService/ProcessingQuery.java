@@ -1322,7 +1322,7 @@ class ProcessingQuery {
 				if (!check) {
 					// Heuristic 2: adjs stand after entity. So, find the
 					// entity that is closest with adj in the previous.
-					for (int j = i - 1; j > 0; j--) {
+					for (int j = i - 1; j >= 0; j--) {
 
                         if ((buffer.getItem(j).classType.compareTo(Constants.UE) == 0)
                             && (!buffer.getItem(j).delete)) {

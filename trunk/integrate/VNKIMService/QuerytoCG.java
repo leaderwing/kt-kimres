@@ -117,8 +117,8 @@ public class QuerytoCG {
                 relationBtw = trip.rel;
 
                 if (relationBtw != null) {
-                    if (relationBtw.value.trim().compareToIgnoreCase("'s") == 0
-                        || relationBtw.value.trim().compareToIgnoreCase("fakeRW") == 0) {
+                    if (relationBtw.value.trim().compareToIgnoreCase("'s") == 0) {
+                       // || relationBtw.value.trim().compareToIgnoreCase("fakeRW") == 0) {
                         //Implement: Neu Ei va Ei+1 lien ke nhau, hoac cach nhau bang “ ’s”
                         //quan he cua Ei voi cac thuc the truoc no se bi xoa bo
                         for (int j = 0; j < i; j++) {
@@ -619,7 +619,8 @@ public class QuerytoCG {
 //        buffer.query = query;
 
         //ALT
-        buffer.query = convert2VN(query);
+        query = convert2VN(query);
+        buffer.query = query;
 
         GateNamedEntity.serverpath = ctx.getRealPath("/") + "/";
         ConnectServers connect = new ConnectServers();
@@ -632,8 +633,9 @@ public class QuerytoCG {
         
         //ALT
         System.out.println("1. Identify IE, UE, ADJ, CONJ, RW");
-        IEanno += ENSearch.GetAnnotation(query, buffer);
+        IEanno += ENSearch.GetAnnotation(query, buffer, "");
 
+        if (IEanno.startsWith("Ambiguous@")) return IEanno;
         //DA2
 //        boolean simple = true;
 //        for (int i = 0; i < buffer.length; i++) {
@@ -644,8 +646,8 @@ public class QuerytoCG {
 //            }
 //        }
 
-        String nhapnhang = connect.isAmbiguous(buffer.query, IEanno);
-        nhapnhang = "";
+//                String nhapnhang = "Ambiguous@June:Woman,Man" ;//connect.isAmbiguous(buffer.query, IEanno);
+//        if (true) return nhapnhang;
 
         //DA2
 //        if (!nhapnhang.equalsIgnoreCase("") && (!simple)) {
@@ -653,9 +655,9 @@ public class QuerytoCG {
 //        }
         
         //ALT
-        if (!nhapnhang.equalsIgnoreCase("")) {
-            return nhapnhang;
-        }
+//        if (!nhapnhang.equalsIgnoreCase("")) {
+//            return nhapnhang;
+//        }
 
         //DA2
 //        if (simple) {
@@ -799,7 +801,7 @@ public class QuerytoCG {
                     buferAtomTmp.length = 1;
                     for (int v = 0; v < atomBuffer.length; v++) {
                         String type = atomBuffer.buffer[v].classType;
-                        if (!atomBuffer.buffer[v].className.equals("UE_How many")
+                        if (!atomBuffer.buffer[v].className.equals("UE_Agent")
                             && (type.equals(Constants.UE)
                                 || type.equals(Constants.IE))) {
                             buferAtomTmp.buffer[0] = atomBuffer.buffer[v];
@@ -891,7 +893,8 @@ public class QuerytoCG {
 //        buffer.query = query;
 
         //ALT
-        buffer.query = convert2VN(query);
+        query = convert2VN(query);
+        buffer.query = query;
 
         GateNamedEntity.serverpath = ctx.getRealPath("/") + "/";
         ConnectServers connect = new ConnectServers();
@@ -904,7 +907,8 @@ public class QuerytoCG {
 
         //ALT
         System.out.println("1. Identify IE, UE, ADJ, CONJ, RW");
-        IEanno += ENSearch.GetAnnotation(query, buffer);
+        IEanno += ENSearch.GetAnnotation(query, buffer, ambiguous);
+
 
          System.out.println("4. Split query to atomic query.");
         List<ItemType> itemList = new ArrayList<ItemType>();
@@ -1029,7 +1033,7 @@ public class QuerytoCG {
                     buferAtomTmp.length = 1;
                     for (int v = 0; v < atomBuffer.length; v++) {
                         String type = atomBuffer.buffer[v].classType;
-                        if (!atomBuffer.buffer[v].className.equals("UE_How many")
+                        if (!atomBuffer.buffer[v].className.equals("UE_Agent")
                             && (type.equals(Constants.UE)
                                 || type.equals(Constants.IE))) {
                             buferAtomTmp.buffer[0] = atomBuffer.buffer[v];
@@ -1121,7 +1125,8 @@ public class QuerytoCG {
         //DA2
 //        buffer.query = query;
         //ALT
-        buffer.query = convert2VN(query);
+        query = convert2VN(query);
+        buffer.query = query;
 
         GateNamedEntity.serverpath = ctx.getRealPath("/") + "/";
         
@@ -1133,7 +1138,7 @@ public class QuerytoCG {
 
         //ALT
         System.out.println("1. Identify IE, UE, ADJ, CONJ, RW");
-        IEanno += ENSearch.GetAnnotation(query, buffer);
+        IEanno += ENSearch.GetAnnotation(query, buffer, ambiguous);
 
         IEanno += buffer.test();
 
@@ -1261,7 +1266,7 @@ public class QuerytoCG {
                     buferAtomTmp.length = 1;
                     for (int v = 0; v < atomBuffer.length; v++) {
                         String type = atomBuffer.buffer[v].classType;
-                        if (!atomBuffer.buffer[v].className.equals("UE_How many")
+                        if (!atomBuffer.buffer[v].className.equals("UE_Agent")
                             && (type.equals(Constants.UE)
                                 || type.equals(Constants.IE))) {
                             buferAtomTmp.buffer[0] = atomBuffer.buffer[v];
@@ -1480,7 +1485,7 @@ public class QuerytoCG {
                     buferAtomTmp.length = 1;
                     for (int v = 0; v < atomBuffer.length; v++) {
                         String type = atomBuffer.buffer[v].classType;
-                        if (!atomBuffer.buffer[v].className.equals("UE_How many")
+                        if (!atomBuffer.buffer[v].className.equals("UE_Agent")
                             && (type.equals(Constants.UE)
                                 || type.equals(Constants.IE))) {
                             buferAtomTmp.buffer[0] = atomBuffer.buffer[v];
@@ -1679,7 +1684,7 @@ public class QuerytoCG {
                     buferAtomTmp.length = 1;
                     for (int v = 0; v < atomBuffer.length; v++) {
                         String type = atomBuffer.buffer[v].classType;
-                        if (!atomBuffer.buffer[v].className.equals("UE_How many")
+                        if (!atomBuffer.buffer[v].className.equals("UE_Agent")
                             && (type.equals(Constants.UE)
                                 || type.equals(Constants.IE))) {
                             buferAtomTmp.buffer[0] = atomBuffer.buffer[v];
@@ -1726,7 +1731,8 @@ public class QuerytoCG {
         //DA2
 //        buffer.query = query;
         //ALT
-        buffer.query = convert2VN(query);
+        query = convert2VN(query);
+        buffer.query = query;
 
         GateNamedEntity.serverpath = ctx.getRealPath("/") + "/";
 
@@ -1739,7 +1745,7 @@ public class QuerytoCG {
         //ALT
         System.out.println("1. Identify IE, UE, ADJ, CONJ, RW");
         IEanno += "ENSearch.GetAnnotation: " + "<br/>"
-                    + ENSearch.GetAnnotation(query, buffer);
+                    + ENSearch.GetAnnotation(query, buffer, "");
 
         //DA2
 //        ConnectServers connect = new ConnectServers();
@@ -1905,7 +1911,7 @@ public class QuerytoCG {
                     buferAtomTmp.length = 1;
                     for (int v = 0; v < atomBuffer.length; v++) {
                         String type = atomBuffer.buffer[v].classType;
-                        if (!atomBuffer.buffer[v].className.equals("UE_How many")
+                        if (!atomBuffer.buffer[v].className.equals("UE_Agent")
                             && (type.equals(Constants.UE)
                                 || type.equals(Constants.IE))) {
                             buferAtomTmp.buffer[0] = atomBuffer.buffer[v];
@@ -2159,7 +2165,7 @@ public class QuerytoCG {
                 QueryBuffer atomicQueryBuffer = new QueryBuffer();
                 atomicQueryBuffer.query = atomicQuery;
                 atomicQueryBuffer.length = query.size();
-                atomicQueryBuffer.buffer = query.toArray(new ItemType[atomicQueryBuffer.length+5]);
+                atomicQueryBuffer.buffer = query.toArray(new ItemType[atomicQueryBuffer.length+10]);
                 aqr.setQuery(atomicQueryBuffer);
                 System.out.println("\t\t - Atomic Query:" + atomicQuery);
                 if (!atomicQuery.trim().equals("")) {
@@ -2430,6 +2436,8 @@ public class QuerytoCG {
                     if (t.classType.equalsIgnoreCase(Constants.SUPERLATIVE_QUANTITATIVE_ADJ)) {
                         result += t.value + " ";
                     } else if ((t.wordbefore.equalsIgnoreCase(Constants.MOST_STRING) || t.wordbefore.equalsIgnoreCase(Constants.LEAST_STRING)) && (t.value.indexOf(Constants.MOST_STRING) < 0 && t.value.indexOf(Constants.LEAST_STRING) < 0)) {
+                        result += t.wordbefore + " " + t.value + " ";
+                    } else if (t.wordbefore.trim().equalsIgnoreCase(",")) {
                         result += t.wordbefore + " " + t.value + " ";
                     } else {
                         result += t.value + " ";

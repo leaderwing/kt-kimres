@@ -578,8 +578,11 @@ public class ENSearch {
 //        return result;
 //    }
         
-    public static String GetAnnotation(String query, QueryBuffer output) {
+    public static String GetAnnotation(String query, QueryBuffer output, String ambiguous) {
         String resultano = "";
+        String ambi = "";
+        String rIE = "";
+        
         try {
             String[] quote = query.split("\"");
             for (int i = 1; i < quote.length; i = i + 2) {
@@ -588,7 +591,7 @@ public class ENSearch {
                 String fol = GateNamedEntity.getWordBefore(query, start);
                 String bef = GateNamedEntity.getWordFollow(query, end);
 
-                output.InsertItem(quote[i], "UE_String", "UE", start, end, "G", fol, bef);
+                output.InsertItem(quote[i], "String", "IE", start, end, "G", fol, bef);
             }
 
             if (kim == null) {
@@ -599,7 +602,7 @@ public class ENSearch {
             CorporaAPI apiCorpora = serviceKim.getCorporaAPI();
             apiSemanticRepository = kim.getSemanticRepositoryAPI();
 
-            SemanticAnnotationAPI apiSemAnn1 = serviceKim.getSemanticAnnotationAPI("mycondapp.gapp");
+            SemanticAnnotationAPI apiSemAnn1 = serviceKim.getSemanticAnnotationAPI("myapp.gapp");
 
             KIMDocument kdoc = apiCorpora.createDocument(query, true);
             kdoc = apiSemAnn1.execute(kdoc);
@@ -751,15 +754,24 @@ public class ENSearch {
                         //System.out.println(SeRQL);
                         SemanticQueryResult qr = apiSemanticRepository.evaluateSelectSeRQL(SeRQL);
 
+                        if (rIE.contains(annotation.value+":")) continue;
+                        //if (ambi.contains(annotation.value+":")) continue;
+                        if (qr.size() >= 2) ambi = ambi + annotation.value + ":";
+
+                        rIE = rIE + annotation.value + ":";
 
                         for (int t = 0; t < qr.size(); t++) {
                             annotation.classname = qr.get(t).get(1).toString().split("#", 2)[1];
                             //ignore because keeping this will make
                             //"REALNUM" class item not inserted in the buffer
                             // (see InsertItem() and CheckItemType() for more details)
-                            if (annotation.classname.equalsIgnoreCase("Number") || annotation.classname.equalsIgnoreCase("Date") || annotation.classname.equalsIgnoreCase("CalendarYear") || annotation.classname.equalsIgnoreCase("CalendarMonth") || annotation.classname.equalsIgnoreCase("PositionKey")) {
+                            if (annotation.classname.equalsIgnoreCase("Number") || annotation.classname.equalsIgnoreCase("Date") || annotation.classname.equalsIgnoreCase("CalendarYear") || annotation.classname.equalsIgnoreCase("PositionKey")) {
                                 continue;
                             }
+
+                            if (qr.size() >= 2) ambi = ambi + annotation.classname + ",";
+
+                            if ((ambiguous.contains(annotation.value)) && (!ambiguous.contains(annotation.classname))) continue;
 
                             annotation.ID = qr.get(t).get(0).toString();
                             System.out.println(annotation.classname);
@@ -771,9 +783,9 @@ public class ENSearch {
                                         wordfollow, wordbefore);
                             }
                         //else annotation.classname = ProcessingXML.findIEfromDic(annotation.value);
-
-
                         }
+                        if (ambi.endsWith(",")) ambi = ambi.substring(0, ambi.length()-1) + ";";
+                        
                     } else {
                         output.InsertItem(annotation.name, annotation.classname,
                                 annotation.classtype, annotation.start, annotation.end,
@@ -809,6 +821,8 @@ public class ENSearch {
             resultano += e.getMessage();
         }
 
+        if (ambi.endsWith(";")) ambi = ambi.substring(0, ambi.length()-1);
+        if (ambi.length() != 0) return "Ambiguous@"+ambi;
         return resultano;
     }
 }

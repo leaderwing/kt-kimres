@@ -286,6 +286,23 @@
 		</consequentlist>
 	</rule>
 	
+	<rule name="hasAlias K2" priority="10">
+		<premiselist>
+			<premise>
+				<subject var="a" className="Alias" value="name" />
+				<relation var="b" value="of" />
+				<object var="c" className="Satellite" />
+			</premise>
+		</premiselist>
+		<consequentlist>
+			<consequent>
+				<subject var="a" />
+				<relation var="b" value="hasRepresentative" />
+				<object var="c" />
+			</consequent>
+		</consequentlist>
+	</rule>
+	
 	<!-- END OF KHOA -->
 	
 	

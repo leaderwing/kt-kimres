@@ -1008,7 +1008,7 @@
 		<premiselist>
 			<premise>
 				<subject var="a" className="Person,Man,Woman" />
-				<relation var="b" value="of,has" />
+				<relation var="b" value="of,has,'s" />
 				<object var="c" className="Dog" />
 			</premise>
 		</premiselist>
@@ -3353,7 +3353,7 @@
 			<premise>
 				<subject var="a" className="Province,CountryCapital" />
 				<relation var="b" value="fakeRW" />
-				<object var="c" className="PoliticalRegion" />
+				<object var="c" className="PoliticalRegion,Country" />
 			</premise>
 		</premiselist>
 		<consequentlist>

@@ -289,15 +289,15 @@
 	<rule name="hasAlias K2" priority="10">
 		<premiselist>
 			<premise>
-				<subject var="a" className="Alias" value="name" />
+				<subject var="a" className="Satellite" />
 				<relation var="b" value="of" />
-				<object var="c" className="Satellite" />
+				<object var="c" className="Alias" value="name" />
 			</premise>
 		</premiselist>
 		<consequentlist>
 			<consequent>
 				<subject var="a" />
-				<relation var="b" value="hasRepresentative" />
+				<relation var="b" value="hasAlias" />
 				<object var="c" />
 			</consequent>
 		</consequentlist>
